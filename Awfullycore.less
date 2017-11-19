@@ -125,7 +125,7 @@ body.page-forum {
 	.threadviewsection {
 		.postblock {
 			position: relative;
-			box-shadow: inset 0px 0px #00000000;
+			box-shadow: none;
 			margin-bottom: 0rem;
 			background-image: svg-gradient(to right, @fp-post-new);
 			.posthead {
@@ -145,7 +145,7 @@ body.page-forum {
 				}
 			}
 			.postuser {
-				box-shadow: inset 0px 0px #00000000;
+				box-shadow: none;
 				background-color: @fp-background-transparent;
 				.username {
 					a {
@@ -182,11 +182,11 @@ body.page-forum {
 		}
 		.postblock.postblock-read {
 			background-image: svg-gradient(to right, @fp-post-old);
-			box-shadow: inset 0px 0px #00000000;
+			box-shadow: none;
 		}
 		.postblock.postblock-own {
 			background-image: svg-gradient(to right, @fp-post-own);
-			box-shadow: inset 0px 0px #00000000;
+			box-shadow: none;
 		}
 	}
 	.forumhead {
@@ -199,8 +199,8 @@ body.page-forum {
 				}
 				.subtitle {
 					margin-left: 0rem;
-					opacity: 0.6;
-					color: @fp-text-light;
+					opacity: 1;
+					color: @fp-text-lighter;
 					font-size: 1rem;
 				}
 			}
@@ -239,14 +239,12 @@ body.page-forum {
 			}
 		}
 }
-body {
+#wrapper {
 	color: @fp-text-normal;
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{fp-wrapper}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{fp-wrapper-light}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{fp-wrapper-light}" stroke="black" stroke-width="0" /></svg>') repeat;
 }
 .forumlastpostavatar {
 	background-color: @fp-background-grey-normal;
-}
-#wrapper {
-	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAACJklEQVR4nO3bOZbCMBBF0dcKvP/NsDmiDqBpMPIsqcafgDOdy7GRq0o/t9sNfZmmSXoJlRSdy7rf79JLqKSg9WdU6FUeH+m1J+X1Lb02U94v0ms9ZXadXiuZY5Fey6lgkV4LqWORXrUsYpFeX1nDIr0+s4FFer1lG4v0+ssuLNIL2I9Feh3CIrzXMSxiex3GIrDXGSyiep3EIqTXeSzieV3CIpjXVSwieTXAIoxXGyxieDXDIoBXSyy8ezXGwrVXeyz8enXBwqlXLyw8enXEwp1XXyx8eXXHwpHXCCy8eA3CwoXXOCzsew3FwrjXaCwsewlgYdZLBgubXmJYGPSSxMKalzAWprzksbDjpQILI15asLDgpQgL9V66sNDtpQ4LxV5F/IxHNTq9CtJnPJai0Ot5G6bXnvw/s9JrMx8P+PRaz/zfML1WUtk6pNdS6vus9KpmcVOaXt9Z28Gn1ywbrzvp9Z7td8P0emXXi3R6PbK36pBeHCrRpNexelZwr8PFv8heZyqlYb1OlpVjep2vwQf0utSwiOZ1tbsTyqtBKyyOV5u+YRCvZk3WCF4tO9LuvRq37317tZ91cOzVZTDEq1evKRqXXh1Hjvx59Z3PcubVfZjNk9eIyT83XoPGJH14jZspdeA1dADXutfoaWXTXgKj3Xa9ZObgjXqJHRqw6CV5wsKcl/BxFFte8md3DHnJY2HHSwUWRry0YGHBSxEW6r10YaHb6xfKLSwI423BYAAAAABJRU5ErkJggg==') #bbb;
 }
 
 .title {
@@ -370,7 +368,6 @@ body {
 		color: @fp-text-normal;
 	}
 }
-
 .commits {
 	background-color: @fp-background-white-normal;
 	color: @fp-text-normal;
@@ -394,11 +391,11 @@ body {
 }
 .forumpanel {
 	&:target {
-		box-shadow: 0px 0px 0px white, 0px 0px 0px white, 0px 0px 0px rgba(200, 255, 255, 0.5) !important;
+		box-shadow: none;
 		border-radius: 0rem;
 	}
-	background-image: none;
 }
+// Editor
 .ql-editor {
 	color: @fp-text-normal;
 	font-size: 0.9rem;
@@ -411,10 +408,10 @@ body {
 		color: @fp-text-normal;
 	}
 }
-html, .navbar, .forumcategoryheader{
+// Background image removal
+html, .navbar, .forumcategoryheader, .forumpanel{
 	background-image: none;
 }
-
 // Forum events
 .forumevents {
 	background: @fp-background-white-normal;

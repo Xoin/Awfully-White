@@ -89,7 +89,7 @@ body.page-forum .forumpanel {
 }
 body.page-forum .threadviewsection .postblock {
   position: relative;
-  box-shadow: inset 0px 0px #00000000;
+  box-shadow: none;
   margin-bottom: 0rem;
   background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22none%22%3E%3ClinearGradient%20id%3D%22gradient%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%220%25%22%3E%3Cstop%20offset%3D%2210px%22%20stop-color%3D%22%23d5e7ff%22%2F%3E%3Cstop%20offset%3D%2225%25%22%20stop-color%3D%22%23ffffff%22%2F%3E%3C%2FlinearGradient%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22url(%23gradient)%22%20%2F%3E%3C%2Fsvg%3E');
 }
@@ -106,7 +106,7 @@ body.page-forum .threadviewsection .postblock .postmain .postbody p {
   color: #000;
 }
 body.page-forum .threadviewsection .postblock .postuser {
-  box-shadow: inset 0px 0px #00000000;
+  box-shadow: none;
   background-color: rgba(0, 0, 0, 0);
 }
 body.page-forum .threadviewsection .postblock .postuser .username a {
@@ -131,19 +131,19 @@ body.page-forum .threadviewsection .postblock:first-of-type {
 }
 body.page-forum .threadviewsection .postblock.postblock-read {
   background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22none%22%3E%3ClinearGradient%20id%3D%22gradient%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%220%25%22%3E%3Cstop%20offset%3D%2210px%22%20stop-color%3D%22%23e2e4e7%22%2F%3E%3Cstop%20offset%3D%2225%25%22%20stop-color%3D%22%23ffffff%22%2F%3E%3C%2FlinearGradient%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22url(%23gradient)%22%20%2F%3E%3C%2Fsvg%3E');
-  box-shadow: inset 0px 0px #00000000;
+  box-shadow: none;
 }
 body.page-forum .threadviewsection .postblock.postblock-own {
   background-image: url('data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20%3F%3E%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22none%22%3E%3ClinearGradient%20id%3D%22gradient%22%20gradientUnits%3D%22userSpaceOnUse%22%20x1%3D%220%25%22%20y1%3D%220%25%22%20x2%3D%22100%25%22%20y2%3D%220%25%22%3E%3Cstop%20offset%3D%2210px%22%20stop-color%3D%22%23eeffbb%22%2F%3E%3Cstop%20offset%3D%2225%25%22%20stop-color%3D%22%23ffffff%22%2F%3E%3C%2FlinearGradient%3E%3Crect%20x%3D%220%22%20y%3D%220%22%20width%3D%221%22%20height%3D%221%22%20fill%3D%22url(%23gradient)%22%20%2F%3E%3C%2Fsvg%3E');
-  box-shadow: inset 0px 0px #00000000;
+  box-shadow: none;
 }
 body.page-forum .forumhead ul .content .title a {
   color: #000;
 }
 body.page-forum .forumhead ul .content .subtitle {
   margin-left: 0rem;
-  opacity: 0.6;
-  color: #7b7b7b;
+  opacity: 1;
+  color: #fff;
   font-size: 1rem;
 }
 body.page-forum .forumblock.is-closed {
@@ -177,14 +177,12 @@ body.page-forum .threadpost .postblock {
     margin-bottom: 3em;
   }
 }
-body {
+#wrapper {
   color: #000;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="#b5b5b5" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="#bbbbbb" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="#bbbbbb" stroke="black" stroke-width="0" /></svg>') repeat;
 }
 .forumlastpostavatar {
   background-color: #eee;
-}
-#wrapper {
-  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAIAAAD/gAIDAAACJklEQVR4nO3bOZbCMBBF0dcKvP/NsDmiDqBpMPIsqcafgDOdy7GRq0o/t9sNfZmmSXoJlRSdy7rf79JLqKSg9WdU6FUeH+m1J+X1Lb02U94v0ms9ZXadXiuZY5Fey6lgkV4LqWORXrUsYpFeX1nDIr0+s4FFer1lG4v0+ssuLNIL2I9Feh3CIrzXMSxiex3GIrDXGSyiep3EIqTXeSzieV3CIpjXVSwieTXAIoxXGyxieDXDIoBXSyy8ezXGwrVXeyz8enXBwqlXLyw8enXEwp1XXyx8eXXHwpHXCCy8eA3CwoXXOCzsew3FwrjXaCwsewlgYdZLBgubXmJYGPSSxMKalzAWprzksbDjpQILI15asLDgpQgL9V66sNDtpQ4LxV5F/IxHNTq9CtJnPJai0Ot5G6bXnvw/s9JrMx8P+PRaz/zfML1WUtk6pNdS6vus9KpmcVOaXt9Z28Gn1ywbrzvp9Z7td8P0emXXi3R6PbK36pBeHCrRpNexelZwr8PFv8heZyqlYb1OlpVjep2vwQf0utSwiOZ1tbsTyqtBKyyOV5u+YRCvZk3WCF4tO9LuvRq37317tZ91cOzVZTDEq1evKRqXXh1Hjvx59Z3PcubVfZjNk9eIyT83XoPGJH14jZspdeA1dADXutfoaWXTXgKj3Xa9ZObgjXqJHRqw6CV5wsKcl/BxFFte8md3DHnJY2HHSwUWRry0YGHBSxEW6r10YaHb6xfKLSwI423BYAAAAABJRU5ErkJggg==') #bbb;
 }
 .title {
   color: #000;
@@ -315,11 +313,8 @@ body {
 .level-item a:hover {
   color: #1e77d0;
 }
-.forumpanel {
-  background-image: none;
-}
 .forumpanel:target {
-  box-shadow: 0px 0px 0px white, 0px 0px 0px white, 0px 0px 0px rgba(200, 255, 255, 0.5) !important;
+  box-shadow: none;
   border-radius: 0rem;
 }
 .ql-editor {
@@ -334,7 +329,8 @@ body {
 }
 html,
 .navbar,
-.forumcategoryheader {
+.forumcategoryheader,
+.forumpanel {
   background-image: none;
 }
 .forumevents {
