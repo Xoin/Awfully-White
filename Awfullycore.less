@@ -127,7 +127,8 @@ body.page-forum {
 			position: relative;
 			box-shadow: none;
 			margin-bottom: 0rem;
-			background-image: svg-gradient(to right, @fp-post-new);
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-new) repeat-y;
+			
 			.posthead {
 				color: @fp-text-normal;
 				a {
@@ -181,12 +182,12 @@ body.page-forum {
 			}
 		}
 		.postblock.postblock-read {
-			background-image: svg-gradient(to right, @fp-post-old);
 			box-shadow: none;
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-old) repeat-y;
 		}
 		.postblock.postblock-own {
-			background-image: svg-gradient(to right, @fp-post-own);
 			box-shadow: none;
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-own) repeat-y;
 		}
 	}
 	.forumhead {
@@ -230,6 +231,11 @@ body.page-forum {
 		}
 	}
 }
+
+.postlist {
+	background: @fp-background-white-normal;
+}
+
 .flex-centered {
 		@media screen {
 			padding: 0rem 0rem;
@@ -241,8 +247,10 @@ body.page-forum {
 }
 #wrapper {
 	color: @fp-text-normal;
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{fp-wrapper}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{fp-wrapper-light}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{fp-wrapper-light}" stroke="black" stroke-width="0" /></svg>') repeat;
-}
+	//Blame Firefox
+	@temp1: escape(%("%a", @fp-wrapper));
+	@temp2: escape(%("%a", @fp-wrapper-light));
+	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{temp1}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{temp2}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{temp2}" stroke="black" stroke-width="0" /></svg>') repeat;}
 .forumlastpostavatar {
 	background-color: @fp-background-grey-normal;
 }
@@ -409,7 +417,7 @@ body.page-forum {
 	}
 }
 // Background image removal
-html, .navbar, .forumcategoryheader, .forumpanel{
+html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	background-image: none;
 }
 // Forum events
