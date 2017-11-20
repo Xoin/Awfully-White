@@ -13,9 +13,10 @@
 
 .my-titles() when (@titles = true) {
 	body.page-forum .threadviewsection .postblock .postuser {
-		.user-banned:after {
-			content: "Banned";
-			color: @fp-user-red;
+
+		.user-gold:after {
+			content: "Gold Member";
+			color: @fp-text-normal;
 			display: block;
 			font-weight: normal;
 			font-size: 0.7rem;
@@ -34,9 +35,9 @@
 			font-weight: normal;
 			font-size: 0.7rem;
 		}
-		.user-gold:after {
-			content: "Gold Member";
-			color: @fp-text-normal;
+		.user-banned:after {
+			content: "Banned";
+			color: @fp-user-red;
 			display: block;
 			font-weight: normal;
 			font-size: 0.7rem;
