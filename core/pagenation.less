@@ -1,0 +1,16 @@
+//Pagenation
+@fp-page: @fp-background-blue-normal;
+@fp-page-active: @fp-background-blue-dark;
+@fp-page-hover: @fp-background-blue-light;
+
+.pagnation.threadpagnation, .pagnation.postpagnation {
+	background-color: @fp-page;
+	margin: 0rem 0;
+	color: @fp-text-lighter;
+	A.page.is-active {
+		background-color: @fp-page-active;
+	}
+	A:hover {
+		background-color: @fp-page-hover;
+	}
+}

@@ -1,0 +1,85 @@
+//Post indicator
+@fp-post-own: @fp-indicator-own 1px, @fp-background-white-normal 25%;
+@fp-post-old: @fp-indicator-old 1px, @fp-background-white-normal 25%;
+@fp-post-new: @fp-indicator-new 1px, @fp-background-white-normal 25%;
+
+.postlist {
+	background: @fp-background-white-normal;
+}
+
+body.page-forum {
+	.threadviewsection {
+		.postblock {
+			position: relative;
+			box-shadow: none;
+			margin-bottom: 0rem;
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-new) repeat-y;
+			background-size: 100%;
+			.posthead {
+				color: @fp-text-normal;
+				a {
+					color: @fp-text-link-normal;
+				}
+				strong {
+					color:@fp-text-normal;
+				}
+			}
+			.postmain {
+				.postbody {
+					p {
+						color: @fp-text-normal;
+					}
+				}
+			}
+			.postuser {
+				box-shadow: none;
+				background-color: @fp-background-transparent;
+				.username {
+					a {
+						color: @fp-user-blue;
+					}
+					.user-online {
+						a {
+							color: @fp-user-blue;
+							border-bottom: 1px dotted @fp-user-blue;
+							font-weight: bolder;
+						}
+					}
+				}
+				.user-moderator {
+					a {
+						color: @fp-user-green;
+					}
+				}
+				.user-admin {
+					a {
+						color: @fp-user-green;
+					}
+				}
+				.user-banned {
+
+					a {
+						color: @fp-user-red;
+					}
+				}
+			}
+			&:first-of-type {
+				margin-top: 0rem;
+			}
+		}
+		.postblock.postblock-read {
+			box-shadow: none;
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-old) repeat-y;
+			background-size: 100%;
+		}
+		.postblock.postblock-own {
+			box-shadow: none;
+			background: @fp-background-white-normal svg-gradient(to right, @fp-post-own) repeat-y;
+			background-size: 100%;
+		}
+	}
+}
+
+.lastread {
+	margin: 0rem 0px;
+}

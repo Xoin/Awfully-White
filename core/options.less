@@ -1,0 +1,46 @@
+// Options
+.my-rounds() when (@roundings = true) {
+	#search_results > .container, .forumevents, body.page-forum .threadpost, .flex-centered {
+		@media screen {
+			@media (min-width: 800px) {
+				box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+				border-radius: 5px;
+			}
+		}
+	}
+}
+.my-rounds();
+
+.my-titles() when (@titles = true) {
+	body.page-forum .threadviewsection .postblock .postuser {
+		.user-banned:after {
+			content: "Banned";
+			color: @fp-user-red;
+			display: block;
+			font-size: 0.7rem;
+		}
+		.user-moderator:after{
+			content: "Moderator";
+			color: @fp-user-green;
+			display: block;
+			font-size: 0.7rem;
+		}
+		.user-admin:after {
+			content: "Administrator";
+			color: @fp-user-green;
+			display: block;
+			font-size: 0.7rem;
+		}
+	}
+}
+.my-titles();
+
+
+.my-seperator() when (@post-seperator = true) {
+	body.page-forum .threadviewsection {
+		.postblock {
+			border-bottom: 0.2rem solid @fp-post-seperator;
+		}
+	}
+}
+.my-seperator();

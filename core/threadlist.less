@@ -1,0 +1,97 @@
+body.page-forum {
+	.forumhead {
+		ul {
+			.content {
+				.title {
+					a {
+						color: @fp-text-normal;
+					}
+				}
+				.subtitle {
+					margin-left: 0rem;
+					opacity: 1;
+					color: @fp-text-lighter;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+	.threadlistsection {
+		.threadblock {
+			border-bottom: 1px solid #CCC;
+			border-left: 1px solid #888;
+			border-right: 1px solid #888;
+			background-color: @fp-background-white-normal;
+			a {
+				color: @fp-text-link-normal;
+				font-weight: bolder;
+			}
+			.threadicon, .threadlastpost {
+				background-color:@fp-background-grey-light;
+			}
+			.threadmain {
+				.threadmeta {
+					.pagnationcomponent {
+						.page {
+							background-color: @fp-background-transparent;
+							color: @fp-text-light;
+							&:hover {
+								background-color: @fp-background-transparent;
+								color: @fp-text-normal;
+							}
+						}
+						&:before {
+							content: "( ";
+						}
+						&:after {
+							content: " )";
+						}
+					}
+				}
+			}
+			.user-moderator {
+				a {
+					color: @fp-user-green;
+				}
+			}
+			.user-banned {
+				a {
+					color: @fp-user-red;
+				}
+			}
+		}
+		.threadblock.is-sticky {
+			A {
+				color: @fp-text-link-normal;
+				font-weight: bolder;
+			}
+			background-color: @fp-background-yellow;
+			color: @fp-text-normal;
+			//Should this even exist?
+			.threadmain {
+				.threadmeta {
+					.pagnationcomponent {
+						.page {
+							background-color: @fp-background-transparent;
+							color: @fp-text-light;
+							&:hover {
+								background-color: @fp-background-transparent;
+								color: @fp-text-normal;
+							}
+						}
+					}
+				}
+			}
+			.threadicon, .threadlastpost {
+				background-color: @fp-background-yellow;
+			}
+		}
+		.threadblock.is-closed {
+			background-color:@fp-background-grey-normal;
+			color: @fp-text-light;
+			.threadicon, .threadlastpost {
+				background-color: @fp-background-grey-normal;
+			}
+		}
+	}
+}

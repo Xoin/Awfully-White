@@ -1,0 +1,19 @@
+.navbar.is-primary {
+	background: @fp-background-blue-normal;
+	.navbar-brand > a.navbar-item:hover {
+		background: @fp-background-blue-light;
+	}
+	.navbar-end > a.navbar-item:hover {
+		background: @fp-background-blue-light;
+	}
+}
+.navbar.is-dark {
+	.navbar-end { 
+		a.navbar-item:hover {
+			background: @fp-background-blue-light !important;
+		}
+		a.navbar-item.is-active {
+			background: @fp-background-blue-normal !important;	
+		}
+	}
+}

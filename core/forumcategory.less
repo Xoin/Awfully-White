@@ -1,0 +1,42 @@
+.forumlastpostavatar {
+	background-color: @fp-background-grey-normal;
+}
+
+body.page-forum {
+	.forumcategoryblock {
+		.forumcategoryheader {
+			background: @fp-background-blue-normal;
+			color: @fp-text-lighter;
+			font-size: 12pt;
+			font-weight: bolder;
+			margin: 0px 0px 0px 0px;
+		}
+	}
+	.forumblock {
+		border-bottom: 1px solid #CCC;
+		border-left: 1px solid #888;
+		border-right: 1px solid #888;
+		background-color: @fp-background-white-normal;
+		.forumname {
+			.forumtitle {
+				a {
+					color: @fp-text-link-normal;
+					font-weight: bolder;
+				}
+			}
+		}
+		.forumlastpost {
+			.threadname {
+				a {
+					color: @fp-text-link-normal;
+					font-weight: bolder;
+				}
+			}
+			background-color:@fp-background-grey-light;
+		}
+	}
+	.forumblock.is-closed {
+		background-color:@fp-background-grey-light;
+		color: @fp-text-light;
+	}
+}
