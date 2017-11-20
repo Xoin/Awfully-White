@@ -22,9 +22,12 @@ body.page-forum {
 			border-left: 1px solid #888;
 			border-right: 1px solid #888;
 			background-color: @fp-background-white-normal;
-			a {
+			a,strong {
 				color: @fp-text-link-normal;
 				font-weight: bolder;
+				&:hover {
+					color: @fp-text-link-light;
+				}
 			}
 			.threadicon, .threadlastpost {
 				background-color:@fp-background-grey-light;
@@ -59,6 +62,11 @@ body.page-forum {
 					color: @fp-user-red;
 				}
 			}
+			.user-gold {
+				a {
+					color: @fp-user-gold;
+				}
+			}
 		}
 		.threadblock.is-sticky {
 			A {
@@ -84,6 +92,21 @@ body.page-forum {
 			}
 			.threadicon, .threadlastpost {
 				background-color: @fp-background-yellow;
+			}
+			.user-moderator {
+				a {
+					color: @fp-user-green;
+				}
+			}
+			.user-banned {
+				a {
+					color: @fp-user-red;
+				}
+			}
+			.user-gold {
+				a {
+					color: @fp-user-gold;
+				}
 			}
 		}
 		.threadblock.is-closed {

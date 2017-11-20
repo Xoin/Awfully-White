@@ -19,6 +19,9 @@ body.page-forum {
 				color: @fp-text-normal;
 				a {
 					color: @fp-text-link-normal;
+					&:hover {
+						color: @fp-text-link-light;
+					}
 				}
 				strong {
 					color:@fp-text-normal;
@@ -26,6 +29,12 @@ body.page-forum {
 			}
 			.postmain {
 				.postbody {
+					a {
+						color: @fp-text-link-normal;
+						&:hover {
+							color: @fp-text-link-light;
+						}
+					}
 					p {
 						color: @fp-text-normal;
 					}
@@ -57,9 +66,13 @@ body.page-forum {
 					}
 				}
 				.user-banned {
-
 					a {
 						color: @fp-user-red;
+					}
+				}
+				.user-gold {
+					a {
+						color: @fp-user-gold;
 					}
 				}
 			}
