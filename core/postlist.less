@@ -12,10 +12,17 @@ body.page-forum {
 		.postblock {
 			position: relative;
 			box-shadow: none;
-			margin-bottom: 0rem;
+			border: 1px solid grey;
+			margin-top: -1px;
 			background: @fp-background-white-normal svg-gradient(to right, @fp-post-new) repeat-y;
 			background-size: 100%;
 			.posthead {
+				background-color: lightgray;
+				margin-top: 0;
+				left: -196px; /*Makes the time stuff span all the way left*/
+				right: -16px;
+				border-bottom: 1px solid grey;
+				padding-bottom: 0.5rem;
 				color: @fp-text-normal;
 				a {
 					color: @fp-text-link-normal;
@@ -26,6 +33,13 @@ body.page-forum {
 				strong {
 					color:@fp-text-normal;
 				}
+			}
+			.posthead .timeago {
+				//temp
+				background-image: url('https://facepunch.com/fp/time.png');
+				background-repeat: no-repeat;
+				padding-left: 17px;
+				background-position-y: -1px;
 			}
 			.postmain {
 				.postbody {
@@ -43,6 +57,8 @@ body.page-forum {
 			.postuser {
 				box-shadow: none;
 				background-color: @fp-background-transparent;
+				border-right: unset;
+				padding-top: 32px;
 				.username {
 					a {
 						color: @fp-user-blue;
