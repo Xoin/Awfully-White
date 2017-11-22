@@ -8,6 +8,7 @@
 	}
 }
 .navbar.is-dark {
+	background-color: @fp-background-white-normal;
 	.navbar-brand {
 		.logo {
 				@temp: escape(%("%a", @fp-logo-normal));
@@ -22,10 +23,15 @@
 		}
 	}
 	.navbar-end { 
-		a.navbar-item:hover {
-			background: @fp-background-blue-light !important;
+		a.navbar-item {
+			color: @fp-text-link-normal;
+			&:hover {
+				color: @fp-text-lighter;
+				background: @fp-background-blue-light !important;
+			}
 		}
 		a.navbar-item.is-active {
+			color: @fp-text-lighter;
 			background: @fp-background-blue-normal !important;	
 		}
 	}
