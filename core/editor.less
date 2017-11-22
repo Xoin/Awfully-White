@@ -1,0 +1,42 @@
+
+
+// Editor
+.ql-editor {
+	color: @fp-text-normal;
+	font-size: 0.9rem;
+	strong {
+		color: @fp-text-normal;
+		font-size: bold;
+	}
+}
+.ql-toolbar.ql-snow.toolbar {
+	button {
+		color: @fp-text-light;
+	}
+	button.ql-active {
+		color: @fp-text-normal;
+	}
+}
+.ql-container.ql-snow {
+	.ql-editor {
+		postquote {
+			border: 1px solid #888;
+			margin: 10px;
+			.head {
+				background-color: #ace;
+				font-weight: 700;
+				color: #05a;
+			}
+			.body {
+				background-color: #bdf;
+				color: @fp-text-normal;
+			}
+		}
+	}
+	a {
+		color: @fp-text-link-normal;
+		&:hover {
+			color: @fp-text-link-light;
+		}
+	}
+}
