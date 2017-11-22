@@ -13,8 +13,17 @@ body.page-forum {
 		{
 			color: @fp-text-normal;
 		}
-		.postlist, .postblock {
-			background: @fp-background-white-normal;
+		.postlist{
+			.postblock {
+				background: @fp-background-white-normal;
+				border: 0px solid grey;
+				.postmain {
+				padding-top: 0rem !important;
+					.posthead {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
