@@ -4,8 +4,20 @@
 @fp-post-new: @fp-indicator-new 1px, @fp-background-white-normal 25%;
 
 // Options
-
-.my-titles() when (@titles = true) {
+.settings-lastread() when (@fp-settings-lastread-hide = true) {
+	.lastread {
+		display: none;
+	}
+}
+.settings-lastread;
+.settings-avatars() when (@fp-settings-mobile-avatars = true) {
+	display: unset !important;
+	float: right;
+	right: 0.2em;
+	top: 1em;
+	position: absolute;
+}
+.settings-titles() when (@fp-settings-titles = true) {
 	.common-user {
 		display: block;
 		font-weight: normal;
@@ -122,7 +134,10 @@ body.page-forum {
 						color: @fp-user-red;
 					}
 				}
-				.my-titles;
+				.settings-titles;
+				.is-hidden-mobile {
+					.settings-avatars;
+				}
 			}
 			&:first-of-type {
 				margin-top: 0rem;
@@ -134,6 +149,7 @@ body.page-forum {
 			}
 			&-own {
 				background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
+				box-shadow: inset 0px 0px #4fa052;
 			}
 
 		}
