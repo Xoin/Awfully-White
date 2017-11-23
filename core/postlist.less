@@ -15,7 +15,7 @@ body.page-forum {
 			border: 1px solid grey;
 			margin-top: -1px;
 			margin-bottom: -0.1rem;
-			background: @fp-background-white-normal svg-gradient(to right, @fp-post-new) repeat-y;
+			background: linear-gradient(90deg,  @fp-post-new, @fp-background-white-normal 500px);
 			background-size: 100%;
 			.posthead {
 				background-color: lightgray;
@@ -43,6 +43,10 @@ body.page-forum {
 				background-position-y: -1px;
 			}
 			.postmain {
+				.postexpand {
+					margin-top: -0.8em;
+				}
+
 				.postbody {
 					a {
 						color: @fp-text-link-light;
@@ -99,12 +103,12 @@ body.page-forum {
 		}
 		.postblock.postblock-read {
 			box-shadow: none;
-			background: @fp-background-white-normal svg-gradient(to right, @fp-post-old) repeat-y;
+			background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
 			background-size: 100%;
 		}
 		.postblock.postblock-own {
 			box-shadow: none;
-			background: @fp-background-white-normal svg-gradient(to right, @fp-post-own) repeat-y;
+			background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
 			background-size: 100%;
 		}
 	}
