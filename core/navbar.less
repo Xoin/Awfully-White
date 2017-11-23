@@ -1,9 +1,6 @@
 .navbar.is-primary {
 	background: @fp-background-blue-normal;
-	.navbar-brand > a.navbar-item:hover {
-		background: @fp-background-blue-light;
-	}
-	.navbar-end > a.navbar-item:hover {
+	.navbar-brand > a.navbar-item:hover, .navbar-end > a.navbar-item:hover {
 		background: @fp-background-blue-light;
 	}
 }
@@ -29,10 +26,10 @@
 				color: @fp-text-lighter;
 				background: @fp-background-blue-light !important;
 			}
-		}
-		a.navbar-item.is-active {
-			color: @fp-text-lighter;
-			background: @fp-background-blue-normal !important;	
+			.is-active {
+				color: @fp-text-lighter;
+				background: @fp-background-blue-normal !important;	
+			}
 		}
 	}
 }

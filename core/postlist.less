@@ -3,6 +3,48 @@
 @fp-post-old: @fp-indicator-old 1px, @fp-background-white-normal 25%;
 @fp-post-new: @fp-indicator-new 1px, @fp-background-white-normal 25%;
 
+// Options
+
+.my-titles() when (@titles = true) {
+	.common-user {
+		display: block;
+		font-weight: normal;
+		font-size: 0.7rem;
+	}
+	.user {
+		&-gold:after {
+			content: "Gold Member";
+			color: @fp-text-normal;
+			display: block;
+			font-weight: normal;
+			font-size: 0.7rem;
+		}
+		&-moderator:after {
+			content: "Moderator";
+			color: @fp-user-green;
+			display: block;
+			font-weight: normal;
+			font-size: 0.7rem;
+		}
+		&-admin:after {
+			content: "Administrator";
+			color: @fp-user-green;
+			display: block;
+			font-weight: normal;
+			font-size: 0.7rem;
+		}
+		&-banned:after {
+			content: "Banned";
+			color: @fp-user-red;
+			display: block;
+			font-weight: normal;
+			font-size: 0.7rem;
+		}
+	}
+}
+
+// End options
+
 .postlist {
 	background: @fp-background-white-normal;
 }
@@ -25,12 +67,7 @@ body.page-forum {
 				border-bottom: 1px solid grey;
 				padding-bottom: 0.5rem;
 				color: @fp-text-normal;
-				a {
-					color: @fp-text-link-normal;
-					&:hover {
-						color: @fp-text-link-light;
-					}
-				}
+				.common-link;
 				strong {
 					color:@fp-text-normal;
 				}
@@ -46,7 +83,6 @@ body.page-forum {
 				.postexpand {
 					margin-top: -0.8em;
 				}
-
 				.postbody {
 					a {
 						color: @fp-text-link-light;
@@ -64,52 +100,42 @@ body.page-forum {
 				background-color: @fp-background-transparent;
 				border-right: unset;
 				padding-top: 32px;
-				.username {
-					a {
+				.user {
+					&name a {
 						color: @fp-user-blue;
 					}
-					.user-online {
-						a {
-							color: @fp-user-blue;
-							border-bottom: 1px dotted @fp-user-blue;
-							font-weight: bolder;
-						}
+					&-useronline a{
+						color: @fp-user-blue;
+						border-bottom: 1px dotted @fp-user-blue;
+						font-weight: bolder;
 					}
-				}
-				.user-gold {
-					a {
+					&-gold a {
 						color: @fp-user-gold;
 					}
-				}
-				.user-moderator {
-					a {
+					&-moderator a {
 						color: @fp-user-green;
 					}
-				}
-				.user-admin {
-					a {
+					&-admin a {
 						color: @fp-user-green;
 					}
-				}
-				.user-banned {
-					a {
+					&-banned a {
 						color: @fp-user-red;
 					}
 				}
+				.my-titles;
 			}
 			&:first-of-type {
 				margin-top: 0rem;
 			}
 		}
-		.postblock.postblock-read {
-			box-shadow: none;
-			background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
-			background-size: 100%;
-		}
-		.postblock.postblock-own {
-			box-shadow: none;
-			background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
-			background-size: 100%;
+		.postblock.postblock {
+			&-read {
+				background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
+			}
+			&-own {
+				background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
+			}
+
 		}
 	}
 }

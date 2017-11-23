@@ -1,5 +1,3 @@
-
-
 // Editor
 .ql-editor {
 	color: @fp-text-normal;
@@ -12,9 +10,9 @@
 .ql-toolbar.ql-snow.toolbar {
 	button {
 		color: @fp-text-light;
-	}
-	button.ql-active {
-		color: @fp-text-normal;
+		.ql-active {
+			color: @fp-text-normal;
+		}
 	}
 }
 .ql-container.ql-snow {
@@ -33,10 +31,5 @@
 			}
 		}
 	}
-	a {
-		color: @fp-text-link-normal;
-		&:hover {
-			color: @fp-text-link-light;
-		}
-	}
+	&:extend(.common-link all);
 }

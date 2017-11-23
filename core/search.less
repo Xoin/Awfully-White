@@ -13,11 +13,8 @@
 }
 .page-search {
 	.searchentry {
-		.searchheader A {
-			color: @fp-text-link-normal;
-			&:hover {
-				color: @fp-text-link-light;
-			}
+		.searchheader {
+			&:extend(.common-link all);
 		}
 		.searchmeta {
 			color: @fp-text-light;

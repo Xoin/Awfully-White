@@ -1,15 +1,13 @@
 body.page-forum {
+	.forumblock {
+		margin-bottom: 0em;
+	}
 	.forumhead {
 		ul {
 			.content {
 				.title {
-					a {
-						color: @fp-text-link-normal;
-						&:hover {
-							color: @fp-text-link-light;
-						}
-					}
-						color: @fp-text-link-normal;
+					&:extend(.common-link all);
+					color: @fp-text-link-normal;
 				}
 				.subtitle {
 					margin-left: 0rem;
@@ -26,6 +24,7 @@ body.page-forum {
 			border-left: 1px solid #888;
 			border-right: 1px solid #888;
 			background-color: @fp-background-white-normal;
+			margin-bottom: 0em;
 			a,strong {
 				color: @fp-text-link-normal;
 				font-weight: bolder;
@@ -56,68 +55,31 @@ body.page-forum {
 					}
 				}
 			}
-			.user-moderator {
-				a {
+			.user {
+				&-moderator a {
 					color: @fp-user-green;
 				}
-			}
-			.user-admin {
-				a {
+				&-admin a {
 					color: @fp-user-green;
 				}
-			}
-			.user-banned {
-				a {
+				&-banned a {
 					color: @fp-user-red;
 				}
 			}
 		}
-		.threadblock.is-sticky {
-			A {
-				color: @fp-text-link-normal;
-				font-weight: bolder;
-			}
-			background-color: @fp-background-yellow;
-			color: @fp-text-normal;
-			//Should this even exist?
-			.threadmain {
-				.threadmeta {
-					.pagnationcomponent {
-						.page {
-							background-color: @fp-background-transparent;
-							color: @fp-text-light;
-							&:hover {
-								background-color: @fp-background-transparent;
-								color: @fp-text-normal;
-							}
-						}
-					}
+		.threadblock.is {
+			&-closed {
+				background-color:@fp-background-grey-normal;
+				color: @fp-text-light;
+				.threadicon, .threadlastpost {
+					background-color: @fp-background-grey-normal;
 				}
 			}
-			.threadicon, .threadlastpost {
-				background-color: @fp-background-yellow;
-			}
-			.user-moderator {
-				a {
-					color: @fp-user-green;
+			&-sticky {
+				background-color: @fp-background-yellow-normal;
+				.threadicon, .threadlastpost {
+					background-color: @fp-background-yellow-dark;
 				}
-			}
-			.user-admin {
-				a {
-					color: @fp-user-green;
-				}
-			}
-			.user-banned {
-				a {
-					color: @fp-user-red;
-				}
-			}
-		}
-		.threadblock.is-closed {
-			background-color:@fp-background-grey-normal;
-			color: @fp-text-light;
-			.threadicon, .threadlastpost {
-				background-color: @fp-background-grey-normal;
 			}
 		}
 	}
