@@ -142,6 +142,13 @@ body.page-forum {
 			&:first-of-type {
 				margin-top: 0rem;
 			}
+			.baninfo {
+				background-color: unset;
+				color: red;
+				.detail strong {
+					color: red;
+				}
+			}
 		}
 		.postblock.postblock {
 			&-read {
@@ -158,4 +165,27 @@ body.page-forum {
 
 .lastread {
 	margin: 0rem 0px;
+}
+
+.baninfo {
+    font-weight: 600;
+	strong {
+	    text-decoration: underline;
+	}
+	.description { 
+		&:before {
+			content: "(";
+		}
+		&:after {
+			content: " for the reason";
+		}
+	}
+	.reason {
+		&:before {
+			content: "\"";
+		}
+		&:after {
+			content: "\")";
+		}
+	}
 }

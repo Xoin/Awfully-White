@@ -34,14 +34,18 @@
 	}
 }
 
-.navbar-alerts .has-alerts {
-	i {
-		display: inline-block;
-		transform-origin: 50% 0em;
-		animation: bell 2.5s infinite;
-		text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+.navbar-alerts {
+	.has-alerts {
+		i {
+			display: inline-block;
+			transform-origin: 50% 0em;
+			animation: bell 2.5s infinite;
+			text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+		}
 	}
-	
+	.alert-button.has-alerts {
+		text-shadow: 0
+	}
 }
 
 @keyframes bell {
