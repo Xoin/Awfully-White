@@ -29,23 +29,24 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 		color: @fp-text-light;
 		background: @fp-background-grey-light;
 	}
-	.button.is-info {
-		margin: 0rem 1rem;
-		font-size: 1rem;
+	.button {
+		&.is-info {
+			margin: 0rem 1rem;
+			font-size: 1rem;
+		}
+	}
+	&.is-primary {
+		background: @fp-background-blue-normal;
+		margin-left: 0.2rem;
+		height: 2rem;
+		&:hover {
+			background: @fp-background-blue-light;
+		}
+	}
+	&.is-primary[disabled] {
+		.button.is-primary;
 	}
 }
-.button.is-primary {
-	background: @fp-background-blue-normal;
-	margin-left: 0.2rem;
-	height: 2rem;
-	&:hover {
-		background: @fp-background-blue-light;
-	}
-}
-.button.is-primary[disabled] {
-	.button.is-primary;
-}
-	
 // Footer
 .footer {
 	background: @fp-background-blue-normal;
@@ -95,7 +96,8 @@ body {
 strong {
 	color: @fp-text-link-normal;
 }
-.force-wide-design .container {
-    width: calc(100% - 1.9rem) !important;
+.force-wide-design {
+	.container {
+    	width: calc(100% - 1.9rem) !important;
+	}
 }
-

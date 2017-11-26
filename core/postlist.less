@@ -82,14 +82,14 @@ body.page-forum {
 				.common-link;
 				strong {
 					color:@fp-text-normal;
+				}			
+				.timeago {
+					//temp
+					background-image: url('https://facepunch.com/fp/time.png');
+					background-repeat: no-repeat;
+					padding-left: 17px;
+					background-position-y: -1px;
 				}
-			}
-			.posthead .timeago {
-				//temp
-				background-image: url('https://facepunch.com/fp/time.png');
-				background-repeat: no-repeat;
-				padding-left: 17px;
-				background-position-y: -1px;
 			}
 			.postmain {
 				.postexpand {
@@ -149,16 +149,15 @@ body.page-forum {
 					color: red;
 				}
 			}
-		}
-		.postblock.postblock {
-			&-read {
-				background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
+			&.postblock {
+				&-read {
+					background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
+				}
+				&-own {
+					background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
+					box-shadow: inset 0px 0px #4fa052;
+				}
 			}
-			&-own {
-				background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
-				box-shadow: inset 0px 0px #4fa052;
-			}
-
 		}
 	}
 }

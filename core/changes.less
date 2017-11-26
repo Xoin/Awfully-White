@@ -16,14 +16,16 @@
 	color: @fp-text-light;
 	li {
 		color: @fp-text-normal;
+		&.is-active {
+			a {
+				background-color: @fp-background-white-normal;
+				color: @fp-text-link-normal;
+				border-bottom-color: @fp-text-link-normal;
+			}
+		}
 		a {
 			color: @fp-text-light;
 		}
-	}
-	li.is-active a {
-		background-color: @fp-background-white-normal;
-		color: @fp-text-link-normal;
-		border-bottom-color: @fp-text-link-normal;
 	}
 }
 .flex-centered {

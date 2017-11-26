@@ -14,9 +14,10 @@
 			border-radius: 0;
 			font-weight: bold;
 			background: #ace;
+			line-height: 1.8;
 			&:hover {
 				background-color: #bbddfe;
-				color: black !important;
+				color: white !important;
 			}
 		}
 	}
@@ -27,11 +28,13 @@
 		box-shadow: 0px 0px 0px 1px black;
 	}
 }
-.ql-toolbar.ql-snow.toolbar {
-	button {
-		color: @fp-text-light;
-		.ql-active {
-			color: @fp-text-normal;
+.ql-toolbar {
+	&.ql-snow.toolbar {
+		button {
+			color: @fp-text-light;
+			&.ql-active {
+				color: @fp-text-normal;
+			}
 		}
 	}
 }

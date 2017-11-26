@@ -1,50 +1,69 @@
-.navbar.is-primary {
-	background: @fp-background-blue-normal;
-	.navbar-brand > a.navbar-item:hover, .navbar-end > a.navbar-item:hover {
-		background: @fp-background-blue-light;
+.navbar {
+	&.is-primary {
+		background: @fp-background-blue-normal;
+		.navbar-brand > a.navbar-item:hover, .navbar-end > a.navbar-item:hover {
+			background: @fp-background-blue-light;
+		}
 	}
-}
-.navbar.is-dark {
-	background-color: @fp-background-white-normal;
-	.navbar-brand {
-		.logo {
-				@temp: escape(%("%a", @fp-logo-normal));
-				background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="112" height="28" viewBox="0 0 256 64"><path d="M 50.5,48 65,62.5 80.5,46.9 96,62.6 110.5,48 95,32.5 110.5,17 96,2.5 80.5,18 65,2.5 50.5,17 66,32.5 Z" fill="@{temp}" stroke="@{temp}" stroke-width="1" /><path d="m 147.50011,48 14.5,14.5 15.5,-15.6 15.5,15.7 14.5,-14.6 -15.5,-15.5 15.5,-15.5 -14.5,-14.5000001 L 177.50011,18 162.00011,2.4999999 147.50011,17 l 15.5,15.5 z" fill="@{temp}" stroke="@{temp}" stroke-width="1" /></svg>') no-repeat;
-					margin-top: .8rem;
-					margin-left: 0.8rem;
-		img {
-					width: 112px;
-					height: 18px;
-					visibility: hidden;
+	&.is-dark {
+		background-color: @fp-background-white-normal;
+		.navbar {
+			&-brand {
+				.logo {
+						@temp: escape(%("%a", @fp-logo-normal));
+						background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="112" height="28" viewBox="0 0 256 64"><path d="M 50.5,48 65,62.5 80.5,46.9 96,62.6 110.5,48 95,32.5 110.5,17 96,2.5 80.5,18 65,2.5 50.5,17 66,32.5 Z" fill="@{temp}" stroke="@{temp}" stroke-width="1" /><path d="m 147.50011,48 14.5,14.5 15.5,-15.6 15.5,15.7 14.5,-14.6 -15.5,-15.5 15.5,-15.5 -14.5,-14.5000001 L 177.50011,18 162.00011,2.4999999 147.50011,17 l 15.5,15.5 z" fill="@{temp}" stroke="@{temp}" stroke-width="1" /></svg>') no-repeat;
+							margin-top: .8rem;
+							margin-left: 0.8rem;
+				img {
+							width: 112px;
+							height: 18px;
+							visibility: hidden;
+					}
+				}
+			}
+			&-end { 
+				&a {
+					&.navbar {
+						&-item {
+							color: @fp-text-link-normal;
+							&:hover {
+								color: @fp-text-lighter;
+								background: @fp-background-blue-light !important;
+							}
+							&.is-active {
+								color: @fp-text-lighter;
+								background: @fp-background-blue-normal !important;	
+							}
+						}
+					}
+				}
 			}
 		}
 	}
-	.navbar-end { 
-		a.navbar-item {
-			color: @fp-text-link-normal;
-			&:hover {
-				color: @fp-text-lighter;
-				background: @fp-background-blue-light !important;
+	&-alerts {
+		.has-alerts {
+			i {
+				display: inline-block;
+				transform-origin: 50% 0em;
+				animation: bell 2.5s infinite;
+				text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
 			}
 		}
-		a.navbar-item.is-active {
-			color: @fp-text-lighter;
-			background: @fp-background-blue-normal !important;	
+		.alert-button {
+			&.has-alerts {
+				text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+			}
 		}
 	}
-}
-
-.navbar-alerts {
-	.has-alerts {
-		i {
-			display: inline-block;
-			transform-origin: 50% 0em;
-			animation: bell 2.5s infinite;
-			text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+	&-burger {
+		span {
+			color: @fp-text-normal;
 		}
 	}
-	.alert-button.has-alerts {
-		text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+	&-menu {
+		&.is-active {
+			background: @fp-background-white-normal;
+		}
 	}
 }
 
@@ -54,13 +73,4 @@
    85% { transform: rotate(15deg); }
    95% { transform: rotate(-15deg); }
   100% { transform: rotate(0deg); }
-}
-.navbar-burger {
-	span {
-		color: @fp-text-normal;
-	}
-}
-
-.navbar-menu.is-active {
-	background: @fp-background-white-normal;
 }
