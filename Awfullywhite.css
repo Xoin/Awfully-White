@@ -306,6 +306,9 @@ body.page-forum .forumblock.is-closed {
   animation: bell 2.5s infinite;
   text-shadow: none;
 }
+.navbar-alerts .alert-button {
+  color: #fff;
+}
 .navbar-alerts .alert-button.has-alerts {
   text-shadow: none;
 }
@@ -314,9 +317,6 @@ body.page-forum .forumblock.is-closed {
 }
 .navbar-menu.is-active {
   background: #ffffff;
-}
-.navbar .container {
-  margin: 0em 1.5em 0em 1.5em;
 }
 @keyframes bell {
   0% {
