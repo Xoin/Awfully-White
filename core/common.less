@@ -55,15 +55,15 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	}
 }
 body {
-	.page-forum {
-		.forumpanel {
-			margin: 0px 0px 0px 0px;
-		}
-	}
 	.force-wide-design {
 		.section {
  			padding: 1rem 0rem;
  		}
+	}
+	&.page-forum {
+		.forumhead {
+			padding: 1rem 0rem 0rem 1rem;
+		}
 	}
 }
 .section {
@@ -99,5 +99,32 @@ strong {
 .force-wide-design {
 	.container {
     	width: calc(100% - 1.9rem) !important;
+	}
+}
+
+.hero {
+	&-body {
+		padding: 0.5rem 0rem 0.5rem 0rem;
+		color: @fp-text-normal;
+		.container {
+			padding-top: 0em;
+			color: @fp-text-normal;
+			background-color: @fp-background-white-normal;
+			padding: 3rem 1.5rem;
+		}
+		h2 {
+			color: @fp-text-normal;
+		}
+	}
+	&.is-dark {
+		.title {
+			color: @fp-text-normal;
+		}
+		.subtitle{
+			color: @fp-text-normal;
+			strong {
+				color: @fp-text-light;
+			}
+		}
 	}
 }

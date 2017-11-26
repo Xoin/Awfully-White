@@ -22,7 +22,7 @@
 				}
 			}
 			&-end { 
-				&a {
+				a {
 					&.navbar {
 						&-item {
 							color: @fp-text-link-normal;
@@ -46,12 +46,12 @@
 				display: inline-block;
 				transform-origin: 50% 0em;
 				animation: bell 2.5s infinite;
-				text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+				text-shadow: none;
 			}
 		}
 		.alert-button {
 			&.has-alerts {
-				text-shadow: 0px 0px 0px #fff, 0px 0px 0px #fff;
+				text-shadow: none;
 			}
 		}
 	}
@@ -64,6 +64,9 @@
 		&.is-active {
 			background: @fp-background-white-normal;
 		}
+	}
+	.container {
+		margin: 0em 1.5em 0em 1.5em;
 	}
 }
 
