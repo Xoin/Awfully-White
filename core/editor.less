@@ -8,16 +8,16 @@
 	}
 	mention {
 		a {
-			color: #0055b1 !important;
-			padding: .1em .2em;
-			border: 1px solid grey;
-			border-radius: 0;
+			color: @fp-text-mention !important;
 			font-weight: bold;
-			background: #ace;
 			line-height: 1.8;
+			background-color: @fp-background-transparent;
+			&:before {
+				content: "@";
+			}
 			&:hover {
-				background-color: #bbddfe;
-				color: white !important;
+				background-color: @fp-background-transparent;
+				color: @fp-text-mention-hover !important;
 			}
 		}
 	}

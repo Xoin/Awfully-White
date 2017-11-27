@@ -127,6 +127,19 @@ strong {
 .hero.is-dark .subtitle strong {
   color: #7b7b7b;
 }
+.hero.is-danger {
+  background-color: #ffffff;
+  color: #000;
+}
+.hero.is-danger .title {
+  color: #000;
+}
+.hero.is-danger .subtitle {
+  color: #000;
+}
+.hero.is-danger .subtitle strong {
+  color: #7b7b7b;
+}
 .commits {
   background-color: #ffffff;
   color: #000;
@@ -200,17 +213,17 @@ strong {
   font-size: bold;
 }
 .ql-editor mention a {
-  color: #0055b1 !important;
-  padding: .1em .2em;
-  border: 1px solid grey;
-  border-radius: 0;
+  color: #c00 !important;
   font-weight: bold;
-  background: #ace;
   line-height: 1.8;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ql-editor mention a:before {
+  content: "@";
 }
 .ql-editor mention a:hover {
-  background-color: #bbddfe;
-  color: white !important;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ff1a1a !important;
 }
 .quill-editor .quill-autocomplete {
   box-shadow: 0px 0px 0px 1px black;
@@ -630,15 +643,6 @@ body.page-forum .threadpost .postlist .postblock .postmain {
 }
 body.page-forum .threadpost .postlist .postblock .postmain .posthead {
   display: none;
-}
-@media screen and (min-width: 800px) {
-  #search_results > .container,
-  .forumevents,
-  body.page-forum .threadpost,
-  .flex-centered {
-    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-    border-radius: 5px;
-  }
 }
 
 /*# sourceMappingURL=Awfullywhite.css.map */
