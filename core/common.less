@@ -46,6 +46,30 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	&.is-primary[disabled] {
 		.button.is-primary;
 	}
+	&.is-success {
+		background-color: @fp-background-blue-normal;
+			color: @fp-text-lighter;
+		&:hover {
+			.button.is-success.is-hovered;
+		}
+		&.is-hovered {
+
+			background-color: @fp-background-blue-light;
+			color: @fp-text-lighter;
+		}
+		
+	}
+	&.is-warning {
+		background-color: @fp-wrapper;
+		color: @fp-text-lighter;
+		&:hover {
+			.button.is-warning.is-hovered
+		}
+		&.is-hovered {
+			background-color: @fp-background-grey-dark;
+			color: @fp-text-lighter;
+		}
+	}
 }
 // Footer
 .footer {

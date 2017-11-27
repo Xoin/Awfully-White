@@ -46,6 +46,30 @@ html,
 .button.is-primary[disabled]:hover {
   background: #36a6ff;
 }
+.button.is-success {
+  background-color: #2288fc;
+  color: #fff;
+}
+.button.is-success:hover {
+  background-color: #36a6ff;
+  color: #fff;
+}
+.button.is-success.is-hovered {
+  background-color: #36a6ff;
+  color: #fff;
+}
+.button.is-warning {
+  background-color: #b5b5b5;
+  color: #fff;
+}
+.button.is-warning:hover {
+  background-color: #ccc;
+  color: #fff;
+}
+.button.is-warning.is-hovered {
+  background-color: #ccc;
+  color: #fff;
+}
 .footer {
   background: #2288fc;
 }
@@ -108,6 +132,7 @@ strong {
 .hero-body {
   padding: 0.5rem 0rem 0.5rem 0rem;
   color: #000;
+  background-color: #ffffff !important;
 }
 .hero-body .container {
   padding-top: 0em;
