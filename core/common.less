@@ -46,27 +46,35 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	&.is-primary[disabled] {
 		.button.is-primary;
 	}
-	&.is-success {
+	&.is-success, &.is-success.is-outlined  {
 		background-color: @fp-background-blue-normal;
-			color: @fp-text-lighter;
+		border-color: @fp-background-blue-normal;
+		color: @fp-text-lighter;
 		&:hover {
 			.button.is-success.is-hovered;
 		}
+		&:focused {
+			.button.is-success.is-hovered;
+		}
 		&.is-hovered {
-
 			background-color: @fp-background-blue-light;
+			border-color: @fp-background-blue-light;
 			color: @fp-text-lighter;
 		}
-		
 	}
-	&.is-warning {
+	&.is-warning, &.is-warning.is-outlined  {
 		background-color: @fp-wrapper;
+		border-color: @fp-wrapper;
 		color: @fp-text-lighter;
 		&:hover {
-			.button.is-warning.is-hovered
+			.button.is-warning.is-hovered;
+		}
+		&:focused {
+			.button.is-warning.is-hovered;
 		}
 		&.is-hovered {
 			background-color: @fp-background-grey-dark;
+			border-color: @fp-background-grey-dark;
 			color: @fp-text-lighter;
 		}
 	}
@@ -130,6 +138,7 @@ strong {
 	&-body {
 		padding: 0.5rem 0rem 0.5rem 0rem;
 		color: @fp-text-normal;
+		background-color: @fp-background-white-normal !important;
 		.container {
 			padding-top: 0em;
 			color: @fp-text-normal;

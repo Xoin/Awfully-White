@@ -10,8 +10,8 @@
 		a {
 			color: @fp-text-mention !important;
 			font-weight: bold;
-			line-height: 1.8;
 			background-color: @fp-background-transparent;
+			line-height: 1.3;
 			&:before {
 				content: "@";
 			}
@@ -48,6 +48,7 @@
 				font-weight: 700;
 				//should be links..
 				color: #05a;
+				&:extend(.common-link all);
 			}
 			.body {
 				background-color: @fp-quote-body;

@@ -46,28 +46,52 @@ html,
 .button.is-primary[disabled]:hover {
   background: #36a6ff;
 }
-.button.is-success {
+.button.is-success,
+.button.is-success.is-outlined {
   background-color: #2288fc;
+  border-color: #2288fc;
   color: #fff;
 }
-.button.is-success:hover {
+.button.is-success:hover,
+.button.is-success.is-outlined:hover {
   background-color: #36a6ff;
+  border-color: #36a6ff;
   color: #fff;
 }
-.button.is-success.is-hovered {
+.button.is-success:focused,
+.button.is-success.is-outlined:focused {
   background-color: #36a6ff;
+  border-color: #36a6ff;
   color: #fff;
 }
-.button.is-warning {
+.button.is-success.is-hovered,
+.button.is-success.is-outlined.is-hovered {
+  background-color: #36a6ff;
+  border-color: #36a6ff;
+  color: #fff;
+}
+.button.is-warning,
+.button.is-warning.is-outlined {
   background-color: #b5b5b5;
+  border-color: #b5b5b5;
   color: #fff;
 }
-.button.is-warning:hover {
+.button.is-warning:hover,
+.button.is-warning.is-outlined:hover {
   background-color: #ccc;
+  border-color: #ccc;
   color: #fff;
 }
-.button.is-warning.is-hovered {
+.button.is-warning:focused,
+.button.is-warning.is-outlined:focused {
   background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+.button.is-warning.is-hovered,
+.button.is-warning.is-outlined.is-hovered {
+  background-color: #ccc;
+  border-color: #ccc;
   color: #fff;
 }
 .footer {
@@ -103,6 +127,7 @@ body.page-forum .threadpost input {
 .commits .change-entry .time a,
 .forumevents a,
 .ql-container.ql-snow a,
+.ql-container.ql-snow .ql-editor postquote .head a,
 .level-item a,
 .page-search .searchentry .searchheader a,
 body.page-forum .forumhead ul .content .title a {
@@ -112,6 +137,7 @@ body.page-forum .forumhead ul .content .title a {
 .commits .change-entry .time a:hover,
 .forumevents a:hover,
 .ql-container.ql-snow a:hover,
+.ql-container.ql-snow .ql-editor postquote .head a:hover,
 .level-item a:hover,
 .page-search .searchentry .searchheader a:hover,
 body.page-forum .forumhead ul .content .title a:hover {
@@ -226,7 +252,34 @@ strong {
 .forumevents span.timeago {
   color: #000;
 }
+.forumevents .entry i {
+  opacity: 1;
+}
 .forumevents .entry .mdi {
+  color: #000;
+}
+.forumevents .entry .mdi-cancel {
+  color: #ff0000;
+}
+.forumevents .entry .mdi-coin {
+  color: #dcd703;
+}
+.forumevents .entry .mdi-emoticon-happy {
+  color: #00ff21;
+}
+.forumevents .entry .mdi-clock {
+  color: #00ff21;
+}
+.forumevents .entry .mdi-lock {
+  color: #000;
+}
+.forumevents .entry .mdi-delete {
+  color: #000;
+}
+.forumevents .entry .mdi-folder-move {
+  color: #000;
+}
+.forumevents .entry .mdi-pin {
   color: #000;
 }
 .ql-editor {
@@ -240,8 +293,8 @@ strong {
 .ql-editor mention a {
   color: #c00 !important;
   font-weight: bold;
-  line-height: 1.8;
   background-color: rgba(0, 0, 0, 0);
+  line-height: 1.3;
 }
 .ql-editor mention a:before {
   content: "@";
@@ -297,6 +350,7 @@ body.page-forum .forumblock .forumname .forumtitle a:hover {
   color: #1e77d0;
 }
 body.page-forum .forumblock .forumlastpost {
+  min-width: 20em;
   background-color: #f5f5f5;
 }
 body.page-forum .forumblock .forumlastpost .threadname a {
