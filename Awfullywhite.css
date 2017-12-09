@@ -773,24 +773,6 @@ body.page-forum .threadviewsection .postblock.postblock-own {
 .lastread {
   margin: 0rem 0px;
 }
-.baninfo {
-  font-weight: 600;
-}
-.baninfo strong {
-  text-decoration: underline;
-}
-.baninfo .description:before {
-  content: "(";
-}
-.baninfo .description:after {
-  content: " for the reason";
-}
-.baninfo .reason:before {
-  content: "\"";
-}
-.baninfo .reason:after {
-  content: "\")";
-}
 .votes .list {
   background-color: #ffd;
   border: 1px solid #777;

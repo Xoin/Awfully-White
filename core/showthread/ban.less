@@ -1,0 +1,22 @@
+.baninfo {
+    font-weight: 600;
+	strong {
+	    text-decoration: underline;
+	}
+	.description { 
+		&:before {
+			content: "(";
+		}
+		&:after {
+			content: " for the reason";
+		}
+	}
+	.reason {
+		&:before {
+			content: "\"";
+		}
+		&:after {
+			content: "\")";
+		}
+	}
+}
