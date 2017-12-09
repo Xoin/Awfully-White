@@ -417,6 +417,10 @@ body.page-forum .forumblock.is-closed {
 .navbar-menu.is-active {
   background: #ffffff;
 }
+.navbar-loggedin .navbar-brand > .navbar-item {
+  padding-left: 0rem;
+  padding: 0.5em;
+}
 @keyframes bell {
   0% {
     transform: rotate(0deg);
@@ -534,7 +538,7 @@ body.page-forum .threadviewsection .postblock .posthead strong {
 body.page-forum .threadviewsection .postblock .posthead .timeago {
   background-image: url('https://facepunch.com/fp/time.png');
   background-repeat: no-repeat;
-  padding-left: 17px;
+  padding-left: 20px;
   background-position-y: -1px;
 }
 body.page-forum .threadviewsection .postblock .postmain .postexpand {
