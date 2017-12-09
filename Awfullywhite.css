@@ -295,6 +295,7 @@ strong {
   font-weight: bold;
   background-color: rgba(0, 0, 0, 0);
   line-height: 1.3;
+  padding: 0px;
 }
 .ql-editor mention a:before {
   content: "@";
@@ -324,6 +325,12 @@ strong {
 .ql-container.ql-snow .ql-editor postquote .body {
   background-color: #bdf;
   color: #000;
+}
+.ql-snow .ql-editor h1 {
+  color: #000;
+}
+.ql-snow .ql-editor h2 {
+  color: #7b7b7b;
 }
 .forumlastpostavatar {
   background-color: #f5f5f5;
@@ -586,6 +593,45 @@ body.page-forum .threadviewsection .postblock.postblock-own {
 }
 .baninfo .reason:after {
   content: "\")";
+}
+.votes .list {
+  background-color: #ffd;
+  border: 1px solid #777;
+  box-shadow: none;
+}
+.votes .list > div {
+  margin: 4px;
+  border: 1px dashed #777 !important;
+  width: auto;
+  /*Unsets the 110px width in favor of letting the width grow for longer names*/
+  min-width: 110px;
+}
+.votes .username {
+  color: #147;
+}
+.votes .username.user-gold {
+  color: #A06000;
+  font-weight: bold;
+}
+.votes .username.user-moderator {
+  color: #00aa00;
+  font-weight: bold;
+}
+.votes .username.user-admin {
+  color: #00aa00;
+  font-weight: bold;
+}
+.votes .username.user-banned {
+  color: #ff0000;
+  font-weight: bold;
+}
+.dropdown-content > .votepicker {
+  padding: 4px;
+  background-color: #ffd;
+  border: 1px solid #777;
+}
+.dropdown-content > .votepicker .dropdown-item {
+  border: 1px dashed #777;
 }
 .level-item {
   background-color: #ffffff;
