@@ -75,3 +75,60 @@
    95% { transform: rotate(-15deg); }
   100% { transform: rotate(0deg); }
 }
+
+@media screen and (min-width: 768px) {
+	.navbar {
+		&>.container {
+			max-width: 99%;
+		}
+		&-under {
+			margin: -52px 260px 0px 170px;
+			&>.container {
+				background-color: @fp-background-white-normal;
+				max-width: 99%;
+			}
+			.navbar-item
+			{
+				color: @fp-text-normal !important;
+				background-color: @fp-background-white-normal;
+				.icon {
+					display: none;
+				}
+				&.is-breadcrumb {
+					opacity: 1;
+					color: @fp-text-normal !important;
+				}
+
+				&.is-active {
+					background-color: @fp-background-white-normal;
+					color: @fp-text-normal !important;
+					overflow: hidden;
+					height: 51px;
+					white-space: nowrap;
+				}
+				&:hover {
+					color: @fp-text-lighter !important;
+				}
+			}
+		}
+		&.is-dark {
+			.container {
+				max-width: 99%
+			}
+			box-shadow: 0 2px 0 rgb(255, 0, 0);
+			.navbar-brand .logo {
+				width: 207px;
+				height: 100px;
+				display: block;
+				background-image: url(http://i.imgur.com/3vINNru.png);
+				position: absolute;
+				background-repeat: no-repeat;
+				overflow: visible;
+				left: -30px;
+				color: transparent;
+				top: -63px;
+				z-index: 2;
+			}
+		}
+	}
+}

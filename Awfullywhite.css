@@ -434,6 +434,58 @@ body.page-forum .forumblock.is-closed {
     transform: rotate(0deg);
   }
 }
+@media screen and (min-width: 768px) {
+  .navbar > .container {
+    max-width: 99%;
+  }
+  .navbar-under {
+    margin: -52px 260px 0px 170px;
+  }
+  .navbar-under > .container {
+    background-color: #ffffff;
+    max-width: 99%;
+  }
+  .navbar-under .navbar-item {
+    color: #000 !important;
+    background-color: #ffffff;
+  }
+  .navbar-under .navbar-item .icon {
+    display: none;
+  }
+  .navbar-under .navbar-item.is-breadcrumb {
+    opacity: 1;
+    color: #000 !important;
+  }
+  .navbar-under .navbar-item.is-active {
+    background-color: #ffffff;
+    color: #000 !important;
+    overflow: hidden;
+    height: 51px;
+    white-space: nowrap;
+  }
+  .navbar-under .navbar-item:hover {
+    color: #fff !important;
+  }
+  .navbar.is-dark {
+    box-shadow: 0 2px 0 #ff0000;
+  }
+  .navbar.is-dark .container {
+    max-width: 99%;
+  }
+  .navbar.is-dark .navbar-brand .logo {
+    width: 207px;
+    height: 100px;
+    display: block;
+    background-image: url(http://i.imgur.com/3vINNru.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    overflow: visible;
+    left: -30px;
+    color: transparent;
+    top: -63px;
+    z-index: 2;
+  }
+}
 .pagnation.threadpagnation,
 .pagnation.postpagnation {
   background-color: #2288fc;
