@@ -1,0 +1,58 @@
+@media screen and (min-width: 768px) {
+	.navbar {
+		&>.container {
+			max-width: 99%;
+		}
+		&-under {
+			margin: -52px 260px 0px 190px;
+			&>.container {
+				background-color: @fp-background-white-normal;
+				max-width: 99%;
+			}
+			.navbar-item
+			{
+				color: @fp-text-normal !important;
+				background-color: @fp-background-white-normal;
+				.icon {
+					display: none;
+				}
+				&.is-breadcrumb {
+					opacity: 1;
+					color: @fp-text-normal !important;
+				}
+
+				&.is-active {
+					background-color: @fp-background-white-normal;
+					color: @fp-text-normal !important;
+					overflow: hidden;
+					height: 51px;
+					white-space: nowrap;
+				}
+				&:hover {
+					color: @fp-text-lighter !important;
+				}
+			}
+		}
+		&.is-dark {
+			.container {
+				max-width: 99%
+			}
+			box-shadow: 0 2px 0 @fp-logo-normal;
+			.navbar-brand .logo {
+				width: 245px;
+				height: 104px;
+				display: block;
+				@temp: escape(%("%a", @fp-logo-normal));
+				@temp2: escape(%("%a", @fp-background-white-normal));
+				background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="245" height="104" viewBox="0 0 245 104"><path d="m 191.36,0 c 20.8,33.28 27.04,64.48 31.2,104 L 0,104 0,0 Z" fill="@{temp2}" stroke="@{temp}" stroke-width="0" /><path d="m 164.32,104 41.6,0 C 199.68,47.84 185.12,27.04 168.48,0 l -56.16,0 c 20.8,18.72 49.92,68.64 52,104 z" fill="@{temp}" stroke="@{temp}" stroke-width="0" /><path d="M 81.64,86.84 91,77.48 66.56,53.04 91,28.6 81.64,19.24 57.2,43.68 33.28,19.76 24.44,28.6 48.36,52.52 23.92,76.96 33.28,86.32 57.2,62.4 Z" fill="@{temp}" stroke="@{temp}" stroke-width="4.1" /></svg>') no-repeat;
+				position: absolute;
+				background-repeat: no-repeat;
+				overflow: visible;
+				left: -31px;
+				color: transparent;
+				top: -65px;
+				z-index: 2;
+			}
+		}
+	}
+}
