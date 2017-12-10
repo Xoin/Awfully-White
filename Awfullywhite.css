@@ -345,6 +345,9 @@ a:hover {
     height: 51px;
     white-space: nowrap;
   }
+  .navbar-under .navbar-item.is-active:hover {
+    color: #000 !important;
+  }
   .navbar-under .navbar-item:hover {
     color: #fff !important;
   }
