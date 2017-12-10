@@ -17,6 +17,41 @@ body.page-forum {
 					.posthead {
 						display: none;
 					}
+					.votes {
+						.list {
+							background-color: #ffd;
+							border: 1px solid #777;
+							& > div {
+								margin: 4px;
+								border: 1px dashed #777 !important;
+								width: auto;
+								min-width: 110px;
+							}
+						}
+						.username {
+							color: @fp-user-blue;
+						}
+						.username.user-gold {
+							color: @fp-user-gold;
+							font-weight: bold;
+						}
+						.username.user-moderator,
+						.username.user-admin {
+							color: @fp-user-green;
+							font-weight: bold;
+						}
+						.username.user-banned {
+							color: @fp-user-red;
+						}
+					}
+					.dropdown-content {
+						padding: 4px;
+						background-color: #ffd;
+						border: 1px solid #777;
+						.dropdown-item {
+							border: 1px dashed #777;
+						}
+					}
 				}
 			}
 		}
