@@ -37,19 +37,22 @@ body.page-forum {
 			}
 			.threadmain {
 				.threadmeta {
+					color: @fp-text-light !important;
 					.pagnationcomponent {
 						.page {
-							background-color: @fp-background-transparent;
-							color: @fp-text-light;
+							background-color: @fp-background-transparent !important;
+							color: @fp-text-light !important;
 							&:hover {
-								background-color: @fp-background-transparent;
-								color: @fp-text-normal;
+								background-color: @fp-background-transparent !important;
+								color: @fp-text-normal !important;
 							}
 						}
 						&:before {
+							color: @fp-text-light !important;
 							content: "( ";
 						}
 						&:after {
+							color: @fp-text-light !important;
 							content: " )";
 						}
 					}
@@ -76,9 +79,11 @@ body.page-forum {
 				}
 				&-sticky {
 					background-color: @fp-background-yellow-normal;
+					color: fp-text-link-normal !important;
 					.threadicon, .threadlastpost {
 						background-color: @fp-background-yellow-dark;
 					}
+					&:extend(.common-link all);
 				}
 			}
 		}

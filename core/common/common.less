@@ -16,6 +16,9 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	@temp1: escape(%("%a", @fp-wrapper));
 	@temp2: escape(%("%a", @fp-wrapper-light));
 	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{temp1}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{temp2}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{temp2}" stroke="black" stroke-width="0" /></svg>') repeat;
+	&:before {
+		background-image: none;
+	}
 }
 body {
 	.force-wide-design {

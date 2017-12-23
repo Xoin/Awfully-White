@@ -99,6 +99,9 @@ html,
   color: #000;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="%23b5b5b5" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="%23bbbbbb" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="%23bbbbbb" stroke="black" stroke-width="0" /></svg>') repeat;
 }
+#wrapper:before {
+  background-image: none;
+}
 body .force-wide-design .section {
   padding: 1rem 0rem;
 }
@@ -184,40 +187,90 @@ strong {
 .footer a {
   color: #fff;
 }
-.hero-body {
+#forum .hero-body,
+.page-help .hero-body,
+.page-forum .hero-body,
+.page-faq .hero-body,
+.page-blog-list .hero-body,
+.page-blog-view .hero-body {
   padding: 0.5rem 0rem 0.5rem 0rem;
   color: #000;
   background-color: #ffffff !important;
 }
-.hero-body .container {
+#forum .hero-body .container,
+.page-help .hero-body .container,
+.page-forum .hero-body .container,
+.page-faq .hero-body .container,
+.page-blog-list .hero-body .container,
+.page-blog-view .hero-body .container {
   padding-top: 0em;
   color: #000;
   background-color: #ffffff;
   padding: 3rem 1.5rem;
 }
-.hero-body h2 {
+#forum .hero-body h2,
+.page-help .hero-body h2,
+.page-forum .hero-body h2,
+.page-faq .hero-body h2,
+.page-blog-list .hero-body h2,
+.page-blog-view .hero-body h2 {
   color: #000;
 }
-.hero.is-dark .title {
+#forum .hero.is-dark .title,
+.page-help .hero.is-dark .title,
+.page-forum .hero.is-dark .title,
+.page-faq .hero.is-dark .title,
+.page-blog-list .hero.is-dark .title,
+.page-blog-view .hero.is-dark .title {
   color: #000;
 }
-.hero.is-dark .subtitle {
+#forum .hero.is-dark .subtitle,
+.page-help .hero.is-dark .subtitle,
+.page-forum .hero.is-dark .subtitle,
+.page-faq .hero.is-dark .subtitle,
+.page-blog-list .hero.is-dark .subtitle,
+.page-blog-view .hero.is-dark .subtitle {
   color: #000;
 }
-.hero.is-dark .subtitle strong {
+#forum .hero.is-dark .subtitle strong,
+.page-help .hero.is-dark .subtitle strong,
+.page-forum .hero.is-dark .subtitle strong,
+.page-faq .hero.is-dark .subtitle strong,
+.page-blog-list .hero.is-dark .subtitle strong,
+.page-blog-view .hero.is-dark .subtitle strong {
   color: #7b7b7b;
 }
-.hero.is-danger {
+#forum .hero.is-danger,
+.page-help .hero.is-danger,
+.page-forum .hero.is-danger,
+.page-faq .hero.is-danger,
+.page-blog-list .hero.is-danger,
+.page-blog-view .hero.is-danger {
   background-color: #ffffff;
   color: #000;
 }
-.hero.is-danger .title {
+#forum .hero.is-danger .title,
+.page-help .hero.is-danger .title,
+.page-forum .hero.is-danger .title,
+.page-faq .hero.is-danger .title,
+.page-blog-list .hero.is-danger .title,
+.page-blog-view .hero.is-danger .title {
   color: #000;
 }
-.hero.is-danger .subtitle {
+#forum .hero.is-danger .subtitle,
+.page-help .hero.is-danger .subtitle,
+.page-forum .hero.is-danger .subtitle,
+.page-faq .hero.is-danger .subtitle,
+.page-blog-list .hero.is-danger .subtitle,
+.page-blog-view .hero.is-danger .subtitle {
   color: #000;
 }
-.hero.is-danger .subtitle strong {
+#forum .hero.is-danger .subtitle strong,
+.page-help .hero.is-danger .subtitle strong,
+.page-forum .hero.is-danger .subtitle strong,
+.page-faq .hero.is-danger .subtitle strong,
+.page-blog-list .hero.is-danger .subtitle strong,
+.page-blog-view .hero.is-danger .subtitle strong {
   color: #7b7b7b;
 }
 .common-link a,
@@ -226,6 +279,7 @@ strong {
 .commits .change-entry .time a,
 .forumevents a,
 body.page-forum .forumhead ul .content .title a,
+body.page-forum .threadlistsection .threadblock.is-sticky a,
 .level-item a,
 .page-search .searchentry .searchheader a {
   color: #147;
@@ -236,6 +290,7 @@ body.page-forum .forumhead ul .content .title a,
 .commits .change-entry .time a:hover,
 .forumevents a:hover,
 body.page-forum .forumhead ul .content .title a:hover,
+body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
 .level-item a:hover,
 .page-search .searchentry .searchheader a:hover {
   color: #1e77d0;
@@ -370,6 +425,9 @@ a:hover {
     top: -65px;
     z-index: 2;
   }
+  .navbar.is-dark .navbar-brand .logo:hover {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
 }
 .pagnation.threadpagnation,
 .pagnation.postpagnation {
@@ -426,6 +484,9 @@ a:hover {
 }
 .container strong {
   color: #000;
+}
+.changelist {
+  background-color: #ffffff;
 }
 .forumevents {
   background: #ffffff;
@@ -544,18 +605,23 @@ body.page-forum .threadlistsection .threadblock .threadicon,
 body.page-forum .threadlistsection .threadblock .threadlastpost {
   background-color: #f5f5f5;
 }
+body.page-forum .threadlistsection .threadblock .threadmain .threadmeta {
+  color: #7b7b7b !important;
+}
 body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page {
-  background-color: rgba(0, 0, 0, 0);
-  color: #7b7b7b;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #7b7b7b !important;
 }
 body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page:hover {
-  background-color: rgba(0, 0, 0, 0);
-  color: #000;
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #000 !important;
 }
 body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:before {
+  color: #7b7b7b !important;
   content: "( ";
 }
 body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:after {
+  color: #7b7b7b !important;
   content: " )";
 }
 body.page-forum .threadlistsection .threadblock .user-moderator a {
@@ -577,6 +643,7 @@ body.page-forum .threadlistsection .threadblock.is-closed .threadlastpost {
 }
 body.page-forum .threadlistsection .threadblock.is-sticky {
   background-color: #ffa;
+  color: fp-text-link-normal !important;
 }
 body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
 body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
