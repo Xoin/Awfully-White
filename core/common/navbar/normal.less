@@ -11,8 +11,29 @@
 		color: @fp-text-lighter;		
 	}
 }
-.navbar-toolbar .container .navbar-brand .navbar-item.darker {
-		color: @fp-text-lighter;	
+.navbar-toolbar .container .navbar-brand .navbar-item {
+	color: @fp-text-lighter;
+	opacity: 1;
+	&.darker {
+		color: @fp-text-lighter;
+		&:hover {
+			color: @fp-text-lighter;
+			opacity: 1;
+		}
+		.mdi- {
+			&book, &account, &file-document {
+				opacity: 0.5;
+				&:hover {
+					color: @fp-text-lighter;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	&:hover {
+		color: @fp-text-lighter;
+		opacity: 1;
+	}
 }
 
 .navbar {

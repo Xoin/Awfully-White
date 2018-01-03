@@ -313,8 +313,31 @@ a:hover {
 .level-item a:hover {
   color: #fff;
 }
+.navbar-toolbar .container .navbar-brand .navbar-item {
+  color: #fff;
+  opacity: 1;
+}
 .navbar-toolbar .container .navbar-brand .navbar-item.darker {
   color: #fff;
+}
+.navbar-toolbar .container .navbar-brand .navbar-item.darker:hover {
+  color: #fff;
+  opacity: 1;
+}
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-book,
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-account,
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-file-document {
+  opacity: 0.5;
+}
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-book:hover,
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-account:hover,
+.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-file-document:hover {
+  color: #fff;
+  opacity: 1;
+}
+.navbar-toolbar .container .navbar-brand .navbar-item:hover {
+  color: #fff;
+  opacity: 1;
 }
 .navbar.is-primary {
   background: #2288fc;
@@ -720,6 +743,10 @@ body.page-forum .threadviewsection .postblock .postmain .postbody a:hover {
 }
 body.page-forum .threadviewsection .postblock .postmain .postbody p {
   color: #000;
+}
+body.page-forum .threadviewsection .postblock .postmain .showcode {
+  background-color: #000;
+  color: #fff;
 }
 body.page-forum .threadviewsection .postblock .postuser {
   box-shadow: none;
