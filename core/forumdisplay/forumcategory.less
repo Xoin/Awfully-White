@@ -12,12 +12,17 @@ body.page-forum {
 			margin: 0px 0px 0px 0px;
 		}
 	}
+	.forumpanel {
+		margin: 0px 0px 0px 0px;
+	}
 	.forumblock {
-		border-bottom: 1px solid #CCC;
-		border-left: 1px solid #888;
-		border-right: 1px solid #888;
 		background-color: @fp-background-white-normal;
-		margin-bottom: 0em;
+		border-left: 1px solid #888;
+		border-bottom: 1px solid #888;
+		border-right: 1px solid #888;
+		&:not(:last-of-type) {
+			border-bottom: 1px solid #CCC!important;
+		}	
 		.forumname {
 			.forumtitle {
 				a {

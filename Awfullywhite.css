@@ -205,18 +205,14 @@ strong {
 .footer a {
   color: #fff;
 }
-#forum .hero-body,
 .page-help .hero-body,
-.page-forum .hero-body,
 .page-faq .hero-body,
 .page-blog-list .hero-body,
 .page-blog-view .hero-body {
   padding: 0.5rem 0rem 0.5rem 0rem;
   color: #000;
 }
-#forum .hero-body .container,
 .page-help .hero-body .container,
-.page-forum .hero-body .container,
 .page-faq .hero-body .container,
 .page-blog-list .hero-body .container,
 .page-blog-view .hero-body .container {
@@ -225,66 +221,50 @@ strong {
   background-color: #ffffff;
   padding: 3rem 1.5rem;
 }
-#forum .hero-body h2,
 .page-help .hero-body h2,
-.page-forum .hero-body h2,
 .page-faq .hero-body h2,
 .page-blog-list .hero-body h2,
 .page-blog-view .hero-body h2 {
   color: #000;
 }
-#forum .hero.is-dark .title,
 .page-help .hero.is-dark .title,
-.page-forum .hero.is-dark .title,
 .page-faq .hero.is-dark .title,
 .page-blog-list .hero.is-dark .title,
 .page-blog-view .hero.is-dark .title {
   color: #000;
 }
-#forum .hero.is-dark .subtitle,
 .page-help .hero.is-dark .subtitle,
-.page-forum .hero.is-dark .subtitle,
 .page-faq .hero.is-dark .subtitle,
 .page-blog-list .hero.is-dark .subtitle,
 .page-blog-view .hero.is-dark .subtitle {
   color: #000;
 }
-#forum .hero.is-dark .subtitle strong,
 .page-help .hero.is-dark .subtitle strong,
-.page-forum .hero.is-dark .subtitle strong,
 .page-faq .hero.is-dark .subtitle strong,
 .page-blog-list .hero.is-dark .subtitle strong,
 .page-blog-view .hero.is-dark .subtitle strong {
   color: #7b7b7b;
 }
-#forum .hero.is-danger,
 .page-help .hero.is-danger,
-.page-forum .hero.is-danger,
 .page-faq .hero.is-danger,
 .page-blog-list .hero.is-danger,
 .page-blog-view .hero.is-danger {
   background-color: #ffffff;
   color: #000;
 }
-#forum .hero.is-danger .title,
 .page-help .hero.is-danger .title,
-.page-forum .hero.is-danger .title,
 .page-faq .hero.is-danger .title,
 .page-blog-list .hero.is-danger .title,
 .page-blog-view .hero.is-danger .title {
   color: #000;
 }
-#forum .hero.is-danger .subtitle,
 .page-help .hero.is-danger .subtitle,
-.page-forum .hero.is-danger .subtitle,
 .page-faq .hero.is-danger .subtitle,
 .page-blog-list .hero.is-danger .subtitle,
 .page-blog-view .hero.is-danger .subtitle {
   color: #000;
 }
-#forum .hero.is-danger .subtitle strong,
 .page-help .hero.is-danger .subtitle strong,
-.page-forum .hero.is-danger .subtitle strong,
 .page-faq .hero.is-danger .subtitle strong,
 .page-blog-list .hero.is-danger .subtitle strong,
 .page-blog-view .hero.is-danger .subtitle strong {
@@ -549,12 +529,17 @@ body.page-forum .forumcategoryblock .forumcategoryheader {
   font-weight: bolder;
   margin: 0px 0px 0px 0px;
 }
+body.page-forum .forumpanel {
+  margin: 0px 0px 0px 0px;
+}
 body.page-forum .forumblock {
-  border-bottom: 1px solid #CCC;
-  border-left: 1px solid #888;
-  border-right: 1px solid #888;
   background-color: #ffffff;
-  margin-bottom: 0em;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+}
+body.page-forum .forumblock:not(:last-of-type) {
+  border-bottom: 1px solid #CCC!important;
 }
 body.page-forum .forumblock .forumname .forumtitle a {
   color: #147;
@@ -650,6 +635,10 @@ body.page-forum .threadlistsection .threadblock.is-sticky {
 body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
 body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   background-color: #fbfba5;
+}
+.page-forum .useroptions > .hero.is-dark {
+  padding-bottom: 0rem;
+  padding-top: 2rem;
 }
 .level-item {
   background-color: #ffffff;
