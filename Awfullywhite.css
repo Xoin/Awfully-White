@@ -277,7 +277,7 @@ strong {
 .forumevents a,
 body.page-forum .forumhead ul .content .title a,
 body.page-forum .threadlistsection .threadblock.is-sticky a,
-.level-item a,
+.useroptions #forum .level-item a,
 .page-search .searchentry .searchheader a {
   color: #147;
 }
@@ -288,7 +288,7 @@ body.page-forum .threadlistsection .threadblock.is-sticky a,
 .forumevents a:hover,
 body.page-forum .forumhead ul .content .title a:hover,
 body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
-.level-item a:hover,
+.useroptions #forum .level-item a:hover,
 .page-search .searchentry .searchheader a:hover {
   color: #1e77d0;
 }
@@ -636,12 +636,63 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
 body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   background-color: #fbfba5;
 }
-.page-forum .useroptions > .hero.is-dark {
+.useroptions #forum .hero.is-medium .hero-body,
+.useroptions #forum .hero.is-small .hero-body {
+  background-color: #ffffff;
   padding-bottom: 0rem;
   padding-top: 2rem;
+  margin-top: 1em;
+  padding-left: 0.75em;
 }
-.level-item {
+.useroptions #forum .hero.is-dark .title {
+  color: #000;
+}
+.useroptions #forum .hero.is-dark .subtitle {
+  color: #7b7b7b;
+}
+.useroptions #forum .section {
+  padding: 0rem 0rem;
+  margin-bottom: 1rem;
+}
+.useroptions #forum .level-item {
+  background-color: #ffffff !important;
+  margin-bottom: 0rem;
+}
+.useroptions #forum .level-item .title {
+  color: #000;
+}
+.useroptions #forum form {
+  background-color: #ffffff !important;
+  padding: 1rem;
+  padding-bottom: 2.5rem;
+}
+.useroptions #forum form .label {
+  color: #000;
+}
+.useroptions #forum form .help.is-success {
+  color: #c00;
+}
+.useroptions #forum form .select select {
+  color: #000;
   background-color: #ffffff;
+}
+.useroptions #forum form .select select option {
+  color: #7b7b7b;
+}
+.useroptions #forum form textarea {
+  color: #000;
+  background-color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .useroptions #forum .hero.is-medium .hero-body,
+  .useroptions #forum .hero.is-small .hero-body {
+    width: calc(98.1%) !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .useroptions #forum .level-item {
+    padding-bottom: 1rem;
+  }
 }
 body.page-forum .threadpost {
   background-color: #ffffff;
