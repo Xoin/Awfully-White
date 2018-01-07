@@ -1,10 +1,40 @@
-.roadmap {
+.page-roadmap {
 	.column {
 		.roadmap-child {
 			.title {
 				background-color: @fp-background-white-normal;
 				color: @fp-text-normal;
 			}
+		}
+	}
+	
+	.roadmap .column {
+    	border-right: 1px solid @fp-background-transparent;
+	}
+	.roadmap .column {
+		 .title {
+		 	color: @fp-text-link-normal;
+		 }
+		.roadmap-child .title {
+			color: @fp-text-normal;
+		}
+	}
+	#content section {
+		.hero-body {
+			padding: 1rem 1.5rem !important;
+		}
+		.title {
+			color: @fp-text-link-normal;
+		}
+		.subtitle {
+			color: @fp-text-normal;
+			strong {
+				color: @fp-text-normal;
+			}
+		}
+		.container {
+			background-color: @fp-background-white-normal;	
+			padding: 1rem;
 		}
 	}
 }

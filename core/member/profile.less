@@ -1,16 +1,16 @@
 .useroptions #forum {
-	.hero.is-medium .hero-body, .hero.is-small .hero-body {
-		background-color: @fp-background-white-normal;
-		padding-bottom: 0rem;
-    	padding-top: 2rem;
-		margin-top: 1em;
-    	padding-left: 0.75em;
-    	padding-left: 0.75em;
+	.hero-body {
+		padding: 0rem;
+		margin-top: 1rem;
+		.container {
+			padding: 2rem;
+			background-color: @fp-background-white-normal;
+		}
 	}
 	.hero.is-dark .title {
 		color: @fp-text-normal;	
 	}
-	.hero.is-dark	.subtitle {
+	.hero.is-dark .subtitle {
 		color: @fp-text-light;
 	}
 	.section {
@@ -23,7 +23,7 @@
 		}
 		background-color: @fp-background-white-normal !important;
 		&:extend(.common-link all);
-		margin-bottom: 0rem;
+		margin-bottom: 1rem;
 	}
 	form {
 		background-color: @fp-background-white-normal !important;
@@ -48,17 +48,3 @@
 		padding-bottom: 2.5rem;
 	}
 }
-
-@media screen and (min-width: 768px) {
-	.useroptions #forum {
-		.hero.is-medium .hero-body, .hero.is-small .hero-body {
-			width: calc(98.1%) !important;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.level-item {
-			padding-bottom: 1rem;
-		}
-	}
-}
-

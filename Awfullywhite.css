@@ -86,6 +86,14 @@
 .button.is-small {
   height: 2rem;
 }
+form .input,
+form .textarea {
+  background-color: #ffffff;
+  color: #000 !important;
+}
+form .icon {
+  color: #000;
+}
 /*
 
 Everything here is slowly getting moved away.
@@ -208,7 +216,7 @@ strong {
 .common-link a,
 .ql-container.ql-snow a,
 .ql-container.ql-snow .ql-editor postquote .head a,
-.commits .change-entry .time a,
+.page- .commits .change-entry .time a,
 .forumevents a,
 body.page-forum .forumhead ul .content .title a,
 body.page-forum .threadlistsection .threadblock.is-sticky a,
@@ -219,7 +227,7 @@ body.page-forum .threadlistsection .threadblock.is-sticky a,
 .common-link a:hover,
 .ql-container.ql-snow a:hover,
 .ql-container.ql-snow .ql-editor postquote .head a:hover,
-.commits .change-entry .time a:hover,
+.page- .commits .change-entry .time a:hover,
 .forumevents a:hover,
 body.page-forum .forumhead ul .content .title a:hover,
 body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
@@ -360,50 +368,51 @@ a:hover {
 .pagnation.postpagnation a.page.is-active {
   background-color: #006fb9;
 }
-.commits {
+.page-changelist .container,
+.page-changelist information {
+  color: #000;
+}
+.page-changelist .container strong,
+.page-changelist information strong {
+  color: #000;
+}
+.page-changelist .changelist .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page- .commits {
   background-color: #ffffff;
   color: #000;
+  padding: 1rem;
+  margin-top: 0rem;
 }
-.commits .change-entry .time {
+.page- .commits .change-entry .time {
   opacity: 1;
 }
-.commits .change-entry .change {
+.page- .commits .change-entry .change {
   color: #000;
 }
-.tabs {
+.page- .tabs {
   background-color: #ffffff;
   color: #7b7b7b;
 }
-.tabs li {
+.page- .tabs li {
   color: #000;
 }
-.tabs li.is-active a {
+.page- .tabs li.is-active a {
   background-color: #ffffff;
   color: #147;
   border-bottom-color: #147;
 }
-.tabs li a {
+.page- .tabs li a {
   color: #7b7b7b;
 }
-.flex-centered {
+.page- #content section .container {
   background-color: #ffffff;
+  padding: 1rem;
 }
-@media screen {
-  .flex-centered {
-    padding: 0rem 0rem;
-  }
-}
-@media screen and (min-width: 800px) {
-  .flex-centered {
-    padding: 3rem 1.5rem;
-    margin-bottom: 3em;
-  }
-}
-.container strong {
-  color: #000;
-}
-.changelist {
-  background-color: #ffffff;
+.page- #content section:last-of-type {
+  margin-bottom: 1rem;
 }
 .forumevents {
   background: #ffffff;
@@ -571,13 +580,13 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
 body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   background-color: #fbfba5;
 }
-.useroptions #forum .hero.is-medium .hero-body,
-.useroptions #forum .hero.is-small .hero-body {
+.useroptions #forum .hero-body {
+  padding: 0rem;
+  margin-top: 1rem;
+}
+.useroptions #forum .hero-body .container {
+  padding: 2rem;
   background-color: #ffffff;
-  padding-bottom: 0rem;
-  padding-top: 2rem;
-  margin-top: 1em;
-  padding-left: 0.75em;
 }
 .useroptions #forum .hero.is-dark .title {
   color: #000;
@@ -591,7 +600,7 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
 }
 .useroptions #forum .level-item {
   background-color: #ffffff !important;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
 }
 .useroptions #forum .level-item .title {
   color: #000;
@@ -618,17 +627,6 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   color: #000;
   background-color: #ffffff;
 }
-@media screen and (min-width: 768px) {
-  .useroptions #forum .hero.is-medium .hero-body,
-  .useroptions #forum .hero.is-small .hero-body {
-    width: calc(98.1%) !important;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .useroptions #forum .level-item {
-    padding-bottom: 1rem;
-  }
-}
 body.page-forum .threadpost {
   background-color: #ffffff;
   color: #000;
@@ -647,9 +645,120 @@ body.page-forum .threadpost .postlist .postblock .postmain {
 body.page-forum .threadpost .postlist .postblock .postmain .posthead {
   display: none;
 }
-.roadmap .column .roadmap-child .title {
+.page-home .projectlist:first-of-type,
+.page-home .teamlist {
+  background-color: #ffffff;
+}
+.page-roadmap .column .roadmap-child .title {
   background-color: #ffffff;
   color: #000;
+}
+.page-roadmap .roadmap .column {
+  border-right: 1px solid rgba(0, 0, 0, 0);
+}
+.page-roadmap .roadmap .column .title {
+  color: #147;
+}
+.page-roadmap .roadmap .column .roadmap-child .title {
+  color: #000;
+}
+.page-roadmap #content section .hero-body {
+  padding: 1rem 1.5rem !important;
+}
+.page-roadmap #content section .title {
+  color: #147;
+}
+.page-roadmap #content section .subtitle {
+  color: #000;
+}
+.page-roadmap #content section .subtitle strong {
+  color: #000;
+}
+.page-roadmap #content section .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-presskit .container .description {
+  color: #fff;
+}
+.page-presskit .section-summary .table {
+  background-color: #ffffff;
+  color: #000;
+}
+.page-presskit .screenshots .container,
+.page-presskit .section-mailinglist .container {
+  background-color: #ffffff;
+  padding: 2rem;
+}
+.page-presskit #content > .is-small .container,
+.page-presskit #content > .is-medium .container {
+  background-color: #ffffff;
+  padding: 2rem;
+}
+.page-presskit #content > .is-small .container .buy_logo,
+.page-presskit #content > .is-medium .container .buy_logo {
+  fill: #000;
+}
+.page-presskit #content > .is-small .container > .is-small .hero-body .container,
+.page-presskit #content > .is-medium .container > .is-small .hero-body .container {
+  width: 100%;
+}
+.page-presskit .hero.is-medium .hero-body {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+.page-faq section:not(.is-dark) .hero-body {
+  padding: 1rem 1.5rem !important;
+}
+.page-faq section:not(.is-dark) h2 {
+  color: #147;
+}
+.page-faq section:not(.is-dark) .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-help #content section .hero-body {
+  padding: 1rem 1.5rem !important;
+}
+.page-help #content section h2 {
+  color: #147;
+}
+.page-help #content section .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-blog-list .is-vertical,
+.page-blog-list .blog-timeline .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-blog-list .hero-body {
+  padding: 1rem 1.5rem;
+}
+.page-blog-view .blogentry {
+  padding: 0rem 1.5rem;
+}
+.page-blog-view .blogentry .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-blog-view .blogentry .container .title {
+  color: #147;
+}
+.page-blog-view .blogentry .container .subtitle {
+  color: #fff;
+}
+.page-blog-view .author .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-blog-view .changelist .container,
+.page-blog-view .section-mailinglist .container {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.page-blog-view .section {
+  padding: 0rem 1.5rem;
 }
 #search_results {
   padding: 0rem;
@@ -865,6 +974,18 @@ body.page-forum .threadviewsection .postblock.postblock-own {
 @media screen and (max-width: 768px) {
   body.page-forum .threadviewsection .postblock .posthead {
     margin-left: auto !important;
+  }
+  .page-help #content section .hero-body,
+  .page-blog-list #content section .hero-body,
+  .page-presskit #content section .hero-body,
+  .page-faq #content section .hero-body,
+  .page-roadmap #content section .hero-body,
+  .page-help .is-medium .hero-body,
+  .page-blog-list .is-medium .hero-body,
+  .page-presskit .is-medium .hero-body,
+  .page-faq .is-medium .hero-body,
+  .page-roadmap .is-medium .hero-body {
+    padding: 0rem 0rem !important;
   }
 }
 

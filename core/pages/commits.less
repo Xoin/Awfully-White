@@ -1,0 +1,41 @@
+.page- {
+	.commits {
+		background-color: @fp-background-white-normal;
+		color: @fp-text-normal;
+		padding: 1rem;
+		margin-top: 0rem;
+		.change-entry {
+			.time {
+				opacity: 1;
+				&:extend(.common-link all);
+			}
+			.change {
+				color: @fp-text-normal;
+			}
+		}
+	}
+	.tabs {
+		background-color: @fp-background-white-normal;
+		color: @fp-text-light;
+		li {
+			color: @fp-text-normal;
+			&.is-active {
+				a {
+					background-color: @fp-background-white-normal;
+					color: @fp-text-link-normal;
+					border-bottom-color: @fp-text-link-normal;
+				}
+			}
+			a {
+				color: @fp-text-light;
+			}
+		}
+	}
+	#content section .container {
+		background-color: @fp-background-white-normal;	
+		padding: 1rem;
+	}
+	#content section:last-of-type {
+		margin-bottom: 1rem;
+	}
+}
