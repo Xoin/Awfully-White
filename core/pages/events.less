@@ -1,16 +1,17 @@
 // Forum events
-.forumevents {
-	background: @fp-background-white-normal;
-	padding: 1rem;
-	@media screen {
-		margin: 0 auto;
-		position: relative;
-		@media (min-width: 800px) {
-			max-width: 736px;
-			width: 736px;
+.page-forum-events {
+	.section  .container {
+		background: @fp-background-white-normal;
+		padding: 1rem;
+		&:extend(.common-link all);
+	}
+	.hero.is-small .hero-body {
+		background: @fp-background-white-normal;
+		.title, .subtitle {
+			color: @fp-text-normal;
 		}
 	}
-	&:extend(.common-link all);
+	
 	span.timeago {
 		color: @fp-text-normal;
 	}

@@ -1,17 +1,23 @@
 //Search
-#search_results	{
-	padding: 0rem;
-	padding-bottom: 1rem;
-}
-#search_results > .container {
-	background: @fp-background-white-normal;
-	color: @fp-text-normal;
-	margin-bottom: 5em;
-	margin: 0 auto;
-	position: relative;
-	padding: 1rem;
-}
+
 .page-search {
+	.section {
+		padding: 1rem 1.5rem;
+		&:first-of-type {
+			padding-bottom: 0rem;
+		}
+		&:last-of-type {
+			padding-top: 0rem;
+		}
+		.container {
+			background: @fp-background-white-normal;
+			color: @fp-text-normal;
+			margin-bottom: 5em;
+			margin: 0 auto;
+			position: relative;
+			padding: 1rem;
+		}
+	}
 	.searchentry {
 		.searchheader {
 			&:extend(.common-link all);

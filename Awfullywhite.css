@@ -181,6 +181,9 @@ strong {
 .ql-toolbar.ql-snow.toolbar button.ql-active {
   color: #000;
 }
+.ql-container.ql-snow {
+  border: 1px dotted #888;
+}
 .ql-container.ql-snow .ql-editor postquote {
   border: 1px solid #888;
   margin: 10px;
@@ -217,7 +220,7 @@ strong {
 .ql-container.ql-snow a,
 .ql-container.ql-snow .ql-editor postquote .head a,
 .page- .commits .change-entry .time a,
-.forumevents a,
+.page-forum-events .section .container a,
 body.page-forum .forumhead ul .content .title a,
 body.page-forum .threadlistsection .threadblock.is-sticky a,
 .useroptions #forum .level-item a,
@@ -228,7 +231,7 @@ body.page-forum .threadlistsection .threadblock.is-sticky a,
 .ql-container.ql-snow a:hover,
 .ql-container.ql-snow .ql-editor postquote .head a:hover,
 .page- .commits .change-entry .time a:hover,
-.forumevents a:hover,
+.page-forum-events .section .container a:hover,
 body.page-forum .forumhead ul .content .title a:hover,
 body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
 .useroptions #forum .level-item a:hover,
@@ -414,53 +417,48 @@ a:hover {
 .page- #content section:last-of-type {
   margin-bottom: 1rem;
 }
-.forumevents {
+.page-forum-events .section .container {
   background: #ffffff;
   padding: 1rem;
 }
-@media screen {
-  .forumevents {
-    margin: 0 auto;
-    position: relative;
-  }
+.page-forum-events .hero.is-small .hero-body {
+  background: #ffffff;
 }
-@media screen and (min-width: 800px) {
-  .forumevents {
-    max-width: 736px;
-    width: 736px;
-  }
-}
-.forumevents span.timeago {
+.page-forum-events .hero.is-small .hero-body .title,
+.page-forum-events .hero.is-small .hero-body .subtitle {
   color: #000;
 }
-.forumevents .entry i {
+.page-forum-events span.timeago {
+  color: #000;
+}
+.page-forum-events .entry i {
   opacity: 1;
 }
-.forumevents .entry .mdi {
+.page-forum-events .entry .mdi {
   color: #000;
 }
-.forumevents .entry .mdi-cancel {
+.page-forum-events .entry .mdi-cancel {
   color: #ff0000;
 }
-.forumevents .entry .mdi-coin {
+.page-forum-events .entry .mdi-coin {
   color: #dcd703;
 }
-.forumevents .entry .mdi-emoticon-happy {
+.page-forum-events .entry .mdi-emoticon-happy {
   color: #00ff21;
 }
-.forumevents .entry .mdi-clock {
+.page-forum-events .entry .mdi-clock {
   color: #00ff21;
 }
-.forumevents .entry .mdi-lock {
+.page-forum-events .entry .mdi-lock {
   color: #000;
 }
-.forumevents .entry .mdi-delete {
+.page-forum-events .entry .mdi-delete {
   color: #000;
 }
-.forumevents .entry .mdi-folder-move {
+.page-forum-events .entry .mdi-folder-move {
   color: #000;
 }
-.forumevents .entry .mdi-pin {
+.page-forum-events .entry .mdi-pin {
   color: #000;
 }
 .forumlastpostavatar {
@@ -627,27 +625,34 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   color: #000;
   background-color: #ffffff;
 }
-body.page-forum .threadpost {
+.page-forum.newthread .section:not(.forumhead) .container {
   background-color: #ffffff;
   color: #000;
   padding: 1rem;
 }
-body.page-forum .threadpost .label {
+.page-forum.newthread .section:not(.forumhead) .container .label {
   color: #000;
 }
-body.page-forum .threadpost .postlist .postblock {
+.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock {
   background: #ffffff;
   border: 0px solid grey;
 }
-body.page-forum .threadpost .postlist .postblock .postmain {
+.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock .postmain {
   padding-top: 0rem !important;
 }
-body.page-forum .threadpost .postlist .postblock .postmain .posthead {
+.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock .postmain .posthead {
   display: none;
 }
 .page-home .projectlist:first-of-type,
 .page-home .teamlist {
   background-color: #ffffff;
+}
+.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body {
+  background: #ffffff;
+}
+.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .title,
+.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .subtitle {
+  color: #000;
 }
 .page-roadmap .column .roadmap-child .title {
   background-color: #ffffff;
@@ -760,11 +765,23 @@ body.page-forum .threadpost .postlist .postblock .postmain .posthead {
 .page-blog-view .section {
   padding: 0rem 1.5rem;
 }
-#search_results {
-  padding: 0rem;
-  padding-bottom: 1rem;
+.page-terms .section .container {
+  background-color: white;
+  padding: 1rem;
 }
-#search_results > .container {
+.page-terms .section .container h2 {
+  color: #147;
+}
+.page-search .section {
+  padding: 1rem 1.5rem;
+}
+.page-search .section:first-of-type {
+  padding-bottom: 0rem;
+}
+.page-search .section:last-of-type {
+  padding-top: 0rem;
+}
+.page-search .section .container {
   background: #ffffff;
   color: #000;
   margin-bottom: 5em;
@@ -800,6 +817,13 @@ body.page-forum .threadpost .postlist .postblock .postmain .posthead {
 .menu-list .count {
   background-color: #2288fc;
   color: #fff;
+}
+.usershop .hero.is-small .hero-body {
+  background: #ffffff;
+}
+.usershop .hero.is-small .hero-body .title,
+.usershop .hero.is-small .hero-body .subtitle {
+  color: #000;
 }
 .postlist {
   background: #ffffff;
