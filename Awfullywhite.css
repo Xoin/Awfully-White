@@ -333,6 +333,9 @@ a:hover {
   padding-left: 0rem;
   padding: 0.5em;
 }
+.navbar-toolbar {
+  box-shadow: none;
+}
 @media screen and (min-width: 768px) {
   .navbar.is-dark {
     height: 104px;
@@ -363,8 +366,12 @@ a:hover {
   margin: 0rem 0;
   color: #fff;
 }
-.pagnation.threadpagnation a:hover,
-.pagnation.postpagnation a:hover {
+.pagnation.threadpagnation a.page,
+.pagnation.postpagnation a.page {
+  background-color: #2288fc;
+}
+.pagnation.threadpagnation a.page:hover,
+.pagnation.postpagnation a.page:hover {
   background-color: #36a6ff;
 }
 .pagnation.threadpagnation a.page.is-active,
