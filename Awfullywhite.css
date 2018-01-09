@@ -223,6 +223,8 @@ strong {
 .page-forum-events .section .container a,
 body.page-forum .forumhead ul .content .title a,
 body.page-forum .threadlistsection .threadblock.is-sticky a,
+.threadlist-gallery .threadblog .title a,
+.threadlist-blog .threadblog .title a,
 .useroptions #forum .level-item a,
 .page-search .searchentry .searchheader a {
   color: #147;
@@ -234,6 +236,8 @@ body.page-forum .threadlistsection .threadblock.is-sticky a,
 .page-forum-events .section .container a:hover,
 body.page-forum .forumhead ul .content .title a:hover,
 body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
+.threadlist-gallery .threadblog .title a:hover,
+.threadlist-blog .threadblog .title a:hover,
 .useroptions #forum .level-item a:hover,
 .page-search .searchentry .searchheader a:hover {
   color: #1e77d0;
@@ -584,6 +588,21 @@ body.page-forum .threadlistsection .threadblock.is-sticky {
 body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
 body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   background-color: #fbfba5;
+}
+.threadlist-gallery,
+.threadlist-blog {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.threadlist-gallery .threadblog,
+.threadlist-blog .threadblog {
+  margin: 1rem;
+  border-radius: 0px;
+  background-color: #eee;
+}
+.threadlist-gallery .threadblog .subtitle,
+.threadlist-blog .threadblog .subtitle {
+  color: #000;
 }
 .useroptions #forum .hero-body {
   padding: 0rem;
