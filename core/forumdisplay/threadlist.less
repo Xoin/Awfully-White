@@ -98,9 +98,15 @@ body.page-forum {
 		background-color: @fp-background-grey-normal;
 		.title {
 			&:extend(.common-link all);
+			z-index: 3;
 		}
 		 .subtitle {
 		 	color: @fp-text-normal;
+		 	z-index: 3;
+		}
+		.avatar {
+			z-index: 2;
+			opacity: 0.2;
 		}
 	}
 }

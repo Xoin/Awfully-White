@@ -600,9 +600,19 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   border-radius: 0px;
   background-color: #eee;
 }
+.threadlist-gallery .threadblog .title,
+.threadlist-blog .threadblog .title {
+  z-index: 3;
+}
 .threadlist-gallery .threadblog .subtitle,
 .threadlist-blog .threadblog .subtitle {
   color: #000;
+  z-index: 3;
+}
+.threadlist-gallery .threadblog .avatar,
+.threadlist-blog .threadblog .avatar {
+  z-index: 2;
+  opacity: 0.2;
 }
 .useroptions #forum .hero-body {
   padding: 0rem;
