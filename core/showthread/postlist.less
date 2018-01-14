@@ -169,3 +169,28 @@ body.page-forum {
 .lastread {
 	margin: 0rem 0px;
 }
+
+@media screen and (orientation:landscape) {
+	.postlist {
+		.postblock .postuser .postavatar {
+			display: block !important;
+		}
+		.postblock .postuser .username
+		{
+			padding: 1.0rem;
+	
+		}
+		.postblock {
+		    flex-direction: unset;
+		}
+		.postblock .postmain {
+			padding-top: 2.5rem !important;
+		}
+	}
+	body.page-forum .forumhead ul {
+		flex-direction: row;
+	}
+	body.page-forum .forumhead ul .forumicon, body.page-forum .forumhead ul .threadicon {
+		display: block !important;
+	}
+}

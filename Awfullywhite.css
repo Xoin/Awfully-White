@@ -340,6 +340,11 @@ a:hover {
 .navbar-toolbar {
   box-shadow: none;
 }
+@media screen and (orientation: landscape) {
+  .level-left .is-hidden-touch {
+    display: flex !important;
+  }
+}
 @media screen and (min-width: 768px) {
   .navbar.is-dark {
     height: 104px;
@@ -513,6 +518,14 @@ body.page-forum .forumblock.is-closed {
   background-color: #f5f5f5;
   color: #7b7b7b;
 }
+@media screen and (orientation: landscape) {
+  body.page-forum .forumblock .forumlastpost {
+    display: flex !important;
+  }
+  body.page-forum .forumblock .forumlastpostavatar {
+    display: flex !important;
+  }
+}
 body.page-forum .forumhead ul .content .title {
   color: #147;
 }
@@ -613,6 +626,14 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
 .threadlist-blog .threadblog .avatar {
   z-index: 2;
   opacity: 0.2;
+}
+@media screen and (orientation: landscape) {
+  body.page-forum .threadlistsection .threadblock .threadlastpost {
+    display: flex !important;
+  }
+  body.page-forum .threadlistsection .threadblock .threadlastpostavatar {
+    display: flex !important;
+  }
 }
 .useroptions #forum .hero-body {
   padding: 0rem;
@@ -991,6 +1012,27 @@ body.page-forum .threadviewsection .postblock.postblock-own {
 }
 .lastread {
   margin: 0rem 0px;
+}
+@media screen and (orientation: landscape) {
+  .postlist .postblock .postuser .postavatar {
+    display: block !important;
+  }
+  .postlist .postblock .postuser .username {
+    padding: 1.0rem;
+  }
+  .postlist .postblock {
+    flex-direction: unset;
+  }
+  .postlist .postblock .postmain {
+    padding-top: 2.5rem !important;
+  }
+  body.page-forum .forumhead ul {
+    flex-direction: row;
+  }
+  body.page-forum .forumhead ul .forumicon,
+  body.page-forum .forumhead ul .threadicon {
+    display: block !important;
+  }
 }
 .votes .list {
   background-color: #ffd;
