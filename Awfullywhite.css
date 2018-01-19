@@ -151,6 +151,12 @@ strong {
   color: #000;
   font-size: 0.9rem;
 }
+.ql-editor a > strong {
+  color: #1e77d0;
+}
+.ql-editor a > strong:hover {
+  color: #6aaaea;
+}
 .ql-editor strong {
   color: #000;
   font-size: bold;
@@ -386,6 +392,10 @@ a:hover {
 .pagnation.threadpagnation a.page.is-active,
 .pagnation.postpagnation a.page.is-active {
   background-color: #006fb9;
+}
+.pagnation.threadpagnation a.page.is-spacer,
+.pagnation.postpagnation a.page.is-spacer {
+  opacity: 1;
 }
 .page-changelist .container,
 .page-changelist information {

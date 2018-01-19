@@ -1,8 +1,14 @@
 // Editor
 .ql- {
-		&editor {
+	&editor {
 		color: @fp-text-normal;
 		font-size: 0.9rem;
+		a > strong {
+			color: @fp-text-link-light;
+			&:hover {
+				color: @fp-text-link-lighter;
+			}
+		}
 		strong {
 			color: @fp-text-normal;
 			font-size: bold;
