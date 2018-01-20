@@ -19,6 +19,9 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	&:before {
 		background-image: none;
 	}
+
+}
+#content {
 	overflow: hidden;
 }
 body {
@@ -53,6 +56,7 @@ body {
 strong {
 	color: @fp-text-link-normal;
 }
+
 @media screen and (min-width: 768px) {
 	.force-wide-design {
 		.container {
@@ -63,4 +67,16 @@ strong {
 			margin-left: -16.1em !important;;
 		}
 	}
+}
+.tooltip.is-top:before, .tooltip.is-top:after {
+    top: auto;
+    right: auto;
+    bottom: calc(100% + 5px + 2px);
+    left: 50%;
+    word-break: initial;
+    overflow: hidden;
+    transform: translateX(-50%);
+}
+.tooltip:after {
+	white-space: pre;
 }

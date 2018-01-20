@@ -22,7 +22,7 @@ body.page-forum {
 		border-right: 1px solid #888;
 		&:not(:last-of-type) {
 			border-bottom: 1px solid #CCC!important;
-		}	
+		}
 		.forumname {
 			.forumtitle {
 				a {
@@ -57,5 +57,24 @@ body.page-forum {
 		&avatar {
 			display: flex !important;
 		}
+	}
+}
+
+@media screen and (orientation:portrait) {
+	body.page-forum .forumcategoryblock {
+		margin: 0rem !important;
+		
+	}
+	body.page-forum .forumcategoryheader {
+		border-top: 1px solid #888;
+	}
+	.tile.is-ancestor {
+		margin: 0rem -0.75rem -0.75rem -0.75rem;
+	}
+	.tile.is-parent {
+		padding: 0rem;
+	}
+	.section-forumstats {
+		padding: 0rem;
 	}
 }

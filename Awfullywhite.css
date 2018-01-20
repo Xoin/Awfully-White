@@ -109,10 +109,12 @@ html,
 #wrapper {
   color: #000;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="%23b5b5b5" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="%23bbbbbb" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="%23bbbbbb" stroke="black" stroke-width="0" /></svg>') repeat;
-  overflow: hidden;
 }
 #wrapper:before {
   background-image: none;
+}
+#content {
+  overflow: hidden;
 }
 body .force-wide-design .section {
   padding: 1rem 0rem;
@@ -147,6 +149,19 @@ strong {
   .force-wide-design .threadviewsection .postblock .posthead {
     margin-left: -16.1em !important;
   }
+}
+.tooltip.is-top:before,
+.tooltip.is-top:after {
+  top: auto;
+  right: auto;
+  bottom: calc(107%);
+  left: 50%;
+  word-break: initial;
+  overflow: hidden;
+  transform: translateX(-50%);
+}
+.tooltip:after {
+  white-space: pre;
 }
 .ql-editor {
   color: #000;
@@ -537,6 +552,23 @@ body.page-forum .forumblock.is-closed {
     display: flex !important;
   }
 }
+@media screen and (orientation: portrait) {
+  body.page-forum .forumcategoryblock {
+    margin: 0rem !important;
+  }
+  body.page-forum .forumcategoryheader {
+    border-top: 1px solid #888;
+  }
+  .tile.is-ancestor {
+    margin: 0rem -0.75rem -0.75rem -0.75rem;
+  }
+  .tile.is-parent {
+    padding: 0rem;
+  }
+  .section-forumstats {
+    padding: 0rem;
+  }
+}
 body.page-forum .forumhead ul .content .title {
   color: #147;
 }
@@ -711,16 +743,21 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
 .page-forum.newthread .section:not(.forumhead) .container .postlist .postblock .postmain .posthead {
   display: none;
 }
-.page-home .projectlist:first-of-type,
-.page-home .teamlist {
-  background-color: #ffffff;
-}
 .page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body {
   background: #ffffff;
 }
 .page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .title,
 .page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .subtitle {
   color: #000;
+}
+.page-home svg#Layer_1 {
+  fill: #000 !important;
+}
+.page-team #content .teamlist .hero-body {
+  background: #ffffff;
+}
+.page-projects #content .projectlist:first-of-type .hero-body {
+  background: #ffffff;
 }
 .page-roadmap .column .roadmap-child .title {
   background-color: #ffffff;
@@ -1039,7 +1076,6 @@ body.page-forum .threadviewsection .postblock.postblock-own {
   }
   body.page-forum .forumhead ul {
     flex-direction: row;
-    overflow: hidden;
   }
   body.page-forum .forumhead ul .forumicon,
   body.page-forum .forumhead ul .threadicon {
