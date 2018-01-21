@@ -51,7 +51,7 @@ body.page-forum {
 	}
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (min-aspect-ratio: 13/9) {
 	body.page-forum .forumblock .forumlastpost {
 		display: flex !important;
 		&avatar {
@@ -60,7 +60,7 @@ body.page-forum {
 	}
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-aspect-ratio: 13/9) {
 	body.page-forum .forumcategoryblock {
 		margin: 0rem !important;
 		

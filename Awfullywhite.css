@@ -362,7 +362,7 @@ a:hover {
 .navbar-toolbar {
   box-shadow: none;
 }
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 13/9) {
   .level-left .is-hidden-touch {
     display: flex !important;
   }
@@ -544,7 +544,7 @@ body.page-forum .forumblock.is-closed {
   background-color: #f5f5f5;
   color: #7b7b7b;
 }
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 13/9) {
   body.page-forum .forumblock .forumlastpost {
     display: flex !important;
   }
@@ -552,7 +552,7 @@ body.page-forum .forumblock.is-closed {
     display: flex !important;
   }
 }
-@media screen and (orientation: portrait) {
+@media screen and (max-aspect-ratio: 13/9) {
   body.page-forum .forumcategoryblock {
     margin: 0rem !important;
   }
@@ -1061,7 +1061,7 @@ body.page-forum .threadviewsection .postblock.postblock-own {
 .lastread {
   margin: 0rem 0px;
 }
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 13/9) {
   .postlist .postblock .postuser .postavatar {
     display: block !important;
   }
