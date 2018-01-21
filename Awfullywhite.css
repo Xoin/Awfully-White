@@ -670,7 +670,7 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   z-index: 2;
   opacity: 0.2;
 }
-@media screen and (orientation: landscape) {
+@media screen and (min-aspect-ratio: 13/9) {
   body.page-forum .threadlistsection .threadblock .threadlastpost {
     display: flex !important;
   }
