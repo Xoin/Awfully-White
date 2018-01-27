@@ -1053,6 +1053,9 @@ body.page-forum .threadviewsection .postblock .postuser .user-banned:after {
   font-weight: normal;
   font-size: 0.7rem;
 }
+body.page-forum .threadviewsection .postblock .postuser span.userlevel {
+  display: inline;
+}
 body.page-forum .threadviewsection .postblock:first-of-type {
   margin-top: 0rem;
 }
