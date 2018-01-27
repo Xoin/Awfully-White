@@ -232,6 +232,106 @@ strong {
 .quill-editor .quill-autocomplete {
   box-shadow: 0px 0px 0px 1px black;
 }
+.quill-tooltip {
+  border: black 1px solid;
+}
+.quill-tooltip input {
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid grey;
+}
+.quill-tooltip .links a {
+  background-color: #eee;
+  border: 1px solid #aaa;
+  color: #000;
+  float: right;
+  font-weight: 700;
+  padding: 2px 10px;
+  margin: 0rem 0.2rem 0.8rem  0.1rem;
+  font-size: 0.9rem;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px;
+  margin: 0rem 0.1rem 0rem 0.1rem;
+}
+.quill-tooltip .links a:active {
+  color: #000;
+}
+.quill-tooltip .links a:hover {
+  color: #7b7b7b;
+  background: #f5f5f5;
+}
+.quill-tooltip .links a .button.is-info {
+  margin: 0rem 1rem;
+  font-size: 1rem;
+}
+.quill-tooltip .links a.is-primary {
+  background: #2288fc;
+  margin-left: 0.2rem;
+  height: 2rem;
+}
+.quill-tooltip .links a.is-primary:hover {
+  background: #36a6ff;
+}
+.quill-tooltip .links a.is-primary[disabled] {
+  background: #2288fc;
+  margin-left: 0.2rem;
+  height: 2rem;
+}
+.quill-tooltip .links a.is-primary[disabled]:hover {
+  background: #36a6ff;
+}
+.quill-tooltip .links a.is-success,
+.quill-tooltip .links a.is-success.is-outlined {
+  background-color: #2288fc;
+  border-color: #2288fc;
+  color: #fff;
+}
+.quill-tooltip .links a.is-success:hover,
+.quill-tooltip .links a.is-success.is-outlined:hover {
+  background-color: #36a6ff;
+  border-color: #36a6ff;
+  color: #fff;
+}
+.quill-tooltip .links a.is-success:focused,
+.quill-tooltip .links a.is-success.is-outlined:focused {
+  background-color: #36a6ff;
+  border-color: #36a6ff;
+  color: #fff;
+}
+.quill-tooltip .links a.is-success.is-hovered,
+.quill-tooltip .links a.is-success.is-outlined.is-hovered {
+  background-color: #36a6ff;
+  border-color: #36a6ff;
+  color: #fff;
+}
+.quill-tooltip .links a.is-warning,
+.quill-tooltip .links a.is-warning.is-outlined {
+  background-color: #b5b5b5;
+  border-color: #b5b5b5;
+  color: #fff;
+}
+.quill-tooltip .links a.is-warning:hover,
+.quill-tooltip .links a.is-warning.is-outlined:hover {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+.quill-tooltip .links a.is-warning:focused,
+.quill-tooltip .links a.is-warning.is-outlined:focused {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+.quill-tooltip .links a.is-warning.is-hovered,
+.quill-tooltip .links a.is-warning.is-outlined.is-hovered {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #fff;
+}
+.quill-tooltip .links a.is-small {
+  height: 2rem;
+}
 .footer {
   background: #2288fc;
 }
