@@ -677,6 +677,18 @@ body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
   body.page-forum .threadlistsection .threadblock .threadlastpostavatar {
     display: flex !important;
   }
+  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .postcount.is-hidden-mobile {
+    display: unset !important;
+  }
+  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .creator.is-hidden-mobile {
+    display: unset !important;
+  }
+  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .createddate.is-hidden-mobile {
+    display: unset !important;
+  }
+  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .is-hidden-tablet.lastposter {
+    display: none !important;
+  }
 }
 .useroptions #forum .hero-body {
   padding: 0rem;
