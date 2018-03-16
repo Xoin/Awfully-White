@@ -1,3 +1,6 @@
+#wrapper footer:after {
+  content: "0.0.1";
+}
 .button {
   background-color: #eee;
   border: 1px solid #aaa;
@@ -274,6 +277,12 @@ html:before {
   color: #000;
   font-size: 11pt;
 }
+#wrapper footer {
+  background: #2288fc;
+}
+#wrapper footer a {
+  color: #fff;
+}
 .common-link a,
 .ql-container.ql-snow a,
 .ql-container.ql-snow .ql-editor postquote .head a {
@@ -332,17 +341,42 @@ body.page-forum .postlist .postblock-read {
 body.page-forum .postlist .postblock-own {
   background: linear-gradient(90deg, #eeffbb 1px, #ffffff 25%, #ffffff 500px);
 }
-.postmain .posthead {
-  background-color: lightgray;
+.lastread {
+  border-top: 1px solid #777;
+  border-bottom: 0px solid #bbb;
+}
+.title.threadname,
+.title.forumname {
+  color: #000 !important;
+}
+.title.threadname a,
+.title.forumname a {
+  color: #000 !important;
+}
+#wrapper #content .postlist .forumpanel {
+  border-bottom: 0px solid #bbb;
+}
+#wrapper #content .postlist .forumpanel:last-of-type {
+  border-bottom: 1px solid #777!important;
+}
+.postrender .posthead {
+  background: repeat-x #ccc;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777!important;
   margin-top: 0;
   margin-right: auto;
-  border-bottom: 1px solid grey;
   color: #000;
 }
-.postmain .posthead strong {
+.postrender .posthead a {
+  color: #147;
+}
+.postrender .posthead a:hover {
+  color: #1e77d0;
+}
+.postrender .posthead strong {
   color: #000;
 }
-.postmain .posthead .timeago {
+.postrender .posthead .timeago {
   background-image: url('https://files.facepunch.com/forum/upload/1704/3a19f1ac-c6fd-4192-89d9-3d58960b1c37/clock.png');
   background-repeat: no-repeat;
   padding-left: 20px;
