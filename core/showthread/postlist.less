@@ -3,197 +3,135 @@
 @fp-post-old: @fp-indicator-old 1px, @fp-background-white-normal 25%;
 @fp-post-new: @fp-indicator-new 1px, @fp-background-white-normal 25%;
 
-// Options
-.settings-lastread() when (@fp-settings-lastread-hide = true) {
-	.lastread {
-		display: none;
-	}
-}
-.settings-lastread;
-.settings-avatars() when (@fp-settings-mobile-avatars = true) {
-	display: unset !important;
-	float: right;
-	right: 0.2em;
-	top: 1em;
-	position: absolute;
-}
 .settings-titles() when (@fp-settings-titles = true) {
-	.common-user {
-		display: block;
-		font-weight: normal;
-		font-size: 0.7rem;
-	}
-	.user {
-		&-gold:after {
-			content: "Gold Member";
-			color: @fp-text-normal;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-moderator:after {
-			content: "Moderator";
-			color: @fp-user-green;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-admin:after {
-			content: "Administrator";
-			color: @fp-user-green;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-banned:after {
-			content: "Banned";
-			color: @fp-user-red;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
+	.username {
+		&.user {
+			&-gold:after {
+				content: "Gold Member";
+				color: @fp-text-normal;
+				display: block;
+				font-weight: normal;
+				font-size: 0.7rem;
+			}
+			&-moderator:after {
+				content: "Moderator";
+				color: @fp-user-green;
+				display: block;
+				font-weight: normal;
+				font-size: 0.7rem;
+			}
+			&-admin:after {
+				content: "Administrator";
+				color: @fp-user-green;
+				display: block;
+				font-weight: normal;
+				font-size: 0.7rem;
+			}
+			&-banned:after {
+				content: "Banned";
+				color: @fp-user-red;
+				display: block;
+				font-weight: normal;
+				font-size: 0.7rem;
+			}
 		}
 	}
 }
 
-// End options
+.background-image {
+	opacity: 0;
+}
+.postblock .postinner .postcontent, .has-background-image {
+	background: @fp-background-transparent;
+	&:before, &:after {
+		background: @fp-background-transparent;
+	}
+}
 
-.postlist {
-	background: @fp-background-white-normal;
+.postrender .postinner>.postuser
+{
+	border-right: 0px solid #bbb;
 }
 
 body.page-forum {
-	.threadviewsection {
-		.postblock {
-			position: relative;
-			box-shadow: none;
-			border: 1px solid grey;
-			margin-top: -1px;
-			margin-bottom: -0.1rem;
-			background: linear-gradient(90deg,  @fp-post-new, @fp-background-white-normal 500px);
-			background-size: 100%;
-			.posthead {
-				background-color: lightgray;
-				margin-top: 0;
-				margin-left: -16em;
-				margin-right: auto;
-				border-bottom: 1px solid grey;
-				padding-bottom: 0.5rem;
-				color: @fp-text-normal;
-				.common-link;
-				strong {
-					color:@fp-text-normal;
-				}			
-				.timeago {
-					//temp
-					background-image: url('https://facepunch.com/fp/time.png');
-					background-repeat: no-repeat;
-					padding-left: 20px;
-					background-position-y: -1px;
-				}
-			}
-			.postmain {
-				.postexpand {
-					margin-top: -0.8em;
-				}
-				.postbody {
-					a {
-						color: @fp-text-link-light;
-						&:hover {
-							color: @fp-text-link-lighter;
-						}
-					}
-					p {
-						color: @fp-text-normal;
-					}
-				}
-				.showcode {
-					background-color: @fp-text-normal;
-					color: @fp-text-lighter;
-				}
-			}
-			.postuser {
-				box-shadow: none;
-				background-color: @fp-background-transparent;
-				border-right: unset;
-				padding-top: 32px;
-				.user {
-					&name a {
-						color: @fp-user-blue;
-					}
-					&-useronline a{
-						color: @fp-user-blue;
-						border-bottom: 1px dotted @fp-user-blue;
-						font-weight: bolder;
-					}
-					&-gold a {
-						color: @fp-user-gold;
-					}
-					&-moderator a {
-						color: @fp-user-green;
-					}
-					&-admin a {
-						color: @fp-user-green;
-					}
-					&-banned a {
-						color: @fp-user-red;
-					}
-				}
-				.settings-titles;
-				.is-hidden-mobile {
-					.settings-avatars;
-				}
-				span.userlevel {
-					display: inline;
-				}
-			}
-			&:first-of-type {
-				margin-top: 0rem;
-			}
-			.baninfo {
-				background-color: unset;
-				color: red;
-				.detail strong {
-					color: red;
-				}
-			}
-			&.postblock {
-				&-read {
-					background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
-				}
-				&-own {
-					background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
-					box-shadow: inset 0px 0px #4fa052;
-				}
-			}
-		}
-	}
-}
-
-.lastread {
-	margin: 0rem 0px;
-}
-
-@media screen and (min-aspect-ratio: 13/9) {
 	.postlist {
-		.postblock .postuser .postavatar {
-			display: block !important;
-		}
-		.postblock .postuser .username
-		{
-			padding: 1.0rem;
-	
-		}
-		.postblock {
-		    flex-direction: unset;
-		}
-		.postblock .postmain {
-			padding-top: 2.5rem !important;
+		.postblock  {
+			background: linear-gradient(90deg,  @fp-post-new, @fp-background-white-normal 500px);
+			&-read {
+				background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
+			}
+			&-own {
+				background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
+			}
 		}
 	}
-	body.page-forum .forumhead ul {
-		flex-direction: row;
+}
+.lastread {
+	border-top: 1px solid #777;
+	border-bottom: 0px solid #bbb;
+}
+
+.title.threadname, .title.forumname {
+	color: @fp-text-normal!important;
+	a {
+		color: @fp-text-normal!important;
 	}
-	body.page-forum .forumhead ul .forumicon, body.page-forum .forumhead ul .threadicon {
-		display: block !important;
+}
+
+#wrapper #content .postlist .forumpanel {
+	border-bottom: 0px solid #bbb;
+	&:last-of-type  {
+		border-bottom: 1px solid #777!important;
 	}
+}
+.postrender {
+	.posthead {
+		background: repeat-x #ccc;
+		border-top: 1px solid #777;
+		border-bottom: 1px solid #777!important;
+		margin-top: 0;
+		margin-right: auto;
+		color: @fp-text-normal;
+		.common-link;
+		strong {
+			color:@fp-text-normal;
+		}			
+		.timeago {
+			//temp
+			background-image: url('https://files.facepunch.com/forum/upload/1704/3a19f1ac-c6fd-4192-89d9-3d58960b1c37/clock.png');
+			background-repeat: no-repeat;
+			padding-left: 20px;
+			background-position-y: -1px;
+		}
+	}
+}
+.posterinfo {
+	.user {
+		&name a {
+			color: @fp-user-blue;
+		}
+		&-useronline a{
+			color: @fp-user-blue;
+			border-bottom: 1px dotted @fp-user-blue;
+			font-weight: bolder;
+		}
+		&-gold a {
+			color: @fp-user-gold;
+		}
+		&-moderator a {
+			color: @fp-user-green;
+		}
+		&-admin a {
+			color: @fp-user-green;
+		}
+		&-banned a {
+			color: @fp-user-red;
+		}
+	}
+}
+.postlist .postinner .postuser .posterinfo {
+	.settings-titles;
+	span.userlevel {
+		display: inline;
+	}	
 }

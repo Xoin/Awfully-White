@@ -1,3 +1,6 @@
+#wrapper footer:after {
+  content: "0.0.1";
+}
 .button {
   background-color: #eee;
   border: 1px solid #aaa;
@@ -86,81 +89,20 @@
 .button.is-small {
   height: 2rem;
 }
-form .input,
-form .textarea {
-  background-color: #ffffff;
-  color: #000 !important;
-}
-form .icon {
-  color: #000;
-}
-/*
-
-Everything here is slowly getting moved away.
-
-*/
-html,
-.navbar,
-.pagnation.postpagnation,
-.forumcategoryheader,
-.forumpanel {
-  background-image: none;
-}
-#wrapper {
+html {
   color: #000;
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="%23b5b5b5" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="%23bbbbbb" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="%23bbbbbb" stroke="black" stroke-width="0" /></svg>') repeat;
 }
-#wrapper:before {
+html:before {
   background-image: none;
 }
-#content {
-  overflow: hidden;
-}
-body .force-wide-design .section {
-  padding: 1rem 0rem;
-}
-body.page-forum .forumhead {
-  padding: 2.1rem 0rem 0rem 1rem;
-}
-.section {
-  padding: 3rem 0rem;
-}
-.title {
-  color: #000;
-}
-.field.has-addons .control .input,
-body.page-forum .threadpost input {
-  background: #ffffff;
-  color: #000;
-}
-.box {
-  background-color: #ffffff;
-  color: #000;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-strong {
-  color: #147;
+.force-wide-design #wrapper {
+  padding: 0rem 0rem;
 }
 @media screen and (min-width: 768px) {
-  .force-wide-design .container {
+  .force-wide-design #wrapper {
     width: calc(98.1%) !important;
   }
-  .force-wide-design .threadviewsection .postblock .posthead {
-    margin-left: -16.1em !important;
-  }
-}
-.tooltip.is-top:before,
-.tooltip.is-top:after {
-  top: auto;
-  right: auto;
-  left: 50%;
-  word-break: initial;
-  overflow: hidden;
-  transform: translateX(-50%);
-}
-.tooltip:after {
-  white-space: pre;
 }
 .ql-editor {
   color: #000;
@@ -331,36 +273,24 @@ strong {
 .quill-tooltip .links a.is-small {
   height: 2rem;
 }
-.footer {
+.ql-container.ql-snow .ql-editor p {
+  color: #000;
+  font-size: 11pt;
+}
+#wrapper footer {
   background: #2288fc;
 }
-.footer a {
+#wrapper footer a {
   color: #fff;
 }
 .common-link a,
 .ql-container.ql-snow a,
-.ql-container.ql-snow .ql-editor postquote .head a,
-.page- .commits .change-entry .time a,
-.page-forum-events .section .container a,
-body.page-forum .forumhead ul .content .title a,
-body.page-forum .threadlistsection .threadblock.is-sticky a,
-.threadlist-gallery .threadblog .title a,
-.threadlist-blog .threadblog .title a,
-.useroptions #forum .level-item a,
-.page-search .searchentry .searchheader a {
+.ql-container.ql-snow .ql-editor postquote .head a {
   color: #147;
 }
 .common-link a:hover,
 .ql-container.ql-snow a:hover,
-.ql-container.ql-snow .ql-editor postquote .head a:hover,
-.page- .commits .change-entry .time a:hover,
-.page-forum-events .section .container a:hover,
-body.page-forum .forumhead ul .content .title a:hover,
-body.page-forum .threadlistsection .threadblock.is-sticky a:hover,
-.threadlist-gallery .threadblog .title a:hover,
-.threadlist-blog .threadblog .title a:hover,
-.useroptions #forum .level-item a:hover,
-.page-search .searchentry .searchheader a:hover {
+.ql-container.ql-snow .ql-editor postquote .head a:hover {
   color: #1e77d0;
 }
 a {
@@ -369,918 +299,139 @@ a {
 a:hover {
   color: #1e77d0;
 }
-.level-item {
-  background-color: #2288fc !important;
-}
-.level-item .navbar-item {
-  background-color: #2288fc !important;
-  color: #fff;
-}
-.level-item .navbar-item:hover {
-  background-color: #36a6ff !important;
-}
-.level-item a:hover {
-  color: #fff;
-}
-.navbar-footbar a.navbar-item .mdi {
-  color: #fff;
-}
-a.navbar-item:hover,
-a.navbar-item.is-active,
-a.navbar-link:hover,
-a.navbar-link.is-active {
-  background: #36a6ff;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item {
-  color: #fff;
-  opacity: 1;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item.darker {
-  color: #fff;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item.darker:hover {
-  color: #fff;
-  opacity: 1;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-book,
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-account,
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-file-document {
-  opacity: 0.5;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-book:hover,
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-account:hover,
-.navbar-toolbar .container .navbar-brand .navbar-item.darker .mdi-file-document:hover {
-  color: #fff;
-  opacity: 1;
-}
-.navbar-toolbar .container .navbar-brand .navbar-item:hover {
-  color: #fff;
-  opacity: 1;
-}
-.navbar.is-primary {
-  background: #2288fc;
-}
-.navbar.is-primary .navbar-brand > a.navbar-item:hover,
-.navbar.is-primary .navbar-end > a.navbar-item:hover {
-  background: #36a6ff;
-}
-.navbar.is-dark {
-  background-color: #ffffff;
-}
-.navbar.is-dark .navbar-brand .logo {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="112" height="28" viewBox="0 0 256 64"><path d="M 50.5,48 65,62.5 80.5,46.9 96,62.6 110.5,48 95,32.5 110.5,17 96,2.5 80.5,18 65,2.5 50.5,17 66,32.5 Z" fill="%23c00" stroke="%23c00" stroke-width="1" /><path d="m 147.50011,48 14.5,14.5 15.5,-15.6 15.5,15.7 14.5,-14.6 -15.5,-15.5 15.5,-15.5 -14.5,-14.5000001 L 177.50011,18 162.00011,2.4999999 147.50011,17 l 15.5,15.5 z" fill="%23c00" stroke="%23c00" stroke-width="1" /></svg>') no-repeat;
-  margin-top: .8rem;
-  margin-left: 0.8rem;
-}
-.navbar.is-dark .navbar-brand .logo img {
-  width: 112px;
-  height: 18px;
-  visibility: hidden;
-}
-.navbar.is-dark .navbar-brand .logo:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.navbar.is-dark .navbar-end a.navbar-item {
-  color: #147;
-}
-.navbar.is-dark .navbar-end a.navbar-item:hover {
-  color: #fff;
-  background: #36a6ff !important;
-}
-.navbar.is-dark .navbar-end a.navbar-item.is-active {
-  color: #fff;
-  background: #2288fc !important;
-}
-.navbar-alerts .alert-button {
-  color: #fff;
-}
-.navbar-alerts .alert-button.has-alerts {
-  text-shadow: none;
-}
-.navbar-burger span {
-  color: #000;
-}
-.navbar-menu.is-active {
-  background: #ffffff;
-}
-.navbar-loggedin .navbar-brand > .navbar-item {
-  padding-left: 0rem;
-  padding: 0.5em;
-}
-.navbar-toolbar {
-  box-shadow: none;
-}
-@media screen and (min-aspect-ratio: 13/9) {
-  .level-left .is-hidden-touch {
-    display: flex !important;
-  }
-}
-@media screen and (min-width: 768px) {
-  .navbar.is-dark {
-    height: 104px;
-  }
-  .navbar.is-dark .navbar-brand .logo {
-    width: 245px;
-    height: 104px;
-    display: block;
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="245" height="104" viewBox="0 0 245 104"><path d="m 191.36,0 c 20.8,33.28 27.04,64.48 31.2,104 L 0,104 0,0 Z" fill="%23ffffff" stroke="%23c00" stroke-width="0" /><path d="m 164.32,104 41.6,0 C 199.68,47.84 185.12,27.04 168.48,0 l -56.16,0 c 20.8,18.72 49.92,68.64 52,104 z" fill="%23c00" stroke="%23c00" stroke-width="0" /><path d="M 81.64,86.84 91,77.48 66.56,53.04 91,28.6 81.64,19.24 57.2,43.68 33.28,19.76 24.44,28.6 48.36,52.52 23.92,76.96 33.28,86.32 57.2,62.4 Z" fill="%23c00" stroke="%23c00" stroke-width="4.1" /></svg>') no-repeat;
-    position: absolute;
-    background-repeat: no-repeat;
-    overflow: visible;
-    left: -13px;
-    color: transparent;
-    top: -13px;
-    z-index: 2;
-  }
-  .navbar.is-dark .navbar-brand .logo:hover {
-    background-color: rgba(0, 0, 0, 0) !important;
-  }
-  .navbar-end {
-    margin-top: 50px;
-  }
-}
-.pagnation.threadpagnation,
-.pagnation.postpagnation {
+.threadpagnation .pagnationcomponent {
   background-color: #2288fc;
   margin: 0rem 0;
   color: #fff;
 }
-.pagnation.threadpagnation a.page,
-.pagnation.postpagnation a.page {
+.threadpagnation .pagnationcomponent a.page {
   background-color: #2288fc;
 }
-.pagnation.threadpagnation a.page:hover,
-.pagnation.postpagnation a.page:hover {
+.threadpagnation .pagnationcomponent a.page:hover {
   background-color: #36a6ff;
 }
-.pagnation.threadpagnation a.page.is-active,
-.pagnation.postpagnation a.page.is-active {
+.threadpagnation .pagnationcomponent a.page.is-active {
   background-color: #006fb9;
 }
-.pagnation.threadpagnation a.page.is-spacer,
-.pagnation.postpagnation a.page.is-spacer {
+.threadpagnation .pagnationcomponent a.page.is-spacer {
   opacity: 1;
 }
-.page-changelist .container,
-.page-changelist information {
-  color: #000;
+.background-image {
+  opacity: 0;
 }
-.page-changelist .container strong,
-.page-changelist information strong {
-  color: #000;
+.postblock .postinner .postcontent,
+.has-background-image {
+  background: rgba(0, 0, 0, 0);
 }
-.page-changelist .changelist .container {
-  background-color: #ffffff;
-  padding: 1rem;
+.postblock .postinner .postcontent:before,
+.has-background-image:before,
+.postblock .postinner .postcontent:after,
+.has-background-image:after {
+  background: rgba(0, 0, 0, 0);
 }
-.page- .commits {
-  background-color: #ffffff;
-  color: #000;
-  padding: 1rem;
-  margin-top: 0rem;
+.postrender .postinner > .postuser {
+  border-right: 0px solid #bbb;
 }
-.page- .commits .change-entry .time {
-  opacity: 1;
+body.page-forum .postlist .postblock {
+  background: linear-gradient(90deg, #d5e7ff 1px, #ffffff 25%, #ffffff 500px);
 }
-.page- .commits .change-entry .change {
-  color: #000;
+body.page-forum .postlist .postblock-read {
+  background: linear-gradient(90deg, #e2e4e7 1px, #ffffff 25%, #ffffff 500px);
 }
-.page- .tabs {
-  background-color: #ffffff;
-  color: #7b7b7b;
+body.page-forum .postlist .postblock-own {
+  background: linear-gradient(90deg, #eeffbb 1px, #ffffff 25%, #ffffff 500px);
 }
-.page- .tabs li {
-  color: #000;
+.lastread {
+  border-top: 1px solid #777;
+  border-bottom: 0px solid #bbb;
 }
-.page- .tabs li.is-active a {
-  background-color: #ffffff;
-  color: #147;
-  border-bottom-color: #147;
-}
-.page- .tabs li a {
-  color: #7b7b7b;
-}
-.page- #content section .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page- #content section:last-of-type {
-  margin-bottom: 1rem;
-}
-.page-forum-events .section .container {
-  background: #ffffff;
-  padding: 1rem;
-}
-.page-forum-events .hero.is-small .hero-body {
-  background: #ffffff;
-}
-.page-forum-events .hero.is-small .hero-body .title,
-.page-forum-events .hero.is-small .hero-body .subtitle {
-  color: #000;
-}
-.page-forum-events span.timeago {
-  color: #000;
-}
-.page-forum-events .entry i {
-  opacity: 1;
-}
-.page-forum-events .entry .mdi {
-  color: #000;
-}
-.page-forum-events .entry .mdi-cancel {
-  color: #ff0000;
-}
-.page-forum-events .entry .mdi-coin {
-  color: #dcd703;
-}
-.page-forum-events .entry .mdi-emoticon-happy {
-  color: #00ff21;
-}
-.page-forum-events .entry .mdi-clock {
-  color: #00ff21;
-}
-.page-forum-events .entry .mdi-lock {
-  color: #000;
-}
-.page-forum-events .entry .mdi-delete {
-  color: #000;
-}
-.page-forum-events .entry .mdi-folder-move {
-  color: #000;
-}
-.page-forum-events .entry .mdi-pin {
-  color: #000;
-}
-.forumlastpostavatar {
-  background-color: #f5f5f5;
-  display: flex !important;
-}
-body.page-forum .forumcategoryblock .forumcategoryheader {
-  background: #2288fc;
-  color: #fff;
-  font-size: 12pt;
-  font-weight: bolder;
-  margin: 0px 0px 0px 0px;
-}
-body.page-forum .forumcategoryblock .forumcategoryheader .categorytitle {
-  font-size: 1rem;
-}
-body.page-forum .forumpanel {
-  margin: 0px 0px 0px 0px;
-}
-body.page-forum .forumblock {
-  background-color: #ffffff;
-  border-left: 1px solid #888;
-  border-bottom: 1px solid #888;
-  border-right: 1px solid #888;
-}
-body.page-forum .forumblock:not(:last-of-type) {
-  border-bottom: 1px solid #CCC!important;
-}
-body.page-forum .forumblock .forumname {
-  line-height: 1.5;
-}
-body.page-forum .forumblock .forumname .forumtitle {
-  font-size: 1.1rem;
-}
-body.page-forum .forumblock .forumname .forumtitle a {
-  color: #147;
-  font-weight: bolder;
-}
-body.page-forum .forumblock .forumname .forumtitle a:hover {
-  color: #1e77d0;
-}
-body.page-forum .forumblock .forumname .forumsubtitle {
-  font-size: 0.8rem;
-}
-body.page-forum .forumblock .forumicon {
-  padding: 0.5rem;
-}
-body.page-forum .forumblock .forumicon img {
-  width: 36px;
-  height: 36px;
-}
-body.page-forum .forumblock .forumlastpost {
-  min-width: 20em;
-  font-size: 0.7rem;
-  background-color: #f5f5f5;
-}
-body.page-forum .forumblock .forumlastpost .threadname a {
-  color: #147;
-  font-weight: bolder;
-}
-body.page-forum .forumblock.is-closed {
-  background-color: #f5f5f5;
-  color: #7b7b7b;
-}
-@media screen and (min-aspect-ratio: 13/9) {
-  body.page-forum .forumblock .forumlastpost {
-    display: flex !important;
-  }
-  body.page-forum .forumblock .forumlastpostavatar {
-    display: flex !important;
-  }
-}
-@media screen and (max-aspect-ratio: 13/9) {
-  body.page-forum .forumcategoryblock {
-    margin: 0rem !important;
-  }
-  body.page-forum .forumcategoryheader {
-    border-top: 1px solid #888;
-  }
-  .tile.is-ancestor {
-    margin: 0rem -0.75rem -0.75rem -0.75rem;
-  }
-  .tile.is-parent {
-    padding: 0rem;
-  }
-  .section-forumstats {
-    padding: 0rem;
-  }
-}
-body.page-forum .forumhead ul .content .title {
-  color: #147;
-}
-body.page-forum .forumhead ul .content .subtitle {
-  margin-left: 0rem;
-  opacity: 1;
-  color: #fff;
-  font-size: 1rem;
-}
-body.page-forum .forumhead ul .actions {
-  padding-left: 0em;
-}
-body.page-forum .threadlistsection .threadblock {
-  border-bottom: 1px solid #CCC;
-  border-left: 1px solid #888;
-  border-right: 1px solid #888;
-  background-color: #ffffff;
-  margin-bottom: 0em;
-}
-body.page-forum .threadlistsection .threadblock a,
-body.page-forum .threadlistsection .threadblock strong {
-  color: #147;
-  font-weight: bolder;
-}
-body.page-forum .threadlistsection .threadblock a:hover,
-body.page-forum .threadlistsection .threadblock strong:hover {
-  color: #1e77d0;
-}
-body.page-forum .threadlistsection .threadblock .threadicon,
-body.page-forum .threadlistsection .threadblock .threadlastpost {
-  background-color: #f5f5f5;
-}
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta {
-  color: #7b7b7b !important;
-}
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page {
-  background-color: rgba(0, 0, 0, 0) !important;
-  color: #7b7b7b !important;
-}
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page:hover {
-  background-color: rgba(0, 0, 0, 0) !important;
+.title.threadname,
+.title.forumname {
   color: #000 !important;
 }
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:before {
-  color: #7b7b7b !important;
-  content: "( ";
-}
-body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:after {
-  color: #7b7b7b !important;
-  content: " )";
-}
-body.page-forum .threadlistsection .threadblock .user-moderator a {
-  color: #00aa00;
-}
-body.page-forum .threadlistsection .threadblock .user-admin a {
-  color: #00aa00;
-}
-body.page-forum .threadlistsection .threadblock .user-banned a {
-  color: #ff0000;
-}
-body.page-forum .threadlistsection .threadblock.is-closed {
-  background-color: #eee;
-  color: #7b7b7b;
-}
-body.page-forum .threadlistsection .threadblock.is-closed .threadicon,
-body.page-forum .threadlistsection .threadblock.is-closed .threadlastpost {
-  background-color: #eee;
-}
-body.page-forum .threadlistsection .threadblock.is-sticky {
-  background-color: #ffa;
-  color: fp-text-link-normal !important;
-}
-body.page-forum .threadlistsection .threadblock.is-sticky .threadicon,
-body.page-forum .threadlistsection .threadblock.is-sticky .threadlastpost {
-  background-color: #fbfba5;
-}
-.threadlist-gallery,
-.threadlist-blog {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.threadlist-gallery .threadblog,
-.threadlist-blog .threadblog {
-  margin: 1rem;
-  border-radius: 0px;
-  background-color: #eee;
-}
-.threadlist-gallery .threadblog .title,
-.threadlist-blog .threadblog .title {
-  z-index: 3;
-}
-.threadlist-gallery .threadblog .subtitle,
-.threadlist-blog .threadblog .subtitle {
-  color: #000;
-  z-index: 3;
-}
-.threadlist-gallery .threadblog .avatar,
-.threadlist-blog .threadblog .avatar {
-  z-index: 2;
-  opacity: 0.2;
-}
-@media screen and (min-aspect-ratio: 13/9) {
-  body.page-forum .threadlistsection .threadblock .threadlastpost {
-    display: flex !important;
-  }
-  body.page-forum .threadlistsection .threadblock .threadlastpostavatar {
-    display: flex !important;
-  }
-  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .postcount.is-hidden-mobile {
-    display: unset !important;
-  }
-  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .creator.is-hidden-mobile {
-    display: unset !important;
-  }
-  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .createddate.is-hidden-mobile {
-    display: unset !important;
-  }
-  body.page-forum .threadlistsection .threadblock .threadmain .threadmeta .is-hidden-tablet.lastposter {
-    display: none !important;
-  }
-}
-.useroptions #forum .hero-body {
-  padding: 0rem;
-  margin-top: 1rem;
-}
-.useroptions #forum .hero-body .container {
-  padding: 2rem;
-  background-color: #ffffff;
-}
-.useroptions #forum .hero.is-dark .title {
-  color: #000;
-}
-.useroptions #forum .hero.is-dark .subtitle {
-  color: #7b7b7b;
-}
-.useroptions #forum .section {
-  padding: 0rem 0rem;
-  margin-bottom: 1rem;
-}
-.useroptions #forum .level-item {
-  background-color: #ffffff !important;
-  margin-bottom: 1rem;
-}
-.useroptions #forum .level-item .title {
-  color: #000;
-}
-.useroptions #forum form {
-  background-color: #ffffff !important;
-  padding: 1rem;
-  padding-bottom: 2.5rem;
-}
-.useroptions #forum form .label {
-  color: #000;
-}
-.useroptions #forum form .help.is-success {
-  color: #c00;
-}
-.useroptions #forum form .select select {
-  color: #000;
-  background-color: #ffffff;
-}
-.useroptions #forum form .select select option {
-  color: #7b7b7b;
-}
-.useroptions #forum form textarea {
-  color: #000;
-  background-color: #ffffff;
-}
-.page-forum.newthread .section:not(.forumhead) .container {
-  background-color: #ffffff;
-  color: #000;
-  padding: 1rem;
-}
-.page-forum.newthread .section:not(.forumhead) .container .label {
-  color: #000;
-}
-.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock {
-  background: #ffffff;
-  border: 0px solid grey;
-}
-.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock .postmain {
-  padding-top: 0rem !important;
-}
-.page-forum.newthread .section:not(.forumhead) .container .postlist .postblock .postmain .posthead {
-  display: none;
-}
-.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body {
-  background: #ffffff;
-}
-.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .title,
-.page-home section.hero:not(.homepage):not(.is-success):not(.is-primary) .hero-body .subtitle {
-  color: #000;
-}
-.page-home svg#Layer_1 {
-  fill: #000 !important;
-}
-.page-team #content .teamlist .hero-body {
-  background: #ffffff;
-}
-.page-projects #content .projectlist:first-of-type .hero-body {
-  background: #ffffff;
-}
-.page-roadmap .column .roadmap-child .title {
-  background-color: #ffffff;
-  color: #000;
-}
-.page-roadmap .roadmap .column {
-  border-right: 1px solid rgba(0, 0, 0, 0);
-}
-.page-roadmap .roadmap .column .title {
-  color: #147;
-}
-.page-roadmap .roadmap .column .roadmap-child .title {
-  color: #000;
-}
-.page-roadmap #content section .hero-body {
-  padding: 1rem 1.5rem !important;
-}
-.page-roadmap #content section .title {
-  color: #147;
-}
-.page-roadmap #content section .subtitle {
-  color: #000;
-}
-.page-roadmap #content section .subtitle strong {
-  color: #000;
-}
-.page-roadmap #content section .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-presskit .container .description {
-  color: #fff;
-}
-.page-presskit .section-summary .table {
-  background-color: #ffffff;
-  color: #000;
-}
-.page-presskit .screenshots .container,
-.page-presskit .section-mailinglist .container {
-  background-color: #ffffff;
-  padding: 2rem;
-}
-.page-presskit #content > .is-small .container,
-.page-presskit #content > .is-medium .container {
-  background-color: #ffffff;
-  padding: 2rem;
-}
-.page-presskit #content > .is-small .container .buy_logo,
-.page-presskit #content > .is-medium .container .buy_logo {
-  fill: #000;
-}
-.page-presskit #content > .is-small .container > .is-small .hero-body .container,
-.page-presskit #content > .is-medium .container > .is-small .hero-body .container {
-  width: 100%;
-}
-.page-presskit .hero.is-medium .hero-body {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-.page-faq section:not(.is-dark) .hero-body {
-  padding: 1rem 1.5rem !important;
-}
-.page-faq section:not(.is-dark) h2 {
-  color: #147;
-}
-.page-faq section:not(.is-dark) .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-help #content section .hero-body {
-  padding: 1rem 1.5rem !important;
-}
-.page-help #content section h2 {
-  color: #147;
-}
-.page-help #content section .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-blog-list .is-vertical,
-.page-blog-list .blog-timeline .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-blog-list .hero-body {
-  padding: 1rem 1.5rem;
-}
-.page-blog-view .blogentry {
-  padding: 0rem 1.5rem;
-}
-.page-blog-view .blogentry .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-blog-view .blogentry .container .title {
-  color: #147;
-}
-.page-blog-view .blogentry .container .subtitle {
-  color: #fff;
-}
-.page-blog-view .author .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-blog-view .changelist .container,
-.page-blog-view .section-mailinglist .container {
-  background-color: #ffffff;
-  padding: 1rem;
-}
-.page-blog-view .section {
-  padding: 0rem 1.5rem;
-}
-.page-terms .section .container {
-  background-color: white;
-  padding: 1rem;
-}
-.page-terms .section .container h2 {
-  color: #147;
-}
-.page-search .section {
-  padding: 1rem 1.5rem;
-}
-.page-search .section:first-of-type {
-  padding-bottom: 0rem;
-}
-.page-search .section:last-of-type {
-  padding-top: 0rem;
-}
-.page-search .section .container {
-  background: #ffffff;
-  color: #000;
-  margin-bottom: 5em;
-  margin: 0 auto;
-  position: relative;
-  padding: 1rem;
-}
-.page-search .searchentry .searchmeta {
-  color: #7b7b7b;
-}
-.page-search .searchentry .searchbody {
-  overflow-wrap: break-word;
-}
-.page-search .searchentry .searchbody .highlighted {
-  color: #f00;
-  font-weight: bolder;
-}
-.menu-label {
-  color: #000;
-  border-bottom: 1px solid #ccc;
-  font-weight: bold;
-}
-.menu-list a.is-active {
-  background-color: #2288fc;
-  color: #fff;
-}
-.menu-list li a {
-  color: #000;
-}
-.menu-list li a:hover {
-  color: #fff;
-}
-.menu-list .count {
-  background-color: #2288fc;
-  color: #fff;
-}
-.usershop .hero.is-small .hero-body {
-  background: #ffffff;
-}
-.usershop .hero.is-small .hero-body .title,
-.usershop .hero.is-small .hero-body .subtitle {
-  color: #000;
-}
-.postlist {
-  background: #ffffff;
-}
-body.page-forum .threadviewsection .postblock {
-  position: relative;
-  box-shadow: none;
-  border: 1px solid grey;
-  margin-top: -1px;
-  margin-bottom: -0.1rem;
-  background: linear-gradient(90deg, #d5e7ff 1px, #ffffff 25%, #ffffff 500px);
-  background-size: 100%;
-}
-body.page-forum .threadviewsection .postblock .posthead {
-  background-color: lightgray;
+.title.threadname a,
+.title.forumname a {
+  color: #000 !important;
+}
+#wrapper #content .postlist .forumpanel {
+  border-bottom: 0px solid #bbb;
+}
+#wrapper #content .postlist .forumpanel:last-of-type {
+  border-bottom: 1px solid #777!important;
+}
+.postrender .posthead {
+  background: repeat-x #ccc;
+  border-top: 1px solid #777;
+  border-bottom: 1px solid #777!important;
   margin-top: 0;
-  margin-left: -16em;
   margin-right: auto;
-  border-bottom: 1px solid grey;
-  padding-bottom: 0.5rem;
   color: #000;
 }
-body.page-forum .threadviewsection .postblock .posthead a {
+.postrender .posthead a {
   color: #147;
 }
-body.page-forum .threadviewsection .postblock .posthead a:hover {
+.postrender .posthead a:hover {
   color: #1e77d0;
 }
-body.page-forum .threadviewsection .postblock .posthead strong {
+.postrender .posthead strong {
   color: #000;
 }
-body.page-forum .threadviewsection .postblock .posthead .timeago {
-  background-image: url('https://facepunch.com/fp/time.png');
+.postrender .posthead .timeago {
+  background-image: url('https://files.facepunch.com/forum/upload/1704/3a19f1ac-c6fd-4192-89d9-3d58960b1c37/clock.png');
   background-repeat: no-repeat;
   padding-left: 20px;
   background-position-y: -1px;
 }
-body.page-forum .threadviewsection .postblock .postmain .postexpand {
-  margin-top: -0.8em;
-}
-body.page-forum .threadviewsection .postblock .postmain .postbody a {
-  color: #1e77d0;
-}
-body.page-forum .threadviewsection .postblock .postmain .postbody a:hover {
-  color: #6aaaea;
-}
-body.page-forum .threadviewsection .postblock .postmain .postbody p {
-  color: #000;
-}
-body.page-forum .threadviewsection .postblock .postmain .showcode {
-  background-color: #000;
-  color: #fff;
-}
-body.page-forum .threadviewsection .postblock .postuser {
-  box-shadow: none;
-  background-color: rgba(0, 0, 0, 0);
-  border-right: unset;
-  padding-top: 32px;
-}
-body.page-forum .threadviewsection .postblock .postuser .username a {
+.posterinfo .username a {
   color: #147;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-useronline a {
+.posterinfo .user-useronline a {
   color: #147;
   border-bottom: 1px dotted #147;
   font-weight: bolder;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-gold a {
+.posterinfo .user-gold a {
   color: #A06000;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-moderator a {
+.posterinfo .user-moderator a {
   color: #00aa00;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-admin a {
+.posterinfo .user-admin a {
   color: #00aa00;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-banned a {
+.posterinfo .user-banned a {
   color: #ff0000;
 }
-body.page-forum .threadviewsection .postblock .postuser .common-user {
-  display: block;
-  font-weight: normal;
-  font-size: 0.7rem;
-}
-body.page-forum .threadviewsection .postblock .postuser .user-gold:after {
+.postlist .postinner .postuser .posterinfo .username.user-gold:after {
   content: "Gold Member";
   color: #000;
   display: block;
   font-weight: normal;
   font-size: 0.7rem;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-moderator:after {
+.postlist .postinner .postuser .posterinfo .username.user-moderator:after {
   content: "Moderator";
   color: #00aa00;
   display: block;
   font-weight: normal;
   font-size: 0.7rem;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-admin:after {
+.postlist .postinner .postuser .posterinfo .username.user-admin:after {
   content: "Administrator";
   color: #00aa00;
   display: block;
   font-weight: normal;
   font-size: 0.7rem;
 }
-body.page-forum .threadviewsection .postblock .postuser .user-banned:after {
+.postlist .postinner .postuser .posterinfo .username.user-banned:after {
   content: "Banned";
   color: #ff0000;
   display: block;
   font-weight: normal;
   font-size: 0.7rem;
 }
-body.page-forum .threadviewsection .postblock .postuser span.userlevel {
+.postlist .postinner .postuser .posterinfo span.userlevel {
   display: inline;
-}
-body.page-forum .threadviewsection .postblock:first-of-type {
-  margin-top: 0rem;
-}
-body.page-forum .threadviewsection .postblock .baninfo {
-  background-color: unset;
-  color: red;
-}
-body.page-forum .threadviewsection .postblock .baninfo .detail strong {
-  color: red;
-}
-body.page-forum .threadviewsection .postblock.postblock-read {
-  background: linear-gradient(90deg, #e2e4e7 1px, #ffffff 25%, #ffffff 500px);
-}
-body.page-forum .threadviewsection .postblock.postblock-own {
-  background: linear-gradient(90deg, #eeffbb 1px, #ffffff 25%, #ffffff 500px);
-  box-shadow: inset 0px 0px #4fa052;
-}
-.lastread {
-  margin: 0rem 0px;
-}
-@media screen and (min-aspect-ratio: 13/9) {
-  .postlist .postblock .postuser .postavatar {
-    display: block !important;
-  }
-  .postlist .postblock .postuser .username {
-    padding: 1.0rem;
-  }
-  .postlist .postblock {
-    flex-direction: unset;
-  }
-  .postlist .postblock .postmain {
-    padding-top: 2.5rem !important;
-  }
-  body.page-forum .forumhead ul {
-    flex-direction: row;
-  }
-  body.page-forum .forumhead ul .forumicon,
-  body.page-forum .forumhead ul .threadicon {
-    display: block !important;
-  }
-}
-.votes .list {
-  background-color: #ffd;
-  border: 1px solid #777;
-  box-shadow: none;
-}
-.votes .list > div {
-  margin: 4px;
-  border: 1px dashed #777 !important;
-  width: auto;
-  /*Unsets the 110px width in favor of letting the width grow for longer names*/
-  min-width: 110px;
-}
-.votes .username {
-  color: #147;
-}
-.votes .username.user-gold {
-  color: #A06000;
-  font-weight: bold;
-}
-.votes .username.user-moderator {
-  color: #00aa00;
-  font-weight: bold;
-}
-.votes .username.user-admin {
-  color: #00aa00;
-  font-weight: bold;
-}
-.votes .username.user-banned {
-  color: #ff0000;
-  font-weight: bold;
-}
-.dropdown-content > .votepicker {
-  padding: 4px;
-  background-color: #ffd;
-  border: 1px solid #777;
-}
-.dropdown-content > .votepicker .dropdown-item {
-  border: 1px dashed #777;
-}
-@media screen and (max-width: 768px) {
-  body.page-forum .threadviewsection .postblock .posthead {
-    margin-left: auto !important;
-  }
-  .page-help #content section .hero-body,
-  .page-blog-list #content section .hero-body,
-  .page-presskit #content section .hero-body,
-  .page-faq #content section .hero-body,
-  .page-roadmap #content section .hero-body,
-  .page-help .is-medium .hero-body,
-  .page-blog-list .is-medium .hero-body,
-  .page-presskit .is-medium .hero-body,
-  .page-faq .is-medium .hero-body,
-  .page-roadmap .is-medium .hero-body {
-    padding: 0rem 0rem !important;
-  }
 }
 
 /*# sourceMappingURL=Awfullywhite.css.map */
