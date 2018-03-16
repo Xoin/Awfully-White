@@ -1,24 +1,36 @@
 //Pagenation
-@fp-page: @fp-background-blue-normal;
-@fp-page-active: @fp-background-blue-dark;
-@fp-page-hover: @fp-background-blue-light;
+@fp-bar: @fp-background-blue-normal;
+@fp-page: @fp-background-white-normal;
+@fp-page-active: @fp-background-grey-light;
+@fp-page-hover: @fp-background-grey-light;
 
-.threadpagnation .pagnationcomponent {
-	background-color: @fp-page;
+#wrapper #content .pagnation.threadpagnation, #wrapper #content .pagnation.postpagnation  {
+	background-color: @fp-bar;
 	margin: 0rem 0;
 	color: @fp-text-lighter;
+	.page {
+		&.pageinfo {
+			color: @fp-text-lighter;
+		}
+	}
 	a {
 		&.page {
 			background-color: @fp-page;
+			
 			&:hover {
 				background-color: @fp-page-hover;
 			}
 			&.is-active {
 				background-color: @fp-page-active;
+				color: @fp-text-normal;
+				font-size: bold;
 			}
 			&.is-spacer {
 				opacity: 1;
 			}
 		}
 	}
+}
+.pagnation.postpagnation.above {
+	border-bottom: 0px solid #bbb;
 }

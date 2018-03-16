@@ -9,15 +9,24 @@ html {
 	}
 
 }
-	.force-wide-design {
+#wrapper {
+	margin: 0px;
+}
+.force-wide-design {
 		#wrapper {
- 			padding: 0rem 0rem;
- 		}
+			#content {
+ 				padding: 0rem 0rem;
+ 			}
+ 			padding: 0px;
+		}
 	}
 @media screen and (min-width: 768px) {
 	.force-wide-design {
-		#wrapper{
-			width: calc(100% - 1.9rem) !important;
+		#wrapper {
+			#content {
+				width: calc(100% - 1.9rem);
+				margin: 12px auto;
+			}
 		}
 	}
 }

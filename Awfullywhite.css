@@ -1,5 +1,5 @@
 #wrapper footer:after {
-  content: "0.0.1";
+  content: "0.0.2";
 }
 .button {
   background-color: #eee;
@@ -96,12 +96,19 @@ html {
 html:before {
   background-image: none;
 }
+#wrapper {
+  margin: 0px;
+}
 .force-wide-design #wrapper {
+  padding: 0px;
+}
+.force-wide-design #wrapper #content {
   padding: 0rem 0rem;
 }
 @media screen and (min-width: 768px) {
-  .force-wide-design #wrapper {
-    width: calc(98.1%) !important;
+  .force-wide-design #wrapper #content {
+    width: calc(98.1%);
+    margin: 12px auto;
   }
 }
 .ql-editor {
@@ -285,12 +292,14 @@ html:before {
 }
 .common-link a,
 .ql-container.ql-snow a,
-.ql-container.ql-snow .ql-editor postquote .head a {
+.ql-container.ql-snow .ql-editor postquote .head a,
+.threadlistsection .threadblock.is-sticky a {
   color: #147;
 }
 .common-link a:hover,
 .ql-container.ql-snow a:hover,
-.ql-container.ql-snow .ql-editor postquote .head a:hover {
+.ql-container.ql-snow .ql-editor postquote .head a:hover,
+.threadlistsection .threadblock.is-sticky a:hover {
   color: #1e77d0;
 }
 a {
@@ -299,22 +308,214 @@ a {
 a:hover {
   color: #1e77d0;
 }
-.threadpagnation .pagnationcomponent {
+#header {
+  margin-top: 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #bbb;
+  border: 0px solid #444;
+  border-bottom: 2px solid #c00;
+}
+#header #toolbar {
+  margin-left: 0px;
+}
+@media screen and (min-width: 768px) {
+  html body {
+    padding-top: 0px;
+  }
+  #header .navbar-main.navbar.is-dark {
+    height: 104px;
+  }
+  #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo {
+    width: 245px;
+    height: 104px;
+    display: block;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="245" height="104" viewBox="0 0 245 104"><path d="m 191.36,0 c 20.8,33.28 27.04,64.48 31.2,104 L 0,104 0,0 Z" fill="%23ffffff" stroke="%23c00" stroke-width="0" /><path d="m 164.32,104 41.6,0 C 199.68,47.84 185.12,27.04 168.48,0 l -56.16,0 c 20.8,18.72 49.92,68.64 52,104 z" fill="%23c00" stroke="%23c00" stroke-width="0" /><path d="M 81.64,86.84 91,77.48 66.56,53.04 91,28.6 81.64,19.24 57.2,43.68 33.28,19.76 24.44,28.6 48.36,52.52 23.92,76.96 33.28,86.32 57.2,62.4 Z" fill="%23c00" stroke="%23c00" stroke-width="4.1" /></svg>') no-repeat;
+    background-repeat: no-repeat;
+    left: 0px;
+    color: transparent;
+    top: 0px;
+    z-index: 2;
+  }
+  #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+#header .navbar-main.navbar.is-dark .navbar-start:after {
+  padding-left: 5rem;
+}
+#wrapper #content .pagnation.threadpagnation,
+#wrapper #content .pagnation.postpagnation {
   background-color: #2288fc;
   margin: 0rem 0;
   color: #fff;
 }
-.threadpagnation .pagnationcomponent a.page {
-  background-color: #2288fc;
+#wrapper #content .pagnation.threadpagnation .page.pageinfo,
+#wrapper #content .pagnation.postpagnation .page.pageinfo {
+  color: #fff;
 }
-.threadpagnation .pagnationcomponent a.page:hover {
-  background-color: #36a6ff;
+#wrapper #content .pagnation.threadpagnation a.page,
+#wrapper #content .pagnation.postpagnation a.page {
+  background-color: #ffffff;
 }
-.threadpagnation .pagnationcomponent a.page.is-active {
-  background-color: #006fb9;
+#wrapper #content .pagnation.threadpagnation a.page:hover,
+#wrapper #content .pagnation.postpagnation a.page:hover {
+  background-color: #f5f5f5;
 }
-.threadpagnation .pagnationcomponent a.page.is-spacer {
+#wrapper #content .pagnation.threadpagnation a.page.is-active,
+#wrapper #content .pagnation.postpagnation a.page.is-active {
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: bold;
+}
+#wrapper #content .pagnation.threadpagnation a.page.is-spacer,
+#wrapper #content .pagnation.postpagnation a.page.is-spacer {
   opacity: 1;
+}
+.pagnation.postpagnation.above {
+  border-bottom: 0px solid #bbb;
+}
+#wrapper #content .forumcategoryblock .forumcategoryheader {
+  background: #2288fc;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: bolder;
+  margin: 0px 0px 0px 0px;
+}
+#wrapper #content .forumcategoryblock .forumcategoryheader .categorytitle {
+  color: #fff;
+  font-size: 1rem;
+}
+#wrapper #content .forumcategoryblock .forumpanel {
+  background-color: #ffffff;
+  border-left: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+}
+#wrapper #content .forumcategoryblock .forumpanel:not(:last-of-type) {
+  border-bottom: 1px solid #CCC!important;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumname {
+  line-height: 1.5;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumname .forumtitle {
+  font-size: 1.1rem;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumname .forumtitle a {
+  color: #147;
+  font-weight: bolder;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumname .forumtitle a:hover {
+  color: #1e77d0;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumname .forumsubtitle {
+  font-size: 0.8rem;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumicon {
+  padding: 0.5rem;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumicon img {
+  width: 36px;
+  height: 36px;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumlastpost {
+  min-width: 20em;
+  font-size: 0.7rem;
+  border-left: 0px solid #bbb;
+  border-right: 0px solid #bbb;
+  background-color: #f5f5f5;
+}
+#wrapper #content .forumcategoryblock .forumpanel .forumlastpost .threadname a {
+  color: #147;
+  font-weight: bolder;
+}
+#wrapper #content .forumcategoryblock .forumpanel .threadcount {
+  color: #000;
+  border-left: 0px solid #bbb;
+}
+#wrapper #content .forumcategoryblock .forumpanel .postcount {
+  background-color: #f5f5f5;
+  color: #000;
+  border-left: 0px solid #bbb;
+}
+#wrapper #content .forumcategoryblock .forumpanel.is-closed {
+  background-color: #f5f5f5;
+  color: #7b7b7b;
+}
+/*.threadlistsection .threadlist {
+	threadblock forumpanel  is-sticky is-closed has-seen
+	threadblock forumpanel  has-seen has-new-posts
+	threadblock forumpanel 
+	threadblock forumpanel  has-seen has-new-posts
+	threadblock forumpanel  is-closed is-resolvable is-resolvabed is-bounty
+}
+*/
+.threadlistsection .threadblock {
+  border-bottom: 1px solid #CCC;
+  border-left: 1px solid #888;
+  border-right: 1px solid #888;
+  background-color: #ffffff;
+  margin-bottom: 0em;
+}
+.threadlistsection .threadblock a,
+.threadlistsection .threadblock strong {
+  color: #147;
+  font-weight: bolder;
+}
+.threadlistsection .threadblock a:hover,
+.threadlistsection .threadblock strong:hover {
+  color: #1e77d0;
+}
+.threadlistsection .threadblock .threadicon,
+.threadlistsection .threadblock .threadage,
+.threadlistsection .threadblock .threadlastpost {
+  background-color: #f5f5f5 !important;
+}
+.threadlistsection .threadblock .threadmain .threadmeta {
+  color: #7b7b7b !important;
+}
+.threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #7b7b7b !important;
+  border: 0px solid #dcdcdc !important;
+}
+.threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent .page:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: #000 !important;
+}
+.threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:before {
+  color: #7b7b7b !important;
+  content: "( ";
+}
+.threadlistsection .threadblock .threadmain .threadmeta .pagnationcomponent:after {
+  color: #7b7b7b !important;
+  content: " )";
+}
+.threadlistsection .threadblock .user-moderator a {
+  color: #00aa00;
+}
+.threadlistsection .threadblock .user-admin a {
+  color: #00aa00;
+}
+.threadlistsection .threadblock .user-banned a {
+  color: #ff0000;
+}
+.threadlistsection .threadblock.is-closed {
+  background-color: #eee !important;
+  color: #7b7b7b !important;
+}
+.threadlistsection .threadblock.is-closed .threadicon,
+.threadlistsection .threadblock.is-closed .threadage,
+.threadlistsection .threadblock.is-closed .threadlastpost {
+  background-color: #eee !important;
+}
+.threadlistsection .threadblock.is-sticky {
+  background-color: #ffa !important;
+  color: #147 !important;
+}
+.threadlistsection .threadblock.is-sticky .threadicon,
+.threadlistsection .threadblock.is-sticky .threadage,
+.threadlistsection .threadblock.is-sticky .threadlastpost {
+  background-color: #fbfba5 !important;
 }
 .background-image {
   opacity: 0;
