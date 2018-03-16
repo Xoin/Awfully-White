@@ -1,16 +1,4 @@
-/*
-
-Everything here is slowly getting moved away.
-
-*/
-
-// Background image removal
-html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
-	background-image: none;
-}
-
-// Main forum background
-#wrapper {
+html {
 	color: @fp-text-normal;
 	//Blame Firefox
 	@temp1: escape(%("%a", @fp-wrapper));
@@ -21,61 +9,15 @@ html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
 	}
 
 }
-#content {
-	overflow: hidden;
-}
-body {
 	.force-wide-design {
-		.section {
- 			padding: 1rem 0rem;
+		#wrapper {
+ 			padding: 0rem 0rem;
  		}
 	}
-	&.page-forum {
-		.forumhead {
-			padding: 2.1rem 0rem 0rem 1rem;
-		}
-	}
-}
-.section {
-	padding: 3rem 0rem;
-}
-
-.title {
-	color: @fp-text-normal;
-}
-.field.has-addons .control .input, body.page-forum .threadpost input {
-		background: @fp-background-white-normal;
-		color: @fp-text-normal;
-}
-.box {
-	background-color: @fp-background-white-normal;
-	color: @fp-text-normal;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-strong {
-	color: @fp-text-link-normal;
-}
-
 @media screen and (min-width: 768px) {
 	.force-wide-design {
-		.container {
+		#wrapper{
 			width: calc(100% - 1.9rem) !important;
 		}
-		.threadviewsection .postblock .posthead
-		{
-			margin-left: -16.1em !important;;
-		}
 	}
-}
-.tooltip.is-top:before, .tooltip.is-top:after {
-    top: auto;
-    right: auto;
-    left: 50%;
-    word-break: initial;
-    overflow: hidden;
-    transform: translateX(-50%);
-}
-.tooltip:after {
-	white-space: pre;
 }
