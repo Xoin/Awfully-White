@@ -16,7 +16,13 @@
 	a {
 		&.page {
 			background-color: @fp-page;
-			
+			width: unset;
+			&.prevpage:before {
+				content: "« ";
+			}
+			&.nextpage:after {
+				content: " »";
+			}
 			&:hover {
 				background-color: @fp-page-hover;
 			}

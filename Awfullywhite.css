@@ -1,5 +1,5 @@
 #wrapper footer:after {
-  content: "0.0.2";
+  content: "0.0.3";
 }
 .button {
   background-color: #eee;
@@ -161,6 +161,11 @@ html body {
   border: 1px solid #888;
   margin: 10px;
 }
+.ql-container.ql-snow .ql-editor postquote p {
+  padding: 0rem;
+  color: #000;
+  font-size: 11pt;
+}
 .ql-container.ql-snow .ql-editor postquote .head {
   background-color: #ace;
   font-weight: 700;
@@ -170,15 +175,32 @@ html body {
   background-color: #bdf;
   color: #000;
 }
+.ql-container.ql-snow .ql-editor p {
+  padding: 0rem;
+  margin: 0px 10px 0px 10px;
+  color: #000;
+  font-size: 11pt;
+}
 .ql-container.ql-snow .ql-editor blockquote {
-  border: 1px solid #888;
-  margin: 10px;
+  margin: 0px 10px 0px 10px;
   background-color: #bdf;
-  padding: 1rem;
+  padding: 10px;
+  border-left: 1px black solid;
+  border-right: 1px black solid;
+  border-top: 0px black solid;
+  border-bottom: 0px black solid;
 }
 .ql-container.ql-snow .ql-editor blockquote:before {
   content: "";
   padding: 0;
+}
+.ql-container.ql-snow .ql-editor blockquote:first-of-type,
+.ql-container.ql-snow .ql-editor p + blockquote,
+.ql-container.ql-snow .ql-editor blockquote + p {
+  border-top: 1px black solid;
+}
+.ql-container.ql-snow .ql-editor blockquote:last-of-type {
+  border-bottom-width: 1px;
 }
 .quill-editor .quill-autocomplete {
   box-shadow: 0px 0px 0px 1px black;
@@ -283,10 +305,6 @@ html body {
 .quill-tooltip .links a.is-small {
   height: 2rem;
 }
-.ql-container.ql-snow .ql-editor p {
-  color: #000;
-  font-size: 11pt;
-}
 #wrapper footer {
   background: #2288fc;
 }
@@ -343,9 +361,9 @@ a:hover {
   #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo:hover {
     background-color: rgba(0, 0, 0, 0);
   }
-}
-#header .navbar-main.navbar.is-dark .navbar-start:after {
-  padding-left: 5rem;
+  #header .navbar-main.navbar.is-dark .navbar-start:after {
+    padding-left: 5rem;
+  }
 }
 #wrapper #content .pagnation.threadpagnation,
 #wrapper #content .pagnation.postpagnation {
@@ -360,6 +378,15 @@ a:hover {
 #wrapper #content .pagnation.threadpagnation a.page,
 #wrapper #content .pagnation.postpagnation a.page {
   background-color: #ffffff;
+  width: unset;
+}
+#wrapper #content .pagnation.threadpagnation a.page.prevpage:before,
+#wrapper #content .pagnation.postpagnation a.page.prevpage:before {
+  content: "« ";
+}
+#wrapper #content .pagnation.threadpagnation a.page.nextpage:after,
+#wrapper #content .pagnation.postpagnation a.page.nextpage:after {
+  content: " »";
 }
 #wrapper #content .pagnation.threadpagnation a.page:hover,
 #wrapper #content .pagnation.postpagnation a.page:hover {
@@ -534,9 +561,6 @@ a:hover {
 .has-background-image:after {
   background: rgba(0, 0, 0, 0);
 }
-.postrender .postinner > .postuser {
-  border-right: 0px solid #bbb;
-}
 body.page-forum .postlist .postblock {
   background: linear-gradient(90deg, #d5e7ff 1px, #ffffff 25%, #ffffff 500px);
 }
@@ -586,6 +610,12 @@ body.page-forum .postlist .postblock-own {
   background-repeat: no-repeat;
   padding-left: 20px;
   background-position-y: -1px;
+}
+.postrender .postinner .postbody {
+  padding: 0rem;
+}
+.postrender .postinner > .postuser {
+  border-right: 0px solid #bbb;
 }
 .posterinfo .username a {
   color: #147;

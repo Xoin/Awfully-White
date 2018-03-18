@@ -55,6 +55,10 @@
 			postquote {
 				border: 1px solid @fp-quote-border;
 				margin: 10px;
+				p {
+					padding: 0rem;
+					color: @fp-text-normal; font-size: 11pt;
+				}
 				.head {
 					background-color: @fp-quote-head;
 					font-weight: 700;
@@ -67,15 +71,30 @@
 					color: @fp-text-normal;
 				}
 			}
+			p {
+				padding: 0rem;
+				margin: 0px 10px 0px 10px;
+				color: @fp-text-normal; font-size: 11pt;
+			}
 			blockquote {
-				border: 1px solid @fp-quote-border;
-				margin: 10px;
+				margin: 0px 10px 0px 10px;
 				background-color: @fp-quote-body;
-				padding: 1rem;
 				&:before {
 					content: "";
 					padding: 0;
 				}
+				padding: 10px;
+				border-left: 1px black solid;
+				border-right: 1px black solid;
+				border-top: 0px black solid;
+				border-bottom: 0px black solid;
+			}
+			blockquote:first-of-type, p+blockquote, blockquote + p {
+				border-top: 1px black solid;
+			}
+			
+			blockquote:last-of-type {
+				border-bottom-width: 1px;
 			}
 		}
 		&:extend(.common-link all);
@@ -101,10 +120,5 @@
 			padding: 3px;
 			margin: 0rem 0.1rem 0rem 0.1rem;
 		}
-	}
-}
-.ql-container.ql-snow .ql-editor {
-	p {
-		color: @fp-text-normal; font-size: 11pt;
 	}
 }
