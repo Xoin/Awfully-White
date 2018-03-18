@@ -96,8 +96,11 @@ html {
 html:before {
   background-image: none;
 }
-#wrapper {
-  margin: 0px;
+html body {
+  background: unset;
+}
+#wrapper #content {
+  box-shadow: unset;
 }
 .force-wide-design #wrapper {
   padding: 0px;
@@ -324,6 +327,7 @@ a:hover {
   }
   #header .navbar-main.navbar.is-dark {
     height: 104px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="100" viewBox="0 0 10 100"><path d="M 0 0 L 0 5.5 L 5.5 0 L 0 0 z M 10 0.5 L 0 10.5 L 0 15.5 L 10 5.5 L 10 0.5 z M 10 10.5 L 0 20.5 L 0 25.5 L 10 15.5 L 10 10.5 z M 10 20.5 L 0 30.5 L 0 35.5 L 10 25.5 L 10 20.5 z M 10 30.5 L 0 40.5 L 0 45.5 L 10 35.5 L 10 30.5 z M 10 40.5 L 0 50.5 L 0 55.5 L 10 45.5 L 10 40.5 z M 10 50.5 L 0 60.5 L 0 65.5 L 10 55.5 L 10 50.5 z M 10 60.5 L 0 70.5 L 0 75.5 L 10 65.5 L 10 60.5 z M 10 70.5 L 0 80.5 L 0 85.5 L 10 75.5 L 10 70.5 z M 10 80.5 L 0 90.5 L 0 95.5 L 10 85.5 L 10 80.5 z M 10 90.5 L 0.5 100 L 5.5 100 L 10 95.5 L 10 90.5 z" fill="%23ffffff" stroke="%23c00" stroke-width="0" /></svg>'), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.63) 28%, rgba(255, 255, 255, 0) 43%, rgba(255, 255, 255, 0) 83%, rgba(255, 255, 255, 0.76) 94%, rgba(255, 255, 255, 0.84) 100%), #f0f0f0;
   }
   #header .navbar-main.navbar.is-dark .navbar-brand .navbar-item.logo {
     width: 245px;
@@ -578,7 +582,7 @@ body.page-forum .postlist .postblock-own {
   color: #000;
 }
 .postrender .posthead .timeago {
-  background-image: url('https://files.facepunch.com/forum/upload/1704/3a19f1ac-c6fd-4192-89d9-3d58960b1c37/clock.png');
+  background-image: url('https://files.facepunch.com/forum/upload/1704/e71c8716-5254-4be6-acd3-ead168c8bb3c/time.png');
   background-repeat: no-repeat;
   padding-left: 20px;
   background-position-y: -1px;
