@@ -6,74 +6,82 @@
 	threadblock forumpanel  is-closed is-resolvable is-resolvabed is-bounty
 }
 */
-	.threadlistsection {
-		.threadblock {
-			border-bottom: 1px solid #CCC;
-			border-left: 1px solid #888;
-			border-right: 1px solid #888;
-			background-color: @fp-background-white-normal;
-			margin-bottom: 0em;
-			a,strong {
-				color: @fp-text-link-normal;
-				font-weight: bolder;
-				&:hover {
-					color: @fp-text-link-light;
-				}
-			}
-			.threadicon, .threadage, .threadlastpost {
-				background-color:@fp-background-grey-light !important;
-			}
-			.threadmain {
-				.threadmeta {
-					color: @fp-text-light !important;
-					.pagnationcomponent {
-						.page {
-							background-color: @fp-background-transparent !important;
-							color: @fp-text-light !important;
-							border: 0px solid #dcdcdc !important;
-							&:hover {
-								background-color: @fp-background-transparent !important;
-								color: @fp-text-normal !important;
-							}
-						}
-						&:before {
-							color: @fp-text-light !important;
-							content: "( ";
-						}
-						&:after {
-							color: @fp-text-light !important;
-							content: " )";
-						}
-					}
-				}
-			}
-			.user {
-				&-moderator a {
-					color: @fp-user-green;
-				}
-				&-admin a {
-					color: @fp-user-green;
-				}
-				&-banned a {
-					color: @fp-user-red;
-				}
-			}
-			&.is {
-				&-closed {
-					background-color:@fp-background-grey-normal!important;
-					color: @fp-text-light!important;
-					.threadicon, .threadage, .threadlastpost {
-						background-color: @fp-background-grey-normal!important;
-					}
-				}
-				&-sticky {
-					background-color: @fp-background-yellow-normal!important;
-					color: @fp-text-link-normal !important;
-					.threadicon, .threadage, .threadlastpost {
-						background-color: @fp-background-yellow-dark!important;
-					}
-					&:extend(.common-link all);
-				}
-			}
-		}
-	}
+
+.threadlistsection {
+    .threadblock {
+        border-bottom: 1px solid #CCC;
+        border-left: 1px solid #888;
+        border-right: 1px solid #888;
+        background-color: @fp-background-white-normal;
+        margin-bottom: 0em;
+        a,
+        strong {
+            color: @fp-text-link-normal;
+            font-weight: bolder;
+            &:hover {
+                color: @fp-text-link-light;
+            }
+        }
+        .threadicon,
+        .threadage,
+        .threadlastpost {
+            background-color: @fp-background-grey-light !important;
+        }
+        .threadmain {
+            .threadmeta {
+                color: @fp-text-light !important;
+                .pagnationcomponent {
+                    .page {
+                        background-color: @fp-background-transparent !important;
+                        color: @fp-text-light !important;
+                        border: 0px solid #dcdcdc !important;
+                        &:hover {
+                            background-color: @fp-background-transparent !important;
+                            color: @fp-text-normal !important;
+                        }
+                    }
+                    &:before {
+                        color: @fp-text-light !important;
+                        content: "( ";
+                    }
+                    &:after {
+                        color: @fp-text-light !important;
+                        content: " )";
+                    }
+                }
+            }
+        }
+        .user {
+            &-moderator a {
+                color: @fp-user-green;
+            }
+            &-admin a {
+                color: @fp-user-green;
+            }
+            &-banned a {
+                color: @fp-user-red;
+            }
+        }
+        &.is {
+            &-closed {
+                background-color: @fp-background-grey-normal!important;
+                color: @fp-text-light!important;
+                .threadicon,
+                .threadage,
+                .threadlastpost {
+                    background-color: @fp-background-grey-normal!important;
+                }
+            }
+            &-sticky {
+                background-color: @fp-background-yellow-normal!important;
+                color: @fp-text-link-normal !important;
+                .threadicon,
+                .threadage,
+                .threadlastpost {
+                    background-color: @fp-background-yellow-dark!important;
+                }
+                &:extend(.common-link all);
+            }
+        }
+    }
+}

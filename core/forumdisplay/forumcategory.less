@@ -1,73 +1,73 @@
 #wrapper #content {
-		.forumcategoryblock {
-			.forumcategoryheader {
-				background: @fp-background-blue-normal;
-				color: @fp-text-lighter;
-				font-size: 12pt;
-				font-weight: bolder;
-				margin: 0px 0px 0px 0px;
-				.categorytitle {
-					color: @fp-text-lighter;
-					font-size: 1rem;
-				}
-			}
-			.forumpanel  {
-				background-color: @fp-background-white-normal;
-				border-left: 1px solid #888;
-				border-bottom: 1px solid #888;
-				border-right: 1px solid #888;
-				&:not(:last-of-type) {
-					border-bottom: 1px solid #CCC!important;
-				}
-				.forumname {
-					.forumtitle {
-						font-size: 1.1rem;
-						a {
-							color: @fp-text-link-normal;
-							font-weight: bolder;
-							&:hover {
-								color: @fp-text-link-light;
-							}
-						}
-					}
-					.forumsubtitle {
-						font-size: 0.8rem;
-					}
-					line-height: 1.5;
-				}
-				.forumicon {
-					padding: 0.5rem;
-					img {
-						width: 36px;
-						height: 36px;
-					}
-				}
-				.forumlastpost {
-					min-width: 20em;
-					font-size: 0.7rem;
-					border-left: 0px solid #bbb;
-					border-right: 0px solid #bbb;
-					.threadname {
-						a {
-							color: @fp-text-link-normal;
-							font-weight: bolder;
-						}
-					}
-					background-color:@fp-background-grey-light;
-				}
-				.threadcount {
-					color: @fp-text-normal;
-					border-left: 0px solid #bbb;
-				}
-				.postcount {
-					background-color:@fp-background-grey-light;
-					color: @fp-text-normal;
-					border-left: 0px solid #bbb;
-				}
-				&.is-closed  {
-					background-color:@fp-background-grey-light;
-					color: @fp-text-light;
-				}
-			}
-		}
+    .forumcategoryblock {
+        .forumcategoryheader {
+            background: @fp-background-blue-normal;
+            color: @fp-text-lighter;
+            font-size: 12pt;
+            font-weight: bolder;
+            margin: 0px 0px 0px 0px;
+            .categorytitle {
+                color: @fp-text-lighter;
+                font-size: 1rem;
+            }
+        }
+        .forumpanel {
+            background-color: @fp-background-white-normal;
+            border-left: 1px solid #888;
+            border-bottom: 1px solid #888;
+            border-right: 1px solid #888;
+            &:not(:last-of-type) {
+                border-bottom: 1px solid #CCC!important;
+            }
+            .forumname {
+                .forumtitle {
+                    font-size: 1.1rem;
+                    a {
+                        color: @fp-text-link-normal;
+                        font-weight: bolder;
+                        &:hover {
+                            color: @fp-text-link-light;
+                        }
+                    }
+                }
+                .forumsubtitle {
+                    font-size: 0.8rem;
+                }
+                line-height: 1.5;
+            }
+            .forumicon {
+                padding: 0.5rem;
+                img {
+                    width: 36px;
+                    height: 36px;
+                }
+            }
+            .forumlastpost {
+                min-width: 20em;
+                font-size: 0.7rem;
+                border-left: 0px solid #bbb;
+                border-right: 0px solid #bbb;
+                .threadname {
+                    a {
+                        color: @fp-text-link-normal;
+                        font-weight: bolder;
+                    }
+                }
+                background-color:@fp-background-grey-light;
+            }
+            .threadcount {
+                color: @fp-text-normal;
+                border-left: 0px solid #bbb;
+            }
+            .postcount {
+                background-color: @fp-background-grey-light;
+                color: @fp-text-normal;
+                border-left: 0px solid #bbb;
+            }
+            &.is-closed {
+                background-color: @fp-background-grey-light;
+                color: @fp-text-light;
+            }
+        }
+    }
 }
