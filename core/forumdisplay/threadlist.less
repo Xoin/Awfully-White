@@ -1,13 +1,4 @@
-/*.threadlistsection .threadlist {
-	threadblock forumpanel  is-sticky is-closed has-seen
-	threadblock forumpanel  has-seen has-new-posts
-	threadblock forumpanel 
-	threadblock forumpanel  has-seen has-new-posts
-	threadblock forumpanel  is-closed is-resolvable is-resolvabed is-bounty
-}
-*/
-
-.threadlistsection {
+#wrapper #content .threadlist {
     .threadblock {
         border-bottom: 1px solid #CCC;
         border-left: 1px solid #888;
@@ -25,28 +16,32 @@
         .threadicon,
         .threadage,
         .threadlastpost {
-            background-color: @fp-background-grey-light !important;
+            background-color: @fp-background-grey-light;
+            border-left: 0px solid #bbb;
+        }
+        .postcount {
             border-left: 0px solid #bbb;
         }
         .threadmain {
+            white-space: normal;
             .threadmeta {
-                color: @fp-text-light !important;
+                color: @fp-text-light;
                 .pagnationcomponent {
                     .page {
-                        background-color: @fp-background-transparent !important;
-                        color: @fp-text-light !important;
-                        border: 0px solid #dcdcdc !important;
+                        background-color: @fp-background-transparent;
+                        color: @fp-text-light;
+                        border: 0px solid #dcdcdc;
                         &:hover {
-                            background-color: @fp-background-transparent !important;
-                            color: @fp-text-normal !important;
+                            background-color: @fp-background-transparent;
+                            color: @fp-text-normal;
                         }
                     }
                     &:before {
-                        color: @fp-text-light !important;
+                        color: @fp-text-light;
                         content: "( ";
                     }
                     &:after {
-                        color: @fp-text-light !important;
+                        color: @fp-text-light;
                         content: " )";
                     }
                 }
@@ -80,21 +75,23 @@
         }
         &.is {
             &-closed {
-                background-color: @fp-background-grey-normal!important;
-                color: @fp-text-light!important;
+                background-color: @fp-background-grey-normal;
+                color: @fp-text-light;
                 .threadicon,
                 .threadage,
                 .threadlastpost {
-                    background-color: @fp-background-grey-normal!important;
+                    border-left: 0px solid #bbb;
+                    background-color: @fp-background-grey-normal;
                 }
             }
             &-sticky {
-                background-color: @fp-background-yellow-normal!important;
-                color: @fp-text-link-normal !important;
+                background-color: @fp-background-yellow-normal;
+                color: @fp-text-link-normal;
                 .threadicon,
                 .threadage,
                 .threadlastpost {
-                    background-color: @fp-background-yellow-dark!important;
+                    border-left: 0px solid #bbb;
+                    background-color: @fp-background-yellow-dark;
                 }
                 &:extend(.common-link all);
             }

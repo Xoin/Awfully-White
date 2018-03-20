@@ -34,3 +34,26 @@ html {
         }
     }
 }
+
+@media screen and (max-aspect-ratio: 13/9) {
+    .drawer-container {
+        display: -moz-inline-box;                /* Mozilla */
+        display: -webkit-inline-box;             /* WebKit */
+        display: inline-box;                     /* As specified */
+        width: 100%;
+        /* Children should be oriented vertically */
+        -moz-box-orient: vertical;      /* Mozilla */
+        -webkit-box-orient: vertical;   /* WebKit */
+        box-orient: vertical;           /* As specified */
+        .drawer {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            box-ordinal-group: 2;
+        }
+        &> div{
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            box-ordinal-group: 1;
+        }
+    }
+}
