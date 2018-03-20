@@ -82,6 +82,9 @@
                 .threadlastpost {
                     border-left: 0px solid #bbb;
                     background-color: @fp-background-grey-normal;
+                    &:hover {
+                        background-color: @fp-background-grey-normal;
+                    }
                 }
             }
             &-sticky {
@@ -92,6 +95,9 @@
                 .threadlastpost {
                     border-left: 0px solid #bbb;
                     background-color: @fp-background-yellow-dark;
+                }
+                &:hover {
+                    background-color: @fp-background-yellow-dark; 
                 }
                 &:extend(.common-link all);
             }
