@@ -26,6 +26,7 @@
         .threadage,
         .threadlastpost {
             background-color: @fp-background-grey-light !important;
+            border-left: 0px solid #bbb;
         }
         .threadmain {
             .threadmeta {
@@ -47,6 +48,21 @@
                     &:after {
                         color: @fp-text-light !important;
                         content: " )";
+                    }
+                }
+                .unreadposts {
+                    background-color: #FFA;
+                    border: 1px solid #ccc;
+                    color: @fp-text-normal;
+                    &:hover {
+                        background-color: #FF5;
+                        border: 1px solid #555;
+                    }
+                    &:before {
+                        font: normal normal normal 12px "Material Design Icons";
+                        content: "\F5E0";
+                        padding-right: 0.2rem;
+                        color: #337dce;
                     }
                 }
             }
