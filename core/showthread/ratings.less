@@ -1,0 +1,38 @@
+.postfoot {
+	.votes {
+		border: 0px dashed @fp-border-grey !important;
+		background-color: @fp-background-transparent;
+	}
+	.votes.detail .votelist {
+		background-color: @fp-background-yellow-light;
+		border: 1px solid @fp-border-grey;
+		box-shadow: none;
+		
+		.voteinfo {
+			margin: 4px;
+			border: 1px dashed @fp-border-grey !important;
+			padding:0.5rem;
+		}
+	}
+	.username {
+		color: @fp-user-blue;
+		&.user- {
+			&gold {
+				color: @fp-user-gold;
+				font-weight: bold;
+			}
+			&moderator {
+				color: @fp-user-green;
+				font-weight: bold;
+			}
+			&admin {
+				color: @fp-user-green;
+				font-weight: bold;
+			}
+			&banned {
+				color: @fp-user-red;
+				font-weight: bold;
+			}
+		}
+	}
+}

@@ -13,9 +13,10 @@ html {
 
 #wrapper #content {
     box-shadow: unset;
+    border-top: 1px solid #000000;
 }
 
-.force-wide-design {
+body.force-wide-design {
     #wrapper {
         #content {
             padding: 0rem 0rem;
@@ -25,10 +26,17 @@ html {
 }
 
 @media screen and (min-width: 768px) {
-    .force-wide-design {
+    body.force-wide-design {
         #wrapper {
             #content {
                 width: calc(100% - 1.9rem);
+                margin: 12px auto;
+            }
+        }
+    }
+    body.not-wide-design {
+        #wrapper {
+            #content {
                 margin: 12px auto;
             }
         }

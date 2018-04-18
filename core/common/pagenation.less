@@ -5,12 +5,13 @@
 @fp-page-hover: @fp-background-grey-light;
 #wrapper #content .pagnation.threadpagnation,
 #wrapper #content .pagnation.postpagnation {
-    background-color: @fp-bar;
+    background: linear-gradient(to bottom, lighten(@fp-background-blue-normal, 5%) 0%,@fp-bar 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin: 0rem 0;
     color: @fp-text-lighter;
     .page {
         &.pageinfo {
             color: @fp-text-lighter;
+            opacity: 1;
         }
     }
     a {

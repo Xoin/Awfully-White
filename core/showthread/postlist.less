@@ -54,6 +54,13 @@
 }
 
 body.page-forum {
+    &.newthread {
+        .postlist {
+            .postblock {
+                background: @fp-background-white-normal;
+            }
+        }
+    }
     .postlist {
         .postblock {
             background: linear-gradient(90deg, @fp-post-new, @fp-background-white-normal 500px);
@@ -109,7 +116,7 @@ body.page-forum {
     }
     .postinner {
         .postbody {
-            padding: 0rem;
+            padding: 1rem 0rem 0rem 0rem;
         }
     }
     .postinner>.postuser {

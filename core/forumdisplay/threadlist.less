@@ -1,8 +1,6 @@
 #wrapper #content .threadlist {
     .threadblock {
         border-bottom: 1px solid #CCC;
-        border-left: 1px solid #888;
-        border-right: 1px solid #888;
         background-color: @fp-background-white-normal;
         margin-bottom: 0em;
         a,
@@ -63,20 +61,23 @@
             }
         }
         .user {
+            &-gold a {
+                color: @fp-user-gold !important;
+            }
             &-moderator a {
-                color: @fp-user-green;
+                color: @fp-user-green !important;
             }
             &-admin a {
-                color: @fp-user-green;
+                color: @fp-user-green !important;
             }
             &-banned a {
-                color: @fp-user-red;
+                color: @fp-user-red !important;
             }
         }
         &.is {
             &-closed {
                 background-color: @fp-background-grey-normal;
-                color: @fp-text-light;
+                
                 .threadicon,
                 .threadage,
                 .threadlastpost {
@@ -85,6 +86,9 @@
                     &:hover {
                         background-color: @fp-background-grey-normal;
                     }
+                }
+                a {
+                    color: @fp-text-light;
                 }
             }
             &-sticky {
