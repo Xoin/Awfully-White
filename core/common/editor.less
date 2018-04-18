@@ -80,12 +80,12 @@
                 color: @fp-text-normal;
                 font-size: 11pt;
                 margin: 0px 10px 0px 10px;
+                padding: 0rem 1rem 0rem 1rem;
                 background-color: @fp-quote-body;
                 &:before {
                     content: "";
                     padding: 0;
                 }
-                padding: 10px;
                 border-left: 1px #888 solid;
                 border-right: 1px #888 solid;
                 border-top: 0px #888 solid;
@@ -95,8 +95,10 @@
             p+blockquote,
             blockquote+p {
                 border-top: 1px #888 solid;
+                padding-top: 1rem;
             }
             blockquote:last-of-type {
+                padding-bottom: 1rem;
                 border-bottom: 1px #888 solid;
             }
             blockquote:last-of-type+p {
