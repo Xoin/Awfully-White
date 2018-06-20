@@ -34,7 +34,9 @@
     color: #555;
     background-color: inherit;
 }
-
 #toolbar .navbar-brand .dropdown-content:hover {
     text-shadow: 0 0 0 transparent;
+}
+.level-left {
+    margin-left: 225px;
 }
