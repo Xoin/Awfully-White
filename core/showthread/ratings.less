@@ -1,13 +1,17 @@
-.votes {
-	.list {
+.postfoot {
+	.votes {
+		border: 0px dashed @fp-border-grey !important;
+		background-color: @fp-background-transparent;
+	}
+	.votes.detail .votelist {
 		background-color: @fp-background-yellow-light;
 		border: 1px solid @fp-border-grey;
 		box-shadow: none;
-		& > div {
+		
+		.voteinfo {
 			margin: 4px;
 			border: 1px dashed @fp-border-grey !important;
-			width: auto; /*Unsets the 110px width in favor of letting the width grow for longer names*/
-			min-width: 110px;
+			padding:0.5rem;
 		}
 	}
 	.username {
@@ -29,16 +33,6 @@
 				color: @fp-user-red;
 				font-weight: bold;
 			}
-		}
-	}
-}
-.dropdown-content {
-	& > .votepicker {
-		padding: 4px;
-		background-color: @fp-background-yellow-light;
-		border: 1px solid @fp-border-grey;
-		.dropdown-item {
-			border: 1px dashed @fp-border-grey;
 		}
 	}
 }

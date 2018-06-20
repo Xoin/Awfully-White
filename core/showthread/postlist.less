@@ -1,167 +1,161 @@
 //Post indicator
-@fp-post-own: @fp-indicator-own 1px, @fp-background-white-normal 25%;
-@fp-post-old: @fp-indicator-old 1px, @fp-background-white-normal 25%;
-@fp-post-new: @fp-indicator-new 1px, @fp-background-white-normal 25%;
-
-// Options
-.settings-lastread() when (@fp-settings-lastread-hide = true) {
-	.lastread {
-		display: none;
-	}
-}
-.settings-lastread;
-.settings-avatars() when (@fp-settings-mobile-avatars = true) {
-	display: unset !important;
-	float: right;
-	right: 0.2em;
-	top: 1em;
-	position: absolute;
-}
-.settings-titles() when (@fp-settings-titles = true) {
-	.common-user {
-		display: block;
-		font-weight: normal;
-		font-size: 0.7rem;
-	}
-	.user {
-		&-gold:after {
-			content: "Gold Member";
-			color: @fp-text-normal;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-moderator:after {
-			content: "Moderator";
-			color: @fp-user-green;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-admin:after {
-			content: "Administrator";
-			color: @fp-user-green;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-		&-banned:after {
-			content: "Banned";
-			color: @fp-user-red;
-			display: block;
-			font-weight: normal;
-			font-size: 0.7rem;
-		}
-	}
+@fp-post-own: @fp-indicator-own 1px,
+@fp-background-white-normal 25%;
+@fp-post-old: @fp-indicator-old 1px,
+@fp-background-white-normal 25%;
+@fp-post-new: @fp-indicator-new 1px,
+@fp-background-white-normal 25%;
+.settings-titles() when (@fp-settings-titles =true) {
+    .username {
+        &.user {
+            &-gold:after {
+                content: "Gold Member";
+                color: @fp-text-normal;
+                display: block;
+                font-weight: normal;
+                font-size: 0.7rem;
+            }
+            &-moderator:after {
+                content: "Moderator";
+                color: @fp-user-green;
+                display: block;
+                font-weight: normal;
+                font-size: 0.7rem;
+            }
+            &-admin:after {
+                content: "Administrator";
+                color: @fp-user-green;
+                display: block;
+                font-weight: normal;
+                font-size: 0.7rem;
+            }
+            &-banned:after {
+                content: "Banned";
+                color: @fp-user-red;
+                display: block;
+                font-weight: normal;
+                font-size: 0.7rem;
+            }
+        }
+    }
 }
 
-// End options
+.background-image {
+    opacity: 0;
+}
 
-.postlist {
-	background: @fp-background-white-normal;
+.postblock .postinner .postcontent,
+.has-background-image {
+    background: @fp-background-transparent;
+    &:before,
+    &:after {
+        background: @fp-background-transparent;
+    }
 }
 
 body.page-forum {
-	.threadviewsection {
-		.postblock {
-			position: relative;
-			box-shadow: none;
-			border: 1px solid grey;
-			margin-top: -1px;
-			margin-bottom: -0.1rem;
-			background: linear-gradient(90deg,  @fp-post-new, @fp-background-white-normal 500px);
-			background-size: 100%;
-			.posthead {
-				background-color: lightgray;
-				margin-top: 0;
-				left: -196px; /*Makes the time stuff span all the way left*/
-				right: -16px;
-				border-bottom: 1px solid grey;
-				padding-bottom: 0.5rem;
-				color: @fp-text-normal;
-				.common-link;
-				strong {
-					color:@fp-text-normal;
-				}			
-				.timeago {
-					//temp
-					background-image: url('https://facepunch.com/fp/time.png');
-					background-repeat: no-repeat;
-					padding-left: 20px;
-					background-position-y: -1px;
-				}
-			}
-			.postmain {
-				.postexpand {
-					margin-top: -0.8em;
-				}
-				.postbody {
-					a {
-						color: @fp-text-link-light;
-						&:hover {
-							color: @fp-text-link-lighter;
-						}
-					}
-					p {
-						color: @fp-text-normal;
-					}
-				}
-			}
-			.postuser {
-				box-shadow: none;
-				background-color: @fp-background-transparent;
-				border-right: unset;
-				padding-top: 32px;
-				.user {
-					&name a {
-						color: @fp-user-blue;
-					}
-					&-useronline a{
-						color: @fp-user-blue;
-						border-bottom: 1px dotted @fp-user-blue;
-						font-weight: bolder;
-					}
-					&-gold a {
-						color: @fp-user-gold;
-					}
-					&-moderator a {
-						color: @fp-user-green;
-					}
-					&-admin a {
-						color: @fp-user-green;
-					}
-					&-banned a {
-						color: @fp-user-red;
-					}
-				}
-				.settings-titles;
-				.is-hidden-mobile {
-					.settings-avatars;
-				}
-			}
-			&:first-of-type {
-				margin-top: 0rem;
-			}
-			.baninfo {
-				background-color: unset;
-				color: red;
-				.detail strong {
-					color: red;
-				}
-			}
-			&.postblock {
-				&-read {
-					background: linear-gradient(90deg,  @fp-post-old, @fp-background-white-normal 500px);
-				}
-				&-own {
-					background: linear-gradient(90deg,  @fp-post-own, @fp-background-white-normal 500px);
-					box-shadow: inset 0px 0px #4fa052;
-				}
-			}
-		}
-	}
+    &.newthread {
+        .postlist {
+            .postblock {
+                background: @fp-background-white-normal;
+            }
+        }
+    }
+    .postlist {
+        .postblock {
+            background: linear-gradient(90deg, @fp-post-new, @fp-background-white-normal 500px);
+            &-read {
+                background: linear-gradient(90deg, @fp-post-old, @fp-background-white-normal 500px);
+            }
+            &-own {
+                background: linear-gradient(90deg, @fp-post-own, @fp-background-white-normal 500px);
+            }
+        }
+    }
 }
 
 .lastread {
-	margin: 0rem 0px;
+    border-top: 1px solid #777;
+    border-bottom: 0px solid #bbb;
+}
+
+.title.threadname,
+.title.forumname {
+    color: @fp-text-normal!important;
+    a {
+        color: @fp-text-normal!important;
+    }
+}
+
+#wrapper #content .postlist .forumpanel {
+    border-bottom: 0px solid #bbb;
+    &:last-of-type {
+        border-bottom: 1px solid #777!important;
+    }
+}
+
+.postrender {
+    .posthead {
+        background: repeat-x #ddd;
+        border-top: 1px solid #777;
+        border-bottom: 1px solid #777!important;
+        margin-top: 0;
+        margin-right: auto;
+        color: @fp-text-normal;
+        .common-link;
+        strong {
+            color: @fp-text-normal;
+        }
+        .timeago {
+            //temp
+            background-image: url('https://files.facepunch.com/forum/upload/1704/e71c8716-5254-4be6-acd3-ead168c8bb3c/time.png');
+            background-repeat: no-repeat;
+            padding-left: 20px;
+            background-position-y: -1px;
+        }
+    }
+    .postinner {
+        .postbody {
+            padding: 1rem 0rem 0rem 0rem;
+        }
+    }
+    .postinner>.postuser {
+        border-right: 0px solid #bbb;
+        .user-card {
+            top: 1px; /*Changed from -16px in the default theme*/
+            left: -28px; /*Changed from -29px*/
+        }
+    }
+}
+
+.posterinfo {
+    .user {
+        &name a {
+            color: @fp-user-blue;
+        }
+        &-useronline a {
+            color: @fp-user-blue;
+            border-bottom: 1px dotted @fp-user-blue;
+            font-weight: bolder;
+        }
+        &-gold a {
+            color: @fp-user-gold;
+        }
+        &-moderator a {
+            color: @fp-user-green;
+        }
+        &-admin a {
+            color: @fp-user-green;
+        }
+        &-banned a {
+            color: @fp-user-red;
+        }
+    }
+}
+
+.postlist .postinner .postuser .posterinfo {
+    .settings-titles;
+    span.userlevel {
+        display: inline;
+    }
 }

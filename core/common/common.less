@@ -1,57 +1,67 @@
-/*
-
-Everything here is slowly getting moved away.
-
-*/
-
-// Background image removal
-html, .navbar, .pagnation.postpagnation, .forumcategoryheader, .forumpanel{
-	background-image: none;
+html {
+    color: @fp-text-normal; //Blame Firefox
+    @temp1: escape(%("%a", @fp-wrapper));
+    @temp2: escape(%("%a", @fp-wrapper-light));
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{temp1}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{temp2}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{temp2}" stroke="black" stroke-width="0" /></svg>') repeat;
+    &:before {
+        background-image: none;
+    }
+    body {
+        background: unset;
+    }
 }
 
-// Main forum background
-#wrapper {
-	color: @fp-text-normal;
-	//Blame Firefox
-	@temp1: escape(%("%a", @fp-wrapper));
-	@temp2: escape(%("%a", @fp-wrapper-light));
-	background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="m 0,0 100,0 0,100 -100,0 z" fill="@{temp1}" stroke="black" stroke-width="0" /><path d="M 0,50.5 49.5,100 99,100 0,1 Z" fill="@{temp2}" stroke="black" stroke-width="0" /><path d="m 50,0 50,50 0,-50 z" fill="@{temp2}" stroke="black" stroke-width="0" /></svg>') repeat;
-}
-body {
-	.force-wide-design {
-		.section {
- 			padding: 1rem 0rem;
- 		}
-	}
-	&.page-forum {
-		.forumhead {
-			padding: 1rem 0rem 0rem 1rem;
-		}
-	}
-}
-.section {
-    padding: 3rem 0rem;
+#wrapper #content {
+    box-shadow: unset;
+    border-top: 1px solid #000000;
 }
 
-.title {
-	color: @fp-text-normal;
-}
-.field.has-addons .control .input, body.page-forum .threadpost input {
-		background: @fp-background-white-normal;
-		color: @fp-text-normal;
-}
-.box {
-	background-color: @fp-background-white-normal;
-	color: @fp-text-normal;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-}
-strong {
-	color: @fp-text-link-normal;
-}
-.force-wide-design {
-	.container {
-    	width: calc(100% - 1.9rem) !important;
-	}
+body.force-wide-design {
+    #wrapper {
+        #content {
+            padding: 0rem 0rem;
+        }
+        padding: 0px;
+    }
 }
 
+@media screen and (min-width: 768px) {
+    body.force-wide-design {
+        #wrapper {
+            #content {
+                width: calc(100% - 1.9rem);
+                margin: 12px auto;
+            }
+        }
+    }
+    body.not-wide-design {
+        #wrapper {
+            #content {
+                margin: 12px auto;
+            }
+        }
+    }
+}
+
+@media screen and (max-aspect-ratio: 13/9) {
+    .drawer-container {
+        display: -moz-inline-box;                /* Mozilla */
+        display: -webkit-inline-box;             /* WebKit */
+        display: inline-box;                     /* As specified */
+        width: 100%;
+        /* Children should be oriented vertically */
+        -moz-box-orient: vertical;      /* Mozilla */
+        -webkit-box-orient: vertical;   /* WebKit */
+        box-orient: vertical;           /* As specified */
+        .drawer {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            box-ordinal-group: 2;
+        }
+        &> div{
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            box-ordinal-group: 1;
+        }
+    }
+}

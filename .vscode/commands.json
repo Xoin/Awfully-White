@@ -1,0 +1,15 @@
+{
+  "commands": [
+    {
+      "command": "commands.refresh",
+      "text": "$(sync)",
+      "tooltip": "Refresh commands",
+      "color": "#FFCC00"
+    },
+    {
+      "text": "$(chevron-right)",
+      "command": "beautify.format",
+      "tooltip": "Beautify"
+    }
+  ]
+}

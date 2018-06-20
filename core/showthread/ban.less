@@ -1,22 +1,61 @@
-.baninfo {
+.postblock .baninfo {
     font-weight: 600;
-	strong {
-	    text-decoration: underline;
-	}
-	.description { 
-		&:before {
-			content: "(";
-		}
-		&:after {
-			content: " for the reason";
-		}
-	}
-	.reason {
-		&:before {
-			content: "\"";
-		}
-		&:after {
-			content: "\")";
-		}
-	}
+    strong {
+        text-decoration: underline;
+    }
+    background-color: @fp-background-transparent;
+    color: @fp-event-ban;
+    strong {
+        color: @fp-event-ban;
+    }
+    .icon {
+        height: 1.5rem;
+    }
+    .detail {
+        display: -moz-inline-box;
+        /* Mozilla */
+        display: -webkit-inline-box;
+        /* WebKit */
+        display: inline-box;
+        /* As specified */
+        width: 100%;
+        /* Children should be oriented vertically */
+        -moz-box-orient: horizontal;
+        /* Mozilla */
+        -webkit-box-orient: horizontal;
+        /* WebKit */
+        box-orient: horizontal;
+        /* As specified */
+        font-size: 0.9rem;
+        .description {
+            &:before {
+                content: "(";
+            }
+            &:after {
+                content: " for the reason ";
+            }
+            strong {
+                color: inherit;
+            }
+            font-size: inherit;
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            box-ordinal-group: 1;
+        }
+        .reason {
+            &:before {
+                content: "\"";
+            }
+            &:after {
+                content: "\")";
+            }
+            strong {
+                color: inherit;
+            }
+            font-size: inherit;
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            box-ordinal-group: 2;
+        }
+    }
 }
