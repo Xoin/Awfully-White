@@ -43,3 +43,10 @@
 #header .navbar-main.navbar.is-dark .navbar-end a.navbar-item {
     color: #555;
 }
+.subforum::before {
+    content: "• ";
+}
+.subforum {
+    display: inline-block;
+    width: 170px;
+}
