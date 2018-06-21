@@ -47,7 +47,7 @@
     content: "• ";
 }
 body.page-forum .forumblock .forumname .forumsubforums .subforum::after {
-	content: "";
+	content: "" !important;
 }
 .subforum {
     display: inline-block;
