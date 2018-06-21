@@ -40,3 +40,6 @@
 .level-left {
     margin-left: 225px;
 }
+#header .navbar-main.navbar.is-dark .navbar-end a.navbar-item {
+    color: #555;
+}
