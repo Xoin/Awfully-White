@@ -46,6 +46,9 @@
 .subforum::before {
     content: "• ";
 }
+body.page-forum .forumblock .forumname .forumsubforums .subforum::after {
+	content: "";
+}
 .subforum {
     display: inline-block;
     width: 170px;
