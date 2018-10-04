@@ -1,0 +1,2424 @@
+.default_font,body{
+    font-family:Tahoma,Helvetica,Arial,Verdana!important;
+    font-size:10pt
+}
+#content_pad,body{
+    margin:0
+}
+.center,.tipsy-inner{
+    text-align:center
+}
+.tipsy-ne .tipsy-arrow,.tipsy-se .tipsy-arrow{
+    right:10px
+}
+table#threads tr.threadbit.old td.threadicon img,table#threads tr.threadbit.old td.threadinfo .inner,table#threads tr.threadbit.old td.threadlastpost dl,table#threads tr.threadbit.old td.threadpostedin a,table#threads tr.threadbit.old td.threadreplies a,table#threads tr.threadbit.old td.threadreplies span,table#threads tr.threadbit.old td.threadviews span,table.forums .forumbit_post.inactiveforum td>*{
+    opacity:.7
+}
+.inlineimgDISABLED,.rotating{
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name:bounce
+}
+.wysiwyg_block .blockrow:first-child{
+    background:0 0
+}
+.pagination_top{
+    width:100%
+}
+#above_threadlist .threadpagenav{
+    width:85%
+}
+html{
+    background:url(/fp/bg.png) #bbb
+}
+.lfloat{
+    float:left
+}
+.rfloat{
+    float:right
+}
+body{
+    color:#444
+}
+strong{
+    font-weight:bolder
+}
+em{
+    font-style:italic
+}
+a: visited,a:link,body_alink,body_avisited{
+    color:#147;
+    text-decoration:none
+}
+.doc_header a:hover,a:active,a:hover,body_ahover{
+    color:#14f;
+    text-decoration:underline
+}
+.above_body{
+    -moz-border-radius:0!important;
+    -webkit-border-radius:0!important;
+    border-radius:0!important;
+    background:url(/fp/navbg.png) #FFF;
+    border:0;
+    margin-top:0
+}
+.forumbit_nopost .forumhead,.forumbit_nopost .forumrow,.forumbit_post .forumhead,.forumbit_post .forumrow,.threadbit{
+    -icab-box-shadow:none!important;
+    -khtml-box-shadow:none!important;
+    -moz-box-shadow:none!important;
+    -o-box-shadow:none!important;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important
+}
+.block .blockbody{
+    border-bottom-width:0
+}
+.block .blockfoot{
+    border-top-width:0
+}
+.alpha60{
+    -ms-filter:"progid: DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+    background:rgba(0,0,0,.6)
+}
+.tipsy{
+    font-size:10px;
+    padding:5px;
+    position:absolute;
+    z-index:100000
+}
+.tipsy-inner{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background-color:#000;
+    color:#fff;
+    max-width:200px;
+    padding:5px 8px 4px
+}
+.tipsy-arrow{
+    border:5px dashed #000;
+    height:0;
+    line-height:0;
+    position:absolute;
+    width:0
+}
+.tipsy-n .tipsy-arrow,.tipsy-ne .tipsy-arrow,.tipsy-nw .tipsy-arrow{
+    border-bottom-style:solid;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top:none;
+    top:0
+}
+.tipsy-n .tipsy-arrow{
+    left:50%;
+    margin-left:-5px
+}
+.tipsy-nw .tipsy-arrow{
+    left:10px
+}
+.tipsy-s .tipsy-arrow,.tipsy-se .tipsy-arrow,.tipsy-sw .tipsy-arrow{
+    border-bottom:none;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top-style:solid;
+    bottom:0
+}
+.tipsy-s .tipsy-arrow{
+    left:50%;
+    margin-left:-5px
+}
+.tipsy-sw .tipsy-arrow{
+    left:10px
+}
+.tipsy-e .tipsy-arrow,.tipsy-w .tipsy-arrow{
+    border-bottom-color:transparent;
+    border-top-color:transparent;
+    margin-top:-5px;
+    top:50%
+}
+.tipsy-e .tipsy-arrow{
+    border-left-style:solid;
+    border-right:none;
+    right:0
+}
+.tipsy-w .tipsy-arrow{
+    border-left:none;
+    border-right-style:solid;
+    left:0
+}
+.syntaxhighlighter a,.syntaxhighlighter code,.syntaxhighlighter div,.syntaxhighlighter table,.syntaxhighlighter table caption,.syntaxhighlighter table tbody,.syntaxhighlighter table td,.syntaxhighlighter table thead,.syntaxhighlighter table tr,.syntaxhighlighter textarea{
+    -moz-border-radius:0!important;
+    -webkit-border-radius:0!important;
+    border-radius:0!important;
+    background:0 0!important;
+    border:0!important;
+    bottom:auto!important;
+    box-sizing:content-box!important;
+    float:none!important;
+    font-family:Consolas,"Bitstream Vera Sans Mono","Courier New",Courier,monospace!important;
+    font-size:11px!important;
+    font-style:normal!important;
+    font-weight:400!important;
+    height:auto!important;
+    left:auto!important;
+    line-height:1.1em!important;
+    margin:0!important;
+    min-height:auto!important;
+    outline:0!important;
+    overflow:visible!important;
+    position:static!important;
+    right:auto!important;
+    text-align:left!important;
+    top:auto!important;
+    vertical-align:baseline!important;
+    width:auto!important
+}
+.syntaxhighlighter .bold,.syntaxhighlighter .keyword,.syntaxhighlighter .script,.syntaxhighlighter.printing .script{
+    font-weight:700!important
+}
+.syntaxhighlighter table,.syntaxhighlighter table td.code{
+    width:100%!important
+}
+.syntaxhighlighter.source{
+    overflow:hidden!important
+}
+.syntaxhighlighter .italic{
+    font-style:italic!important
+}
+.syntaxhighlighter .line{
+    white-space:pre!important
+}
+.syntaxhighlighter table caption{
+    color:#000!important;
+    padding:.5em 0 .5em 1em!important;
+    text-align:left!important
+}
+.syntaxhighlighter table td.code .container{
+    position:relative!important
+}
+.syntaxhighlighter table td.code .container textarea{
+    background:#FFF!important;
+    border:none!important;
+    box-sizing:border-box!important;
+    height:100%!important;
+    left:0!important;
+    overflow:hidden!important;
+    padding-left:1em!important;
+    position:absolute!important;
+    top:0!important;
+    white-space:pre!important;
+    width:100%!important
+}
+.syntaxhighlighter table td.gutter .line{
+    background-color:#aaa;
+    padding:0 .5em 0 1em!important;
+    text-align:right!important
+}
+.syntaxhighlighter table td.code .line{
+    padding:0 1em!important
+}
+.syntaxhighlighter.nogutter td.code .container textarea,.syntaxhighlighter.nogutter td.code .line{
+    padding-left:0!important
+}
+.syntaxhighlighter.show{
+    display:block!important
+}
+.syntaxhighlighter.collapsed table{
+    display:none!important
+}
+.syntaxhighlighter.collapsed .toolbar{
+    background:#FFF!important;
+    border:1px solid #6ce26c!important;
+    color:#00f!important;
+    font-size:1em!important;
+    height:auto!important;
+    padding:.1em .8em 0!important;
+    position:static!important;
+    width:auto!important
+}
+.syntaxhighlighter.collapsed .toolbar span{
+    display:inline!important;
+    margin-right:1em!important
+}
+.syntaxhighlighter.collapsed .toolbar span a{
+    display:none!important
+}
+.syntaxhighlighter.collapsed .toolbar span a.expandSource{
+    display:inline!important
+}
+.syntaxhighlighter.ie{
+    font-size:.9em!important;
+    padding:1px 0!important
+}
+.syntaxhighlighter.ie .toolbar{
+    line-height:8px!important
+}
+.syntaxhighlighter.ie .toolbar a{
+    padding-top:0!important
+}
+.syntaxhighlighter.printing .line.alt1 .content,.syntaxhighlighter.printing .line.alt2 .content,.syntaxhighlighter.printing .line.highlighted .number,.syntaxhighlighter.printing .line.highlighted.alt1 .content,.syntaxhighlighter.printing .line.highlighted.alt2 .content{
+    background:0 0!important
+}
+.syntaxhighlighter.printing .line .number{
+    color:#bbb!important
+}
+.syntaxhighlighter.printing .line .content{
+    border:none!important;
+    color:#000!important
+}
+.syntaxhighlighter.printing .toolbar{
+    display:none!important
+}
+.syntaxhighlighter.printing a{
+    text-decoration:none!important
+}
+.syntaxhighlighter.printing .plain,.syntaxhighlighter.printing .plain a{
+    color:#000!important
+}
+.syntaxhighlighter.printing .comments,.syntaxhighlighter.printing .comments a{
+    color:#008200!important
+}
+.syntaxhighlighter.printing .string,.syntaxhighlighter.printing .string a{
+    color:#00f!important
+}
+.syntaxhighlighter.printing .keyword{
+    color:#069!important;
+    font-weight:700!important
+}
+.syntaxhighlighter.printing .preprocessor{
+    color:gray!important
+}
+.syntaxhighlighter.printing .variable{
+    color:#a70!important
+}
+.syntaxhighlighter.printing .value{
+    color:#090!important
+}
+.syntaxhighlighter.printing .functions{
+    color:#ff1493!important
+}
+.syntaxhighlighter.printing .constants{
+    color:#06c!important
+}
+.syntaxhighlighter.printing .color1,.syntaxhighlighter.printing .color1 a{
+    color:gray!important
+}
+.syntaxhighlighter.printing .color2,.syntaxhighlighter.printing .color2 a{
+    color:#ff1493!important
+}
+.syntaxhighlighter.printing .color3,.syntaxhighlighter.printing .color3 a{
+    color:red!important
+}
+.syntaxhighlighter .line.highlighted.number,.syntaxhighlighter.printing .break,.syntaxhighlighter.printing .break a{
+    color:#000!important
+}
+.syntaxhighlighter,.syntaxhighlighter .line.alt1,.syntaxhighlighter .line.alt2{
+    background-color:#FFF!important
+}
+.syntaxhighlighter .line.highlighted.alt1,.syntaxhighlighter .line.highlighted.alt2{
+    background-color:#e0e0e0!important
+}
+.syntaxhighlighter .gutter{
+    color:#afafaf!important
+}
+.syntaxhighlighter .gutter .line{
+    border-right:1px solid #888!important
+}
+.syntaxhighlighter .gutter .line.highlighted{
+    background-color:#6ce26c!important;
+    color:#FFF!important
+}
+.syntaxhighlighter.collapsed{
+    overflow:visible!important
+}
+.syntaxhighlighter.collapsed .toolbar a{
+    color:#00f!important
+}
+.syntaxhighlighter.collapsed .toolbar a:hover{
+    color:red!important
+}
+.syntaxhighlighter .toolbar{
+    background:#6ce26c!important;
+    border:none!important;
+    color:#FFF!important
+}
+.syntaxhighlighter .toolbar a{
+    color:#FFF!important
+}
+.syntaxhighlighter .plain,.syntaxhighlighter .plain a,.syntaxhighlighter .toolbar a:hover{
+    color:#000!important
+}
+.syntaxhighlighter .comments,.syntaxhighlighter .comments a{
+    color:#008200!important
+}
+.syntaxhighlighter .string,.syntaxhighlighter .string a{
+    color:#00f!important
+}
+.syntaxhighlighter .keyword{
+    color:#069!important
+}
+.syntaxhighlighter .preprocessor{
+    color:gray!important
+}
+.syntaxhighlighter .variable{
+    color:#a70!important
+}
+.syntaxhighlighter .value{
+    color:#090!important
+}
+.syntaxhighlighter .functions{
+    color:#ff1493!important
+}
+.syntaxhighlighter .constants{
+    color:#06c!important
+}
+.syntaxhighlighter .script{
+    background-color:none!important;
+    color:#069!important
+}
+.syntaxhighlighter .color1,.syntaxhighlighter .color1 a{
+    color:gray!important
+}
+.syntaxhighlighter .color2,.syntaxhighlighter .color2 a{
+    color:#ff1493!important
+}
+.syntaxhighlighter .color3,.syntaxhighlighter .color3 a{
+    color:red!important
+}
+#navbar-login{
+    color:#fff;
+    float:right;
+    font-size:13px;
+    padding:8px 8px 10px 10px
+}
+#navbar-login input{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0;
+    border:1px solid #999;
+    padding:inherit
+}
+#navbar-login input[type=password],#navbar-login input[type=text]{
+    padding:1px 0
+}
+#navbar-login input[type=submit]{
+    padding:0 6px
+}
+#navbar-login input.default-value{
+    color:#828282
+}
+#navbar-login img{
+    vertical-align:middle
+}
+#navbar-login .buttons,#navbar-login .notifications{
+    display:inline;
+    vertical-align:top
+}
+#navbar-login .notifications a{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background-color:#fff;
+    border:1px solid #f0f0f0;
+    border-bottom:1px solid #f3f3f3;
+    border-top:1px solid #ddd;
+    padding:3px 3px 4px
+}
+.userinfo-tipsy .tipsy-arrow{
+    border:5px dashed #999;
+    border-bottom-style:solid;
+    border-left-color:transparent;
+    border-right-color:transparent;
+    border-top:medium none
+}
+.userinfo-tipsy .tipsy-inner{
+    background-color:#999;
+    font-size:13px
+}
+.doc_header{
+    color:inherit;
+    font:inherit
+}
+div.forumlastpost p.lastposttitle,div.important a{
+    font-weight:700
+}
+.online{
+    border-bottom:2px dotted #0D0
+}
+#header{
+    border-bottom:2px solid #c00;
+    box-shadow:0 5px 32px rgba(255,255,255,.4);
+    height:90px;
+    overflow:hidden
+}
+#header #logo{
+    float:left
+}
+#header #breadcrumb{
+    height:50px;
+    margin-top:13px;
+    overflow:hidden;
+    padding:0
+}
+#header #breadcrumb .navbit{
+    font-size:11px
+}
+#header #breadcrumb #lastelement{
+    color:#000;
+    font-size:18px;
+    padding-left:32px;
+    text-shadow:1px 1px 2px #aaa
+}
+#header #breadcrumb #lastelement div.lastelement span{
+    white-space:nowrap
+}
+#header .navbarlink{
+    float:left;
+    font-size:11px;
+    margin-left:8px;
+    vertical-align:top
+}
+div#showpm>ol .postbit .posthead .postdate img,div#showpm>ol .postbitdeleted .posthead .postdate img,div#showpm>ol .postbitlegacy .posthead .postdate img,div.forumlastpost p.lastpostdate img,ol#announcements .postbit .posthead .postdate img,ol#announcements .postbitdeleted .posthead .postdate img,ol#announcements .postbitlegacy .posthead .postdate img,ol#message_list .postbit .posthead .postdate img,ol#message_list .postbitdeleted .posthead .postdate img,ol#message_list .postbitlegacy .posthead .postdate img,ol#posts .postbit .posthead .postdate img,ol#posts .postbitdeleted .posthead .postdate img,ol#posts .postbitlegacy .posthead .postdate img,table#threads tr.threadbit td.threadlastpost img,table.forums .forumbit_post .forumlastpost .lastpostdate img{
+    vertical-align:middle
+}
+#header .navbarlink img{
+    float:left;
+    height:16px;
+    margin-right:3px;
+    width:16px
+}
+div.forumlastpost p.lastpostdate,table.forums .forumbit_post .forumlastpost .lastpostdate{
+    float:right
+}
+#header #navbarlinks .navbarlink:first-child{
+    margin-left:0
+}
+div.important a{
+    color:red!important
+}
+h2.forumtitle{
+    font-size:10pt!important
+}
+.forumrow{
+    border:1px solid #ccc!important;
+    border-left:1px solid #888!important;
+    border-right:1px solid #888!important;
+    border-top:0!important
+}
+ol#forums ol.childforum li:last-child div.forumrow{
+    border-bottom:1px solid #888!important
+}
+.forumbit_post{
+    border:0
+}
+img.forumicon{
+    width:32px!important
+}
+ul.forumstats li,ul.forumstats_2 li{
+    font-size:8pt
+}
+div.foruminfo div.datacontainer{
+    padding-left:47px!important
+}
+div.forumlastpost{
+    font-size:10px!important
+}
+div#footer #fps,table.forums .forumbit_post .forumlastpost .lastposttitle a{
+    font-weight:bolder
+}
+.forumbit_nopost .forumhead span.forumlastpost{
+    padding:7px 0 8px
+}
+table.forums{
+    width:100%
+}
+table.forums .forumhead{
+    font-size:8pt;
+    position:relative
+}
+table.forums .forumhead h2{
+    color:#fff;
+    font-size:12pt;
+    font-weight:bolder;
+    padding:5px
+}
+table.forums .forumhead h2 a,table.forums .forumhead h2 a:hover{
+    color:inherit
+}
+table.forums .forumhead a.collapse{
+    display:block;
+    float:right;
+    left:auto;
+    padding:0 5px 0 0;
+    position:static;
+    right:auto;
+    top:auto
+}
+table.forums .forumhead .tpcount{
+    min-width:105px
+}
+table.forums .forumrowdata{
+    border:1px solid #888;
+    border-top-width:0
+}
+table.forums .forumrowdata .subforumdescription{
+    background-color:#ccc;
+    color:#3e3e3e;
+    padding:5px 10px
+}
+div#footer,div#footer a,div#footer a:hover{
+    color:#fff
+}
+table.forums .forumbit_post{
+    border-bottom:1px solid #CCC;
+    border-left:1px solid #888;
+    border-right:1px solid #888
+}
+table.forums .forumbit_post td{
+    background-color:#fff;
+    padding:6px
+}
+table.forums .forumbit_post td.alt{
+    background-color:#f5f5f5
+}
+table.forums .forumbit_post .forumlastpost{
+    font-size:10px
+}
+table.forums .forumbit_post .forumlastpost>p{
+    white-space:nowrap
+}
+table.forums .forumbit_post .forumrepliescount,table.forums .forumbit_post .forumviewscount{
+    text-align:center
+}
+table.forums tbody tr.L1:last-child{
+    border-bottom-color:#888
+}
+div.wgo_subblock{
+    position:relative
+}
+div.wgo_subblock>img{
+    float:left;
+    left:15px;
+    margin-top:-16px;
+    position:absolute;
+    top:50%
+}
+div.subforums ol.subforumlist.commalist,div.threadhead{
+    margin-top:5px
+}
+div.wgo_subblock>div.wgo_subblock_text{
+    padding-left:45px
+}
+div#footer{
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    background:#26f;
+    border:0;
+    text-align:left
+}
+div#footer strong{
+    text-shadow:1px 1px 5px #ccc
+}
+div#footer #content_pad{
+    padding:20px
+}
+div#footer #fps{
+    font-size:18px
+}
+div#footer #fps_copyright{
+    color:#ddd;
+    font-size:10px
+}
+div#footer .footer_links{
+    float:right;
+    text-align:right
+}
+div#footer:after{
+    content:''
+}
+div.subforums h4.subforumlistlabel{
+    display:none
+}
+div.subforums li.subforum>a{
+    text-decoration:underline
+}
+ol#forums div.forumhead>h2>span>a{
+    font-size:11pt!important
+}
+.above_threadlist,.below_threadlist{
+    height:28px
+}
+.below_threadlist .threadpagenav{
+    margin-top:-8px;
+    width:auto
+}
+div#above_postlist,div#above_postlist div.pagination_top,div#above_threadlist div.threadpagenav,div#below_postlist div#pagination_bottom,div#below_postlist div.pagination_bottom,div#below_searchresults,div#below_threadlist div.threadpagenav,div#pagination_top{
+    bottom:auto;
+    top:5px;
+    white-space:nowrap
+}
+div#above_postlist div.pagination_top span,div#above_postlist span,div#above_threadlist div.threadpagenav span,div#below_postlist div#pagination_bottom span,div#below_postlist div.pagination_bottom span,div#below_searchresults span,div#below_threadlist div.threadpagenav span,div#pagination_top span{
+    height:18px
+}
+div#above_postlist div.pagination_top span.selected a,div#above_postlist span.selected a,div#above_threadlist div.threadpagenav span.selected a,div#below_postlist div#pagination_bottom span.selected a,div#below_postlist div.pagination_bottom span.selected a,div#below_searchresults span.selected a,div#below_threadlist div.threadpagenav span.selected a,div#pagination_top span.selected a{
+    background-color:#f5f5f5;
+    color:#444;
+    font-weight:strong
+}
+div#above_postlist div.pagination_top span.first_last a,div#above_postlist div.pagination_top span.prev_next a,div#above_postlist span.first_last a,div#above_postlist span.prev_next a,div#above_threadlist div.threadpagenav span.first_last a,div#above_threadlist div.threadpagenav span.prev_next a,div#below_postlist div#pagination_bottom span.first_last a,div#below_postlist div#pagination_bottom span.prev_next a,div#below_postlist div.pagination_bottom span.first_last a,div#below_postlist div.pagination_bottom span.prev_next a,div#below_searchresults span.first_last a,div#below_searchresults span.prev_next a,div#below_threadlist div.threadpagenav span.first_last a,div#below_threadlist div.threadpagenav span.prev_next a,div#pagination_top span.first_last a,div#pagination_top span.prev_next a{
+    top:0!important
+}
+div#above_postlist div.pagination_top span>a,div#above_postlist span>a,div#above_threadlist div.threadpagenav span>a,div#below_postlist div#pagination_bottom span>a,div#below_postlist div.pagination_bottom span>a,div#below_searchresults span>a,div#below_threadlist div.threadpagenav span>a,div#pagination_top span>a{
+    background-color:#fff;
+    border:1px solid #888;
+    border-left-width:0;
+    border-right-width:1px!important;
+    font-size:11px;
+    line-height:17px;
+    margin-left:0;
+    padding:6px 5px
+}
+div#above_postlist a.popupctrl,div#above_postlist div.pagination_top a.popupctrl,div#above_threadlist div.threadpagenav a.popupctrl,div#below_postlist div#pagination_bottom a.popupctrl,div#below_postlist div.pagination_bottom a.popupctrl,div#below_searchresults a.popupctrl,div#below_threadlist div.threadpagenav a.popupctrl,div#pagination_top a.popupctrl{
+    -moz-border-radius:0!important;
+    -webkit-border-radius:0!important;
+    border-radius:0!important;
+    border:1px solid #888;
+    color:#fff;
+    padding:6px 10px
+}
+#above_threadlist .newcontent_textcontrol,#below_threadlist .newcontent_textcontrol{
+    -icab-box-shadow:none!important;
+    -khtml-box-shadow:none!important;
+    -moz-box-shadow:none!important;
+    -o-box-shadow:none!important;
+    -webkit-box-shadow:none!important;
+    box-shadow:none!important
+}
+div.profile_content div#above_postlist div#pagination_top span>a,div.profile_content div#below_postlist div#pagination_bottom span>a{
+    padding:4px
+}
+div.profile_content div#above_postlist div#pagination_top a.popupctrl,div.profile_content div#below_postlist div#pagination_bottom a.popupctrl{
+    padding:4px 8px
+}
+div#threadlist div.boxshadow{
+    border:1px solid #888
+}
+div#threadlist div.boxshadow .threadlisthead{
+    border:0;
+    color:#fff;
+    font-size:10px
+}
+div#threadlist div.boxshadow .threadlisthead td{
+    padding:4px 0
+}
+div#threadlist div.boxshadow .threadlisthead td.threadinfo{
+    padding-left:6px
+}
+div#threadlist div.boxshadow .threadlisthead td.threadlastpost,div#threadlist div.boxshadow .threadlisthead td.threadreplies,div#threadlist div.boxshadow .threadlisthead td.threadviews{
+    text-align:center
+}
+div#threadlist div.boxshadow .threadlisthead a,div#threadlist div.boxshadow .threadlisthead a:hover{
+    color:#fff
+}
+table#threads{
+    clear:both;
+    display:table;
+    width:100%
+}
+table#threads tr.threadbit{
+    background-color:#fff
+}
+table#threads tr.threadbit td{
+    border-bottom:1px solid #ccc;
+    min-width:40px;
+    padding:6px
+}
+table#threads tr.threadbit td.alt{
+    background-color:#f5f5f5
+}
+table#threads tr.threadbit td.threadicon{
+    width:50px
+}
+table#threads tr.threadbit td.threadinfo{
+    width:100%
+}
+table#threads tr.threadbit td.threadinfo h3.threadtitle>a{
+    word-break:break-all;
+    font-size:10pt
+}
+table#threads tr.threadbit td.threadinfo p.threaddesc{
+    display:none
+}
+table#threads tr.threadbit td.threadinfo .author{
+    color:#ddd;
+    font-size:10px;
+    padding-top:4px
+}
+table#threads tr.threadbit td.threadinfo .author a{
+    color:#666
+}
+table#threads tr.threadbit td.threadinfo .author a:hover{
+    text-decoration:none
+}
+table#threads tr.threadbit td.threadinfo .author .viewers{
+    color:#88a
+}
+table#threads tr.threadbit td.threadinfo .managethread{
+    float:right
+}
+table#threads tr.threadbit td.threadinfo .threaddetails{
+    float:right;
+    margin-top:10px
+}
+table#threads tr.threadbit td.threadinfo .threaddetails .threadratings{
+    color:#777;
+    font-size:11px;
+    font-weight:400
+}
+div.events li a,table#threads tr.threadbit.new h3.threadtitle>a{
+    font-weight:700
+}
+table#threads tr.threadbit td.threadinfo .threadpagenav{
+    color:#666;
+    font-size:10px
+}
+table#threads tr.threadbit td.threadlastpost{
+    font-size:10px;
+    text-align:right;
+    white-space:nowrap
+}
+.nothreads,div.events div#event_types,table#threads tr.threadbit td.threadreplies,table#threads tr.threadbit td.threadviews{
+    text-align:center
+}
+table#threads tr.threadbit td.threadimod{
+    min-width:0;
+    width:0
+}
+table#threads tr.threadbit td.threadimod input{
+    position:static;
+    right:auto;
+    top:auto
+}
+table#threads tr.threadbit td.threadpostedin{
+    font-size:12px
+}
+table#threads tr.threadbit:last-child td{
+    border-bottom:0
+}
+table#threads tr.threadbit.old td.threadlastpost .popupbody{
+    opacity:1
+}
+table#threads tr.threadbit.lock{
+    background-color:#EEE;
+    color:#888
+}
+table#threads tr.threadbit.lock td.alt{
+    background-color:inherit
+}
+table#threads tr.threadbit.lock td a{
+    color:#888
+}
+table#threads tr.threadbit.sticky{
+    background-color:#ffa
+}
+table#threads tr.threadbit.sticky td.alt{
+    background-color:#fbfba5
+}
+table#threads tr.threadbit.imod_highlight td{
+    background-color:#FFEB90
+}
+.nothreads{
+    padding:20px
+}
+#new_subscribed_threads #threads{
+    border-left:1px solid #888;
+    border-right:1px solid #888
+}
+a.newcontent_textcontrol{
+    border:1px solid #888;
+    color:#fff
+}
+a.newcontent_textcontrol:hover{
+    color:#fff;
+    text-decoration:underline
+}
+.navlinks{
+    border:1px solid #26f
+}
+.wgo_block .wgo_subblock{
+    border-left:1px solid #888;
+    border-right:1px solid #888
+}
+.wgo_block .wgo_subblock:last-child{
+    border-bottom:1px solid #888
+}
+.notice{
+    background:url(/fp/notice.png) 4px 4px no-repeat #ffc;
+    border:1px solid #888;
+    margin-bottom:4px;
+    margin-top:4px;
+    overflow:hidden;
+    padding:4px 4px 4px 32px
+}
+div.events{
+    font-size:10px;
+    padding:10px
+}
+div.events ul{
+    margin:20px;
+    padding:0
+}
+div.events li{
+    color:#333;
+    font-size:11px;
+    line-height:20px;
+    list-style:none
+}
+div.threadfoot,div.threadfoot h2>span,div.threadhead,div.threadhead h2>span{
+    float:left;
+    font:700 12px Arial,Tahoma,Calibri,Verdana,Geneva,sans-serif;
+    color:#fff
+}
+div.threadfoot,div.threadhead{
+    border:1px solid #888;
+    clear:both;
+    padding:0;
+    width:100%
+}
+div.threadfoot h2,div.threadhead h2{
+    margin:0 3px
+}
+div.threadfoot h2>span,div.threadhead h2>span{
+    clear:right;
+    display:block;
+    padding:4px 0
+}
+div.threadfoot h2>span a,div.threadfoot h2>span a:hover,div.threadhead h2>span a,div.threadhead h2>span a:hover{
+    color:#fff;
+    font-size:11pt;
+    margin-left:10px
+}
+div.threadfoot h2 span#inlinemod_controls,div.threadfoot h2 span#subscribe_button,div.threadhead h2 span#inlinemod_controls,div.threadhead h2 span#subscribe_button{
+    float:right
+}
+div.threadfoot h2 span#inlinemod_controls a,div.threadfoot h2 span#subscribe_button a,div.threadhead h2 span#inlinemod_controls a,div.threadhead h2 span#subscribe_button a{
+    margin-right:10px
+}
+div.threadfoot h2 span#inlinemod_controls>div a.popupctrl,div.threadhead h2 span#inlinemod_controls>div a.popupctrl{
+    background:0 0;
+    border:0;
+    color:#fff;
+    font:inherit
+}
+div.threadfoot h2 span#inlinemod_controls>div a.popupctrl span.ctrlcontainer,div.threadhead h2 span#inlinemod_controls>div a.popupctrl span.ctrlcontainer{
+    background:0 0;
+    font-size:11pt;
+    padding:0
+}
+div.threadfoot h2 span#inlinemod_controls>div .popupbody li>a,div.threadfoot h2 span#inlinemod_controls>div .popupbody li>label,div.threadhead h2 span#inlinemod_controls>div .popupbody li>a,div.threadhead h2 span#inlinemod_controls>div .popupbody li>label{
+    color:#444
+}
+div.threadhead{
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-topright:3px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-top-right-radius:3px;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+    border-bottom-width:0
+}
+div.threadfoot{
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -webkit-border-bottom-right-radius:3px;
+    border-bottom-left-radius:3px;
+    border-bottom-right-radius:3px;
+    margin-bottom:5px
+}
+div#showpm>ol .wysiwyg_block,ol#announcements .wysiwyg_block,ol#message_list .wysiwyg_block,ol#posts .wysiwyg_block{
+    border:0
+}
+div#showpm>ol .postbit,div#showpm>ol .postbitdeleted,div#showpm>ol .postbitlegacy,ol#announcements .postbit,ol#announcements .postbitdeleted,ol#announcements .postbitlegacy,ol#message_list .postbit,ol#message_list .postbitdeleted,ol#message_list .postbitlegacy,ol#posts .postbit,ol#posts .postbitdeleted,ol#posts .postbitlegacy{
+    border:1px solid #888;
+    border-bottom-width:0;
+    clear:both;
+    color:#3e3e3e;
+    display:block;
+    float:left;
+    margin-bottom:0;
+    position:relative;
+    width:100%
+}
+div#showpm>ol .postbit hr,div#showpm>ol .postbitdeleted hr,div#showpm>ol .postbitlegacy hr,ol#announcements .postbit hr,ol#announcements .postbitdeleted hr,ol#announcements .postbitlegacy hr,ol#message_list .postbit hr,ol#message_list .postbitdeleted hr,ol#message_list .postbitlegacy hr,ol#posts .postbit hr,ol#posts .postbitdeleted hr,ol#posts .postbitlegacy hr{
+    display:none
+}
+div#showpm>ol .postbit .posthead,div#showpm>ol .postbitdeleted .posthead,div#showpm>ol .postbitlegacy .posthead,ol#announcements .postbit .posthead,ol#announcements .postbitdeleted .posthead,ol#announcements .postbitlegacy .posthead,ol#message_list .postbit .posthead,ol#message_list .postbitdeleted .posthead,ol#message_list .postbitlegacy .posthead,ol#posts .postbit .posthead,ol#posts .postbitdeleted .posthead,ol#posts .postbitlegacy .posthead{
+    background:repeat-x #ccc;
+    border:1px solid #777;
+    border-left-width:0;
+    border-right-width:0;
+    clear:both;
+    display:block;
+    float:left;
+    font:12px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+    font-size:10px!important;
+    line-height:15px;
+    margin:-1px 0 0;
+    padding:3px 0;
+    width:100%
+}
+div#showpm>ol .postbit .posthead .time,div#showpm>ol .postbitdeleted .posthead .time,div#showpm>ol .postbitlegacy .posthead .time,ol#announcements .postbit .posthead .time,ol#announcements .postbitdeleted .posthead .time,ol#announcements .postbitlegacy .posthead .time,ol#message_list .postbit .posthead .time,ol#message_list .postbitdeleted .posthead .time,ol#message_list .postbitlegacy .posthead .time,ol#posts .postbit .posthead .time,ol#posts .postbitdeleted .posthead .time,ol#posts .postbitlegacy .posthead .time{
+    font:inherit
+}
+div#showpm>ol .postbit .posthead .postdate,div#showpm>ol .postbitdeleted .posthead .postdate,div#showpm>ol .postbitlegacy .posthead .postdate,ol#announcements .postbit .posthead .postdate,ol#announcements .postbitdeleted .posthead .postdate,ol#announcements .postbitlegacy .posthead .postdate,ol#message_list .postbit .posthead .postdate,ol#message_list .postbitdeleted .posthead .postdate,ol#message_list .postbitlegacy .posthead .postdate,ol#posts .postbit .posthead .postdate,ol#posts .postbitdeleted .posthead .postdate,ol#posts .postbitlegacy .posthead .postdate{
+    font-size:10px!important;
+    margin-left:0;
+    margin-top:2px;
+    padding-left:0;
+    width:auto
+}
+div#showpm>ol .postbit .posthead .postdate.new,div#showpm>ol .postbit .posthead .postdate.old,div#showpm>ol .postbitdeleted .posthead .postdate.new,div#showpm>ol .postbitdeleted .posthead .postdate.old,div#showpm>ol .postbitlegacy .posthead .postdate.new,div#showpm>ol .postbitlegacy .posthead .postdate.old,ol#announcements .postbit .posthead .postdate.new,ol#announcements .postbit .posthead .postdate.old,ol#announcements .postbitdeleted .posthead .postdate.new,ol#announcements .postbitdeleted .posthead .postdate.old,ol#announcements .postbitlegacy .posthead .postdate.new,ol#announcements .postbitlegacy .posthead .postdate.old,ol#message_list .postbit .posthead .postdate.new,ol#message_list .postbit .posthead .postdate.old,ol#message_list .postbitdeleted .posthead .postdate.new,ol#message_list .postbitdeleted .posthead .postdate.old,ol#message_list .postbitlegacy .posthead .postdate.new,ol#message_list .postbitlegacy .posthead .postdate.old,ol#posts .postbit .posthead .postdate.new,ol#posts .postbit .posthead .postdate.old,ol#posts .postbitdeleted .posthead .postdate.new,ol#posts .postbitdeleted .posthead .postdate.old,ol#posts .postbitlegacy .posthead .postdate.new,ol#posts .postbitlegacy .posthead .postdate.old{
+    background-image:none
+}
+div#showpm>ol .postbit .posthead .nodecontrols,div#showpm>ol .postbitdeleted .posthead .nodecontrols,div#showpm>ol .postbitlegacy .posthead .nodecontrols,ol#announcements .postbit .posthead .nodecontrols,ol#announcements .postbitdeleted .posthead .nodecontrols,ol#announcements .postbitlegacy .posthead .nodecontrols,ol#message_list .postbit .posthead .nodecontrols,ol#message_list .postbitdeleted .posthead .nodecontrols,ol#message_list .postbitlegacy .posthead .nodecontrols,ol#posts .postbit .posthead .nodecontrols,ol#posts .postbitdeleted .posthead .nodecontrols,ol#posts .postbitlegacy .posthead .nodecontrols{
+    color:#444;
+    font:10px Tahoma,Helvetica,Arial,Verdana;
+    font-size:10px;
+    padding:4px 10px 0;
+    position:absolute;
+    right:0;
+    text-align:right;
+    top:0;
+    vertical-align:middle;
+    width:auto
+}
+div#showpm>ol .postbit .posthead .nodecontrols a,div#showpm>ol .postbitdeleted .posthead .nodecontrols a,div#showpm>ol .postbitlegacy .posthead .nodecontrols a,ol#announcements .postbit .posthead .nodecontrols a,ol#announcements .postbitdeleted .posthead .nodecontrols a,ol#announcements .postbitlegacy .posthead .nodecontrols a,ol#message_list .postbit .posthead .nodecontrols a,ol#message_list .postbitdeleted .posthead .nodecontrols a,ol#message_list .postbitlegacy .posthead .nodecontrols a,ol#posts .postbit .posthead .nodecontrols a,ol#posts .postbitdeleted .posthead .nodecontrols a,ol#posts .postbitlegacy .posthead .nodecontrols a{
+    color:#147;
+    position:static;
+    top:0
+}
+div#showpm>ol .postbit .posthead .nodecontrols img,div#showpm>ol .postbitdeleted .posthead .nodecontrols img,div#showpm>ol .postbitlegacy .posthead .nodecontrols img,ol#announcements .postbit .posthead .nodecontrols img,ol#announcements .postbitdeleted .posthead .nodecontrols img,ol#announcements .postbitlegacy .posthead .nodecontrols img,ol#message_list .postbit .posthead .nodecontrols img,ol#message_list .postbitdeleted .posthead .nodecontrols img,ol#message_list .postbitlegacy .posthead .nodecontrols img,ol#posts .postbit .posthead .nodecontrols img,ol#posts .postbitdeleted .posthead .nodecontrols img,ol#posts .postbitlegacy .posthead .nodecontrols img{
+    position:static;
+    top:0;
+    vertical-align:top
+}
+div#showpm>ol .postbit .posthead .nodecontrols .postimod,div#showpm>ol .postbitdeleted .posthead .nodecontrols .postimod,div#showpm>ol .postbitlegacy .posthead .nodecontrols .postimod,ol#announcements .postbit .posthead .nodecontrols .postimod,ol#announcements .postbitdeleted .posthead .nodecontrols .postimod,ol#announcements .postbitlegacy .posthead .nodecontrols .postimod,ol#message_list .postbit .posthead .nodecontrols .postimod,ol#message_list .postbitdeleted .posthead .nodecontrols .postimod,ol#message_list .postbitlegacy .posthead .nodecontrols .postimod,ol#posts .postbit .posthead .nodecontrols .postimod,ol#posts .postbitdeleted .posthead .nodecontrols .postimod,ol#posts .postbitlegacy .posthead .nodecontrols .postimod{
+    margin-left:5px;
+    position:relative;
+    right:0;
+    top:0
+}
+div#showpm>ol .postbit .posthead div#time_image,div#showpm>ol .postbitdeleted .posthead div#time_image,div#showpm>ol .postbitlegacy .posthead div#time_image,ol#announcements .postbit .posthead div#time_image,ol#announcements .postbitdeleted .posthead div#time_image,ol#announcements .postbitlegacy .posthead div#time_image,ol#message_list .postbit .posthead div#time_image,ol#message_list .postbitdeleted .posthead div#time_image,ol#message_list .postbitlegacy .posthead div#time_image,ol#posts .postbit .posthead div#time_image,ol#posts .postbitdeleted .posthead div#time_image,ol#posts .postbitlegacy .posthead div#time_image{
+    float:left;
+    margin:0 3px
+}
+div#showpm>ol .postbit .postdetails .postbody .quickedit,div#showpm>ol .postbit .postfoot .rating_results span,div#showpm>ol .postbitdeleted .postdetails .postbody .quickedit,div#showpm>ol .postbitdeleted .postfoot .rating_results span,div#showpm>ol .postbitlegacy .postdetails .postbody .quickedit,div#showpm>ol .postbitlegacy .postfoot .rating_results span,ol#announcements .postbit .postdetails .postbody .quickedit,ol#announcements .postbit .postfoot .rating_results span,ol#announcements .postbitdeleted .postdetails .postbody .quickedit,ol#announcements .postbitdeleted .postfoot .rating_results span,ol#announcements .postbitlegacy .postdetails .postbody .quickedit,ol#announcements .postbitlegacy .postfoot .rating_results span,ol#message_list .postbit .postdetails .postbody .quickedit,ol#message_list .postbit .postfoot .rating_results span,ol#message_list .postbitdeleted .postdetails .postbody .quickedit,ol#message_list .postbitdeleted .postfoot .rating_results span,ol#message_list .postbitlegacy .postdetails .postbody .quickedit,ol#message_list .postbitlegacy .postfoot .rating_results span,ol#posts .postbit .postdetails .postbody .quickedit,ol#posts .postbit .postfoot .rating_results span,ol#posts .postbitdeleted .postdetails .postbody .quickedit,ol#posts .postbitdeleted .postfoot .rating_results span,ol#posts .postbitlegacy .postdetails .postbody .quickedit,ol#posts .postbitlegacy .postfoot .rating_results span{
+    margin-right:10px
+}
+div#showpm>ol .postbit .postdetails,div#showpm>ol .postbitdeleted .postdetails,div#showpm>ol .postbitlegacy .postdetails,ol#announcements .postbit .postdetails,ol#announcements .postbitdeleted .postdetails,ol#announcements .postbitlegacy .postdetails,ol#message_list .postbit .postdetails,ol#message_list .postbitdeleted .postdetails,ol#message_list .postbitlegacy .postdetails,ol#posts .postbit .postdetails,ol#posts .postbitdeleted .postdetails,ol#posts .postbitlegacy .postdetails{
+    float:left;
+    font-size:13px;
+    white-space:nowrap;
+    width:100%
+}
+div#showpm>ol .postbit .postdetails .userinfo,div#showpm>ol .postbitdeleted .postdetails .userinfo,div#showpm>ol .postbitlegacy .postdetails .userinfo,ol#announcements .postbit .postdetails .userinfo,ol#announcements .postbitdeleted .postdetails .userinfo,ol#announcements .postbitlegacy .postdetails .userinfo,ol#message_list .postbit .postdetails .userinfo,ol#message_list .postbitdeleted .postdetails .userinfo,ol#message_list .postbitlegacy .postdetails .userinfo,ol#posts .postbit .postdetails .userinfo,ol#posts .postbitdeleted .postdetails .userinfo,ol#posts .postbitlegacy .postdetails .userinfo{
+    background:0 0;
+    border-bottom:0;
+    clear:both;
+    display:block;
+    float:left;
+    font-size:11px;
+    overflow:hidden;
+    padding:8px;
+    position:relative;
+    width:125px
+}
+div#showpm>ol .postbit .postdetails .userinfo .username_container,div#showpm>ol .postbitdeleted .postdetails .userinfo .username_container,div#showpm>ol .postbitlegacy .postdetails .userinfo .username_container,ol#announcements .postbit .postdetails .userinfo .username_container,ol#announcements .postbitdeleted .postdetails .userinfo .username_container,ol#announcements .postbitlegacy .postdetails .userinfo .username_container,ol#message_list .postbit .postdetails .userinfo .username_container,ol#message_list .postbitdeleted .postdetails .userinfo .username_container,ol#message_list .postbitlegacy .postdetails .userinfo .username_container,ol#posts .postbit .postdetails .userinfo .username_container,ol#posts .postbitdeleted .postdetails .userinfo .username_container,ol#posts .postbitlegacy .postdetails .userinfo .username_container{
+    margin-bottom:0
+}
+div#showpm>ol .postbit .postdetails .userinfo .username_container a.username,div#showpm>ol .postbitdeleted .postdetails .userinfo .username_container a.username,div#showpm>ol .postbitlegacy .postdetails .userinfo .username_container a.username,ol#announcements .postbit .postdetails .userinfo .username_container a.username,ol#announcements .postbitdeleted .postdetails .userinfo .username_container a.username,ol#announcements .postbitlegacy .postdetails .userinfo .username_container a.username,ol#message_list .postbit .postdetails .userinfo .username_container a.username,ol#message_list .postbitdeleted .postdetails .userinfo .username_container a.username,ol#message_list .postbitlegacy .postdetails .userinfo .username_container a.username,ol#posts .postbit .postdetails .userinfo .username_container a.username,ol#posts .postbitdeleted .postdetails .userinfo .username_container a.username,ol#posts .postbitlegacy .postdetails .userinfo .username_container a.username{
+    clear:right;
+    font-size:10pt;
+    font-weight:700;
+    max-width:160px;
+    width:auto;
+    word-wrap:break-word
+}
+div#showpm>ol .postbit .postdetails .userinfo .usertitle,div#showpm>ol .postbitdeleted .postdetails .userinfo .usertitle,div#showpm>ol .postbitlegacy .postdetails .userinfo .usertitle,ol#announcements .postbit .postdetails .userinfo .usertitle,ol#announcements .postbitdeleted .postdetails .userinfo .usertitle,ol#announcements .postbitlegacy .postdetails .userinfo .usertitle,ol#message_list .postbit .postdetails .userinfo .usertitle,ol#message_list .postbitdeleted .postdetails .userinfo .usertitle,ol#message_list .postbitlegacy .postdetails .userinfo .usertitle,ol#posts .postbit .postdetails .userinfo .usertitle,ol#posts .postbitdeleted .postdetails .userinfo .usertitle,ol#posts .postbitlegacy .postdetails .userinfo .usertitle{
+    clear:both;
+    display:block;
+    font-size:10px;
+    overflow:hidden;
+    white-space:normal
+}
+div#showpm>ol .postbit .postdetails .userinfo #userdata,div#showpm>ol .postbitdeleted .postdetails .userinfo #userdata,div#showpm>ol .postbitlegacy .postdetails .userinfo #userdata,ol#announcements .postbit .postdetails .userinfo #userdata,ol#announcements .postbitdeleted .postdetails .userinfo #userdata,ol#announcements .postbitlegacy .postdetails .userinfo #userdata,ol#message_list .postbit .postdetails .userinfo #userdata,ol#message_list .postbitdeleted .postdetails .userinfo #userdata,ol#message_list .postbitlegacy .postdetails .userinfo #userdata,ol#posts .postbit .postdetails .userinfo #userdata,ol#posts .postbitdeleted .postdetails .userinfo #userdata,ol#posts .postbitlegacy .postdetails .userinfo #userdata{
+    padding-top:20px;
+    text-align:center
+}
+div#showpm>ol .postbit .postdetails .userinfo #userdata #userstats,div#showpm>ol .postbitdeleted .postdetails .userinfo #userdata #userstats,div#showpm>ol .postbitlegacy .postdetails .userinfo #userdata #userstats,ol#announcements .postbit .postdetails .userinfo #userdata #userstats,ol#announcements .postbitdeleted .postdetails .userinfo #userdata #userstats,ol#announcements .postbitlegacy .postdetails .userinfo #userdata #userstats,ol#message_list .postbit .postdetails .userinfo #userdata #userstats,ol#message_list .postbitdeleted .postdetails .userinfo #userdata #userstats,ol#message_list .postbitlegacy .postdetails .userinfo #userdata #userstats,ol#posts .postbit .postdetails .userinfo #userdata #userstats,ol#posts .postbitdeleted .postdetails .userinfo #userdata #userstats,ol#posts .postbitlegacy .postdetails .userinfo #userdata #userstats{
+    font-size:10px;
+    margin:10px
+}
+div#showpm>ol .postbit .postdetails .userinfo #userdata .imlinks,div#showpm>ol .postbitdeleted .postdetails .userinfo #userdata .imlinks,div#showpm>ol .postbitlegacy .postdetails .userinfo #userdata .imlinks,ol#announcements .postbit .postdetails .userinfo #userdata .imlinks,ol#announcements .postbitdeleted .postdetails .userinfo #userdata .imlinks,ol#announcements .postbitlegacy .postdetails .userinfo #userdata .imlinks,ol#message_list .postbit .postdetails .userinfo #userdata .imlinks,ol#message_list .postbitdeleted .postdetails .userinfo #userdata .imlinks,ol#message_list .postbitlegacy .postdetails .userinfo #userdata .imlinks,ol#posts .postbit .postdetails .userinfo #userdata .imlinks,ol#posts .postbitdeleted .postdetails .userinfo #userdata .imlinks,ol#posts .postbitlegacy .postdetails .userinfo #userdata .imlinks{
+    white-space:normal
+}
+div#showpm>ol .postbit .postdetails .postbody,div#showpm>ol .postbitdeleted .postdetails .postbody,div#showpm>ol .postbitlegacy .postdetails .postbody,ol#announcements .postbit .postdetails .postbody,ol#announcements .postbitdeleted .postdetails .postbody,ol#announcements .postbitlegacy .postdetails .postbody,ol#message_list .postbit .postdetails .postbody,ol#message_list .postbitdeleted .postdetails .postbody,ol#message_list .postbitlegacy .postdetails .postbody,ol#posts .postbit .postdetails .postbody,ol#posts .postbitdeleted .postdetails .postbody,ol#posts .postbitlegacy .postdetails .postbody{
+    background:0 0;
+    border-left:0;
+    margin-left:140px;
+    padding-bottom:1em;
+    white-space:normal
+}
+div#showpm>ol .postbit .postdetails .postbody .postrow,div#showpm>ol .postbitdeleted .postdetails .postbody .postrow,div#showpm>ol .postbitlegacy .postdetails .postbody .postrow,ol#announcements .postbit .postdetails .postbody .postrow,ol#announcements .postbitdeleted .postdetails .postbody .postrow,ol#announcements .postbitlegacy .postdetails .postbody .postrow,ol#message_list .postbit .postdetails .postbody .postrow,ol#message_list .postbitdeleted .postdetails .postbody .postrow,ol#message_list .postbitlegacy .postdetails .postbody .postrow,ol#posts .postbit .postdetails .postbody .postrow,ol#posts .postbitdeleted .postdetails .postbody .postrow,ol#posts .postbitlegacy .postdetails .postbody .postrow{
+    color:#333;
+    font:13px Verdana,Arial,Tahoma,Calibri,Geneva,sans-serif;
+    overflow:visible;
+    padding:16px 0 0
+}
+div#showpm>ol .postbit .postdetails .postbody .posttools,div#showpm>ol .postbitdeleted .postdetails .postbody .posttools,div#showpm>ol .postbitlegacy .postdetails .postbody .posttools,ol#announcements .postbit .postdetails .postbody .posttools,ol#announcements .postbitdeleted .postdetails .postbody .posttools,ol#announcements .postbitlegacy .postdetails .postbody .posttools,ol#message_list .postbit .postdetails .postbody .posttools,ol#message_list .postbitdeleted .postdetails .postbody .posttools,ol#message_list .postbitlegacy .postdetails .postbody .posttools,ol#posts .postbit .postdetails .postbody .posttools,ol#posts .postbitdeleted .postdetails .postbody .posttools,ol#posts .postbitlegacy .postdetails .postbody .posttools{
+    position:absolute;
+    right:5px;
+    top:30px;
+    z-index:100
+}
+div#showpm>ol .postbit .postdetails .postbody .postcontent,div#showpm>ol .postbitdeleted .postdetails .postbody .postcontent,div#showpm>ol .postbitlegacy .postdetails .postbody .postcontent,ol#announcements .postbit .postdetails .postbody .postcontent,ol#announcements .postbitdeleted .postdetails .postbody .postcontent,ol#announcements .postbitlegacy .postdetails .postbody .postcontent,ol#message_list .postbit .postdetails .postbody .postcontent,ol#message_list .postbitdeleted .postdetails .postbody .postcontent,ol#message_list .postbitlegacy .postdetails .postbody .postcontent,ol#posts .postbit .postdetails .postbody .postcontent,ol#posts .postbitdeleted .postdetails .postbody .postcontent,ol#posts .postbitlegacy .postdetails .postbody .postcontent{
+    font-family:Tahoma,Helvetica,Arial,Verdana!important;
+    font-size:10pt;
+    padding-right:5px;
+    word-wrap:break-word
+}
+div#showpm>ol .postbit .postdetails .postbody .postcontent .highlight,div#showpm>ol .postbitdeleted .postdetails .postbody .postcontent .highlight,div#showpm>ol .postbitlegacy .postdetails .postbody .postcontent .highlight,ol#announcements .postbit .postdetails .postbody .postcontent .highlight,ol#announcements .postbitdeleted .postdetails .postbody .postcontent .highlight,ol#announcements .postbitlegacy .postdetails .postbody .postcontent .highlight,ol#message_list .postbit .postdetails .postbody .postcontent .highlight,ol#message_list .postbitdeleted .postdetails .postbody .postcontent .highlight,ol#message_list .postbitlegacy .postdetails .postbody .postcontent .highlight,ol#posts .postbit .postdetails .postbody .postcontent .highlight,ol#posts .postbitdeleted .postdetails .postbody .postcontent .highlight,ol#posts .postbitlegacy .postdetails .postbody .postcontent .highlight{
+    background:0 0;
+    color:red;
+    font-weight:700
+}
+div#showpm>ol .postbit .postdetails .postbody .postcontent .editline,div#showpm>ol .postbitdeleted .postdetails .postbody .postcontent .editline,div#showpm>ol .postbitlegacy .postdetails .postbody .postcontent .editline,ol#announcements .postbit .postdetails .postbody .postcontent .editline,ol#announcements .postbitdeleted .postdetails .postbody .postcontent .editline,ol#announcements .postbitlegacy .postdetails .postbody .postcontent .editline,ol#message_list .postbit .postdetails .postbody .postcontent .editline,ol#message_list .postbitdeleted .postdetails .postbody .postcontent .editline,ol#message_list .postbitlegacy .postdetails .postbody .postcontent .editline,ol#posts .postbit .postdetails .postbody .postcontent .editline,ol#posts .postbitdeleted .postdetails .postbody .postcontent .editline,ol#posts .postbitlegacy .postdetails .postbody .postcontent .editline{
+    color:#444;
+    font-size:10px;
+    font-weight:bolder
+}
+div#showpm>ol .postbit .postdetails .postbody .quickedit .actionbuttons,div#showpm>ol .postbitdeleted .postdetails .postbody .quickedit .actionbuttons,div#showpm>ol .postbitlegacy .postdetails .postbody .quickedit .actionbuttons,ol#announcements .postbit .postdetails .postbody .quickedit .actionbuttons,ol#announcements .postbitdeleted .postdetails .postbody .quickedit .actionbuttons,ol#announcements .postbitlegacy .postdetails .postbody .quickedit .actionbuttons,ol#message_list .postbit .postdetails .postbody .quickedit .actionbuttons,ol#message_list .postbitdeleted .postdetails .postbody .quickedit .actionbuttons,ol#message_list .postbitlegacy .postdetails .postbody .quickedit .actionbuttons,ol#posts .postbit .postdetails .postbody .quickedit .actionbuttons,ol#posts .postbitdeleted .postdetails .postbody .quickedit .actionbuttons,ol#posts .postbitlegacy .postdetails .postbody .quickedit .actionbuttons{
+    border:0
+}
+div#showpm>ol .postbit .postfoot,div#showpm>ol .postbitdeleted .postfoot,div#showpm>ol .postbitlegacy .postfoot,ol#announcements .postbit .postfoot,ol#announcements .postbitdeleted .postfoot,ol#announcements .postbitlegacy .postfoot,ol#message_list .postbit .postfoot,ol#message_list .postbitdeleted .postfoot,ol#message_list .postbitlegacy .postfoot,ol#posts .postbit .postfoot,ol#posts .postbitdeleted .postfoot,ol#posts .postbitlegacy .postfoot{
+    clear:both;
+    display:both;
+    float:left;
+    font:700 11px Tahoma,Calibri,Verdana,Geneva,sans-serif;
+    height:22px;
+    padding-top:32px;
+    position:relative;
+    right:0;
+    width:100%
+}
+div#showpm>ol .postbit .postfoot .postlinking,div#showpm>ol .postbitdeleted .postfoot .postlinking,div#showpm>ol .postbitlegacy .postfoot .postlinking,ol#announcements .postbit .postfoot .postlinking,ol#announcements .postbitdeleted .postfoot .postlinking,ol#announcements .postbitlegacy .postfoot .postlinking,ol#message_list .postbit .postfoot .postlinking,ol#message_list .postbitdeleted .postfoot .postlinking,ol#message_list .postbitlegacy .postfoot .postlinking,ol#posts .postbit .postfoot .postlinking,ol#posts .postbitdeleted .postfoot .postlinking,ol#posts .postbitlegacy .postfoot .postlinking{
+    float:left;
+    min-width:137px;
+    padding-left:4px
+}
+div#showpm>ol .postbit .postfoot .postlinking .smallfont,div#showpm>ol .postbitdeleted .postfoot .postlinking .smallfont,div#showpm>ol .postbitlegacy .postfoot .postlinking .smallfont,ol#announcements .postbit .postfoot .postlinking .smallfont,ol#announcements .postbitdeleted .postfoot .postlinking .smallfont,ol#announcements .postbitlegacy .postfoot .postlinking .smallfont,ol#message_list .postbit .postfoot .postlinking .smallfont,ol#message_list .postbitdeleted .postfoot .postlinking .smallfont,ol#message_list .postbitlegacy .postfoot .postlinking .smallfont,ol#posts .postbit .postfoot .postlinking .smallfont,ol#posts .postbitdeleted .postfoot .postlinking .smallfont,ol#posts .postbitlegacy .postfoot .postlinking .smallfont{
+    font-weight:400
+}
+div#showpm>ol .postbit .postfoot .rating_results,div#showpm>ol .postbitdeleted .postfoot .rating_results,div#showpm>ol .postbitlegacy .postfoot .rating_results,ol#announcements .postbit .postfoot .rating_results,ol#announcements .postbitdeleted .postfoot .rating_results,ol#announcements .postbitlegacy .postfoot .rating_results,ol#message_list .postbit .postfoot .rating_results,ol#message_list .postbitdeleted .postfoot .rating_results,ol#message_list .postbitlegacy .postfoot .rating_results,ol#posts .postbit .postfoot .rating_results,ol#posts .postbitdeleted .postfoot .rating_results,ol#posts .postbitlegacy .postfoot .rating_results{
+    color:#777;
+    float:left;
+    font-size:11px;
+    font-weight:400;
+    position:relative;
+    top:-4px;
+    white-space:nowrap
+}
+div#showpm>ol .postbit .postfoot .rating_results img,div#showpm>ol .postbitdeleted .postfoot .rating_results img,div#showpm>ol .postbitlegacy .postfoot .rating_results img,ol#announcements .postbit .postfoot .rating_results img,ol#announcements .postbitdeleted .postfoot .rating_results img,ol#announcements .postbitlegacy .postfoot .rating_results img,ol#message_list .postbit .postfoot .rating_results img,ol#message_list .postbitdeleted .postfoot .rating_results img,ol#message_list .postbitlegacy .postfoot .rating_results img,ol#posts .postbit .postfoot .rating_results img,ol#posts .postbitdeleted .postfoot .rating_results img,ol#posts .postbitlegacy .postfoot .rating_results img{
+    position:relative;
+    top:4px
+}
+div#showpm>ol .postbit .postfoot .rating_results a.rating_users,div#showpm>ol .postbit .postfoot .rating_results a.rating_users:hover,div#showpm>ol .postbitdeleted .postfoot .rating_results a.rating_users,div#showpm>ol .postbitdeleted .postfoot .rating_results a.rating_users:hover,div#showpm>ol .postbitlegacy .postfoot .rating_results a.rating_users,div#showpm>ol .postbitlegacy .postfoot .rating_results a.rating_users:hover,ol#announcements .postbit .postfoot .rating_results a.rating_users,ol#announcements .postbit .postfoot .rating_results a.rating_users:hover,ol#announcements .postbitdeleted .postfoot .rating_results a.rating_users,ol#announcements .postbitdeleted .postfoot .rating_results a.rating_users:hover,ol#announcements .postbitlegacy .postfoot .rating_results a.rating_users,ol#announcements .postbitlegacy .postfoot .rating_results a.rating_users:hover,ol#message_list .postbit .postfoot .rating_results a.rating_users,ol#message_list .postbit .postfoot .rating_results a.rating_users:hover,ol#message_list .postbitdeleted .postfoot .rating_results a.rating_users,ol#message_list .postbitdeleted .postfoot .rating_results a.rating_users:hover,ol#message_list .postbitlegacy .postfoot .rating_results a.rating_users,ol#message_list .postbitlegacy .postfoot .rating_results a.rating_users:hover,ol#posts .postbit .postfoot .rating_results a.rating_users,ol#posts .postbit .postfoot .rating_results a.rating_users:hover,ol#posts .postbitdeleted .postfoot .rating_results a.rating_users,ol#posts .postbitdeleted .postfoot .rating_results a.rating_users:hover,ol#posts .postbitlegacy .postfoot .rating_results a.rating_users,ol#posts .postbitlegacy .postfoot .rating_results a.rating_users:hover{
+    color:#777;
+    margin-left:-5px
+}
+div#showpm>ol .postbit .postfoot .postcontrols,div#showpm>ol .postbitdeleted .postfoot .postcontrols,div#showpm>ol .postbitlegacy .postfoot .postcontrols,ol#announcements .postbit .postfoot .postcontrols,ol#announcements .postbitdeleted .postfoot .postcontrols,ol#announcements .postbitlegacy .postfoot .postcontrols,ol#message_list .postbit .postfoot .postcontrols,ol#message_list .postbitdeleted .postfoot .postcontrols,ol#message_list .postbitlegacy .postfoot .postcontrols,ol#posts .postbit .postfoot .postcontrols,ol#posts .postbitdeleted .postfoot .postcontrols,ol#posts .postbitlegacy .postfoot .postcontrols{
+    float:right;
+    padding-right:0;
+    text-align:right;
+    width:auto
+}
+#announce_viewall,#quick_reply .wysiwyg_block .actionbuttons .group{
+    text-align:center
+}
+div#showpm>ol .postbit .postfoot .postcontrols>img,div#showpm>ol .postbitdeleted .postfoot .postcontrols>img,div#showpm>ol .postbitlegacy .postfoot .postcontrols>img,ol#announcements .postbit .postfoot .postcontrols>img,ol#announcements .postbitdeleted .postfoot .postcontrols>img,ol#announcements .postbitlegacy .postfoot .postcontrols>img,ol#message_list .postbit .postfoot .postcontrols>img,ol#message_list .postbitdeleted .postfoot .postcontrols>img,ol#message_list .postbitlegacy .postfoot .postcontrols>img,ol#posts .postbit .postfoot .postcontrols>img,ol#posts .postbitdeleted .postfoot .postcontrols>img,ol#posts .postbitlegacy .postfoot .postcontrols>img{
+    float:right
+}
+div#showpm>ol .postbit .postfoot .postcontrols a.post_button,div#showpm>ol .postbitdeleted .postfoot .postcontrols a.post_button,div#showpm>ol .postbitlegacy .postfoot .postcontrols a.post_button,ol#announcements .postbit .postfoot .postcontrols a.post_button,ol#announcements .postbitdeleted .postfoot .postcontrols a.post_button,ol#announcements .postbitlegacy .postfoot .postcontrols a.post_button,ol#message_list .postbit .postfoot .postcontrols a.post_button,ol#message_list .postbitdeleted .postfoot .postcontrols a.post_button,ol#message_list .postbitlegacy .postfoot .postcontrols a.post_button,ol#posts .postbit .postfoot .postcontrols a.post_button,ol#posts .postbitdeleted .postfoot .postcontrols a.post_button,ol#posts .postbitlegacy .postfoot .postcontrols a.post_button{
+    background-color:#eee;
+    border:1px solid #aaa;
+    color:#444;
+    float:right;
+    font-size:9px;
+    font-weight:700;
+    margin:0 4px 4px;
+    padding:2px 10px
+}
+div#showpm>ol .postbit .postfoot .postcontrols a.post_button:hover,div#showpm>ol .postbitdeleted .postfoot .postcontrols a.post_button:hover,div#showpm>ol .postbitlegacy .postfoot .postcontrols a.post_button:hover,ol#announcements .postbit .postfoot .postcontrols a.post_button:hover,ol#announcements .postbitdeleted .postfoot .postcontrols a.post_button:hover,ol#announcements .postbitlegacy .postfoot .postcontrols a.post_button:hover,ol#message_list .postbit .postfoot .postcontrols a.post_button:hover,ol#message_list .postbitdeleted .postfoot .postcontrols a.post_button:hover,ol#message_list .postbitlegacy .postfoot .postcontrols a.post_button:hover,ol#posts .postbit .postfoot .postcontrols a.post_button:hover,ol#posts .postbitdeleted .postfoot .postcontrols a.post_button:hover,ol#posts .postbitlegacy .postfoot .postcontrols a.post_button:hover{
+    background-color:#ffa;
+    color:#222;
+    text-decoration:none
+}
+div#showpm>ol .postbitold div.postdetails,div#showpm>ol .postbitold div.postfoot,ol#announcements .postbitold div.postdetails,ol#announcements .postbitold div.postfoot,ol#message_list .postbitold div.postdetails,ol#message_list .postbitold div.postfoot,ol#posts .postbitold div.postdetails,ol#posts .postbitold div.postfoot{
+    background:url(/fp/postbitback_old.png) repeat-y #fff
+}
+div#showpm>ol .postbitnew div.postdetails,div#showpm>ol .postbitnew div.postfoot,ol#announcements .postbitnew div.postdetails,ol#announcements .postbitnew div.postfoot,ol#message_list .postbitnew div.postdetails,ol#message_list .postbitnew div.postfoot,ol#posts .postbitnew div.postdetails,ol#posts .postbitnew div.postfoot{
+    background:url(/fp/postbitback_new.png) repeat-y #fff
+}
+div#showpm>ol .yourpost div.postdetails,div#showpm>ol .yourpost div.postfoot,ol#announcements .yourpost div.postdetails,ol#announcements .yourpost div.postfoot,ol#message_list .yourpost div.postdetails,ol#message_list .yourpost div.postfoot,ol#posts .yourpost div.postdetails,ol#posts .yourpost div.postfoot{
+    background:url(/fp/postbitback_yours.png) repeat-y #fff
+}
+div#showpm>ol .imod_highlight div.postdetails,div#showpm>ol .imod_highlight div.postfoot,ol#announcements .imod_highlight div.postdetails,ol#announcements .imod_highlight div.postfoot,ol#message_list .imod_highlight div.postdetails,ol#message_list .imod_highlight div.postfoot,ol#posts .imod_highlight div.postdetails,ol#posts .imod_highlight div.postfoot{
+    background:#ffeb90
+}
+div#showpm>ol #quick_reply,ol#announcements #quick_reply,ol#message_list #quick_reply,ol#posts #quick_reply{
+    margin-bottom:0
+}
+div#showpm>ol #quick_reply .fullwidth,ol#announcements #quick_reply .fullwidth,ol#message_list #quick_reply .fullwidth,ol#posts #quick_reply .fullwidth{
+    display:block
+}
+#quick_reply .fullwidth,div.editor_controls{
+    display:none
+}
+div#showpm>ol #quick_reply #quickreply_title,ol#announcements #quick_reply #quickreply_title,ol#message_list #quick_reply #quickreply_title,ol#posts #quick_reply #quickreply_title{
+    -moz-border-radius-topleft:0;
+    -moz-border-radius-topright:0;
+    -webkit-border-top-left-radius:0;
+    -webkit-border-top-right-radius:0;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    border:0
+}
+div#showpm>ol #quick_reply .wysiwyg_block,ol#announcements #quick_reply .wysiwyg_block,ol#message_list #quick_reply .wysiwyg_block,ol#posts #quick_reply .wysiwyg_block{
+    background:url(/fp/postbitback_old.png) repeat-y #fff;
+    margin-bottom:0
+}
+div#showpm>ol #quick_reply .wysiwyg_block .actionbuttons,div#showpm>ol #quick_reply .wysiwyg_block .formcontrols,div#showpm>ol #quick_reply .wysiwyg_block .formcontrols .blockrow,ol#announcements #quick_reply .wysiwyg_block .actionbuttons,ol#announcements #quick_reply .wysiwyg_block .formcontrols,ol#announcements #quick_reply .wysiwyg_block .formcontrols .blockrow,ol#message_list #quick_reply .wysiwyg_block .actionbuttons,ol#message_list #quick_reply .wysiwyg_block .formcontrols,ol#message_list #quick_reply .wysiwyg_block .formcontrols .blockrow,ol#posts #quick_reply .wysiwyg_block .actionbuttons,ol#posts #quick_reply .wysiwyg_block .formcontrols,ol#posts #quick_reply .wysiwyg_block .formcontrols .blockrow{
+    background:0 0
+}
+.ratingslist{
+    -icab-box-shadow:1px 1px 4px #999!important;
+    -khtml-box-shadow:1px 1px 4px #999!important;
+    -moz-box-shadow:1px 1px 4px #999!important;
+    -o-box-shadow:1px 1px 4px #999!important;
+    -webkit-box-shadow:1px 1px 4px #999!important;
+    border-top:0!important;
+    box-shadow:1px 1px 4px #999!important
+}
+.ratingslist .ratingsbox{
+    border:1px dashed #777;
+    float:left;
+    margin-right:10px;
+    padding:5px
+}
+#report_moderation .post_report #dismiss,.postrating{
+    float:right
+}
+.ratingslist .ratingsbox ul{
+    margin-top:5px;
+    max-height:200px;
+    overflow:auto;
+    overflow-x:hidden;
+    padding:1px
+}
+#referrers .linkbit,#referrers .linkbit>div,#usercss.converse_page #postlist,.notices li,H5.widget_post_header,P.lastposttitle,div.blog #content .blogentrybit,div.blog #content form#blog_stats .blockbody,ol#announcements,ol#blogentries li.blogentrybit{
+    overflow:hidden
+}
+.ratingslist .ratingsbox:last-child{
+    margin-right:0
+}
+ol#announcements{
+    margin-bottom:20px
+}
+ol#announcements li{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+#report_moderation h1,#usercss.converse_page #postlist{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box
+}
+ol#announcements li:last-child{
+    border-bottom-width:1px
+}
+#announce_viewall{
+    font-size:10px
+}
+#usercss #postlist #message_list .postbit,#view-visitor_messaging ol#message_list .postbit{
+    border:0
+}
+#usercss.converse_page #postlist{
+    background-color:#eee;
+    border:1px solid #888;
+    box-sizing:border-box;
+    padding:10px
+}
+#usercss.converse_page #postlist .postbit{
+    background:0 0
+}
+div#above_postlist{
+    margin:0
+}
+div#below_postlist{
+    margin:10px 0
+}
+#qr_defaultcontainer{
+    border:0;
+    padding:0
+}
+#quick_reply{
+    margin-bottom:0
+}
+#quick_reply .fullwidth h3{
+    border-bottom-width:0
+}
+#quick_reply .wysiwyg_block{
+    border:1px solid #888;
+    margin-bottom:0;
+    padding:5px
+}
+#quick_reply .wysiwyg_block .formcontrols{
+    border:0;
+    margin:auto;
+    max-width:750px
+}
+#quick_reply .wysiwyg_block .actionbuttons{
+    border:0
+}
+#quick_reply .wysiwyg_block .actionbuttons input[type=reset],#quick_reply .wysiwyg_block .actionbuttons input[type=submit]{
+    padding:2px 3px
+}
+.smallfont{
+    font-size:10px
+}
+.quote{
+    border:1px solid #888;
+    display:table;
+    margin:10px
+}
+#report_moderation .post_report .postrating,.popupbox{
+    display:none
+}
+.quote .information,.quote .message{
+    background-color:#bdf;
+    font-size:11px;
+    padding:10px
+}
+.quote .information{
+    background-color:#ace;
+    font-size:10px;
+    padding:4px
+}
+.postrating{
+    margin-bottom:4px;
+    margin-right:10px;
+    white-space:nowrap
+}
+.postrating img{
+    opacity:.6
+}
+.postrating img:hover{
+    opacity:1
+}
+#blog_sidebar_generic,#blog_user_sidebar{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0
+}
+div.blog #content{
+    -moz-box-shadow:-2px 2px 2px #999;
+    -webkit-box-shadow:-2px 2px 2px #999;
+    background:url(images/misc/blog/top-highlight.png) left top repeat-x #f1f1f1;
+    border:1px solid #C4C4C4;
+    padding:10px
+}
+div.blog #content #content_inner{
+    background:0 0;
+    padding:none
+}
+div.blog #content .blogentrybit h4#blog_title{
+    font-size:16pt
+}
+div.blog #content form#blog_permissions .blockbody,div.blog #content form#blog_title .blockbody,div.blog #content form#usercss_form .blockbody{
+    border-top:1px solid #888
+}
+div.blog #content form#blog_sidebar div.block{
+    border:1px solid #888
+}
+div.blog #content form#blog_sidebar div.block .blockbody,div.blog #content form#blog_sidebar div.block .blockfoot{
+    border:0
+}
+div.blog #content form#blog_sidebar div.block dd.bloglistinfo{
+    padding-left:5px
+}
+div.blog #content form#blog_categories,div.blog #content form#blog_pages,div.blog #content form#trackbackform{
+    border:1px solid #888
+}
+div.blog #content form#blog_categories .blockbody,div.blog #content form#blog_categories .blockfoot,div.blog #content form#blog_delete .blockfoot,div.blog #content form#blog_pages .blockbody,div.blog #content form#blog_pages .blockfoot,div.blog #content form#trackbackform .blockbody,div.blog #content form#trackbackform .blockfoot{
+    border:0
+}
+div.blog #content form#blog_delete .blockbody{
+    border-bottom-width:1px
+}
+div.blog #content .blockhead{
+    margin-top:2em
+}
+div.blog #content #content_inner.blockrow #pagetitle{
+    margin-bottom:0
+}
+div.blog #content #content_inner.blockrow #blogheader{
+    background-color:#4683B8;
+    margin:0 5px 10px;
+    padding:5px
+}
+div.blog #content #content_inner.blockrow #blogheader a,div.blog #content #content_inner.blockrow #blogheader a:hover{
+    color:#fff
+}
+div.blog #content ol#message_list li{
+    background:0 0;
+    border:0
+}
+div.blog #content ol#message_list li .postbithead .username{
+    font-weight:400
+}
+div.blog #content ol#message_list li.imod_highlight{
+    background-color:#ffeb90
+}
+.blog #sidebar_container .blockfoot{
+    border:0
+}
+.popupbox{
+    background-color:#ffd;
+    border:1px solid #777;
+    color:#555;
+    font-size:11px;
+    padding:5px;
+    position:absolute
+}
+.popupbox.report ul{
+    margin:5px;
+    padding-left:15px
+}
+.popupbox.report li{
+    font-size:10px;
+    list-style:disc
+}
+#report_moderation{
+    background-color:#eee;
+    border:1px solid #888
+}
+#report_moderation h1{
+    box-sizing:border-box;
+    font-size:14pt;
+    padding:10px;
+    width:100%
+}
+.searchresults li.postbit,.searchresults li.postbit .posthead{
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box
+}
+#report_moderation .post_report{
+    background-color:#fff;
+    border:1px solid #888;
+    margin:20px;
+    padding:10px
+}
+#report_moderation .post_report .postbitlegacy{
+    border-bottom-width:1px!important;
+    margin:10px 0
+}
+#report_moderation .post_report .userbox{
+    background-color:#cfc;
+    border:1px solid #aaa;
+    float:left;
+    font-size:10px;
+    margin:0 3px 3px;
+    padding:2px
+}
+.postadmin{
+    -icab-box-shadow:1px 1px 8px #aaa!important;
+    -khtml-box-shadow:1px 1px 8px #aaa!important;
+    -moz-box-shadow:1px 1px 8px #aaa!important;
+    -o-box-shadow:1px 1px 8px #aaa!important;
+    -webkit-box-shadow:1px 1px 8px #aaa!important;
+    background-color:#ffb;
+    border:1px solid #888;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+    box-shadow:1px 1px 8px #aaa!important;
+    display:block;
+    font-size:11px;
+    padding:10px;
+    position:absolute;
+    text-align:left
+}
+#threadadmin,.postadmin .pa_eventlog{
+    display:none
+}
+.postadmin input{
+    font-size:10px;
+    margin:5px;
+    width:95%
+}
+#threadadmin,#threadadmin_toggle{
+    font-size:12px;
+    font-weight:700;
+    text-align:center
+}
+.postadmin hr{
+    background-color:#ccc;
+    border:0;
+    height:1px
+}
+.postadmin .pa_eventlog ul{
+    margin-left:10px;
+    margin-top:5px
+}
+#threadadmin a,.tabutton{
+    background-color:#ffa;
+    margin:2px;
+    line-height:28px;
+    width:50px;
+    border:1px solid #888
+}
+.postadmin .pa_eventlog ul img{
+    vertical-align:bottom
+}
+.tabutton{
+    padding:5px
+}
+#threadadmin{
+    background-color:#eee;
+    margin-bottom:5px;
+    padding:15px
+}
+#threadadmin a{
+    padding:5px
+}
+#threadadmin a:hover{
+    background-color:#ff5;
+    text-decoration:none
+}
+.blockhead .popupgroup .popupmenu a.popupctrl:hover,.postcontent A{
+    text-decoration:underline
+}
+#threadadmin p{
+    margin:10px
+}
+#threadadmin .move{
+    margin:0 auto;
+    max-width:600px
+}
+#threadadmin .move a{
+    background-color:#cfa
+}
+#threadadmin #threadadmin_response{
+    clear:both
+}
+#threadadmin_toggle{
+    margin-bottom:5px
+}
+#threadadmin_toggle a{
+    background-color:#ffa;
+    border:1px solid #888;
+    line-height:28px;
+    margin:2px;
+    padding:5px;
+    width:50px
+}
+#bottom_box{
+    background-color:#fff;
+    border:1px solid #888;
+    margin-right:-2px;
+    margin-top:10px;
+    width:100%
+}
+#bottom_box div.td{
+    padding:5px;
+    vertical-align:middle
+}
+#bottom_box div.td ol,#bottom_box div.td ul{
+    display:inline
+}
+#bottom_box tr:last-child td{
+    border-bottom:0
+}
+#bottom_box div.img{
+    background-color:#f5f5f5;
+    width:32px
+}
+.member_content .profile_content #view-visitor_messaging #message_form .actionbuttons,.member_content .profile_content #view-visitor_messaging #message_form .formcontrols,.member_content .profile_content #view-visitor_messaging #message_form .subsectionhead,.member_content .profile_content #view-visitor_messaging #message_form .texteditor{
+    background:0 0;
+    border:0
+}
+.member_content .profile_content #view-visitor_messaging .postbit-lite{
+    background:0 0
+}
+.member_content .profile_content #view-visitor_messaging .postbit-lite .postbithead{
+    background-color:#ccc;
+    border:1px solid #777;
+    color:#444
+}
+.member_content .profile_content #view-visitor_messaging .postbit-lite.imod_highlight{
+    background-color:#FFEB90
+}
+.member_content .profile_content #view-friends-content .breakfriendship{
+    margin-top:0;
+    top:16px
+}
+.wysiwyg_block .blockbody{
+    border-bottom-width:0
+}
+.wysiwyg_block .blockfoot{
+    border-top-width:0
+}
+form#searchform .actionbuttons{
+    border:0
+}
+form#searchform a#collapse_additionaloptions{
+    float:right
+}
+.block>#search_form.blockbody.formcontrols{
+    border-bottom-width:1px
+}
+#group_desc.blockbody,.searchresults{
+    border:1px solid #888
+}
+.searchresults .searchlisthead{
+    border-bottom:1px solid #888
+}
+.searchresults .blockbody{
+    background:0
+}
+.searchresults .blockfoot{
+    border:0
+}
+.searchresults .blockfoot #inlinemod_formctrls{
+    margin-right:10px
+}
+.searchresults .blockfoot .postpagestats{
+    padding:5px 10px
+}
+.searchresults li.postbit .posthead{
+    border:0;
+    border-bottom:1px solid #777;
+    box-sizing:border-box;
+    font-size:10px;
+    margin:0
+}
+#bottom_box,#posts li,.searchresults .searchlisthead,.threadfoot,.threadhead{
+    box-sizing:border-box
+}
+.searchresults li.postbit .userinfo_noavatar{
+    background-color:#eee;
+    border-bottom:1px solid #ccc
+}
+.searchresults li.postbit .postbody{
+    background-color:#fff
+}
+.searchresults li.imod_highlight .postbody,.searchresults li.imod_highlight .userinfo,.searchresults li.imod_highlight .userinfo_noavatar{
+    background-color:#ffeb90
+}
+#above_searchresults{
+    height:40px
+}
+div#usercp_content #user_notifications .blockbody{
+    border-bottom-width:1px
+}
+div#usercp_content #foldercontrols.block .blockfoot{
+    padding:5px
+}
+div#usercp_content form[name=vbform] .blockbody{
+    border-bottom:0
+}
+div#usercp_content form[name=vbform] .blockfoot{
+    border-top:0
+}
+ul.memberlist li{
+    overflow:hidden
+}
+#group_desc.blockbody{
+    background-color:#EEE;
+    border-top-width:0
+}
+#group_desc.blockbody div.blockrow{
+    padding:10px
+}
+#group_desc_title.blockhead ul#menugroup{
+    margin:0
+}
+#group_desc_title.blockhead ul#menugroup li{
+    clear:none
+}
+#group_desc_title.blockhead ul#menugroup li h6{
+    padding-left:0;
+    padding-right:5px
+}
+#group_desc_title.blockhead ul#menugroup li h6 a{
+    color:#fff;
+    margin-left:0
+}
+#group_desc_title.blockhead ul#menugroup li:last-child h6{
+    padding-right:0
+}
+#group_desc_title.blockhead ul#menugroup #menu-admin,#group_desc_title.blockhead ul#menugroup #menu-grouptools{
+    background-image:none
+}
+table#threads.groupd{
+    border-left:1px solid #888;
+    border-right:1px solid #888
+}
+.notices{
+    background:0 0
+}
+.notices li{
+    -icab-box-shadow:none!important;
+    -khtml-box-shadow:none!important;
+    -moz-box-shadow:none!important;
+    -o-box-shadow:none!important;
+    -webkit-box-shadow:none!important;
+    background:url(/fp/notice.png) 4px 4px no-repeat #ffc;
+    border:1px solid #888;
+    box-shadow:none!important;
+    font-size:10pt;
+    margin-bottom:4px;
+    margin-top:4px;
+    padding:4px 4px 4px 32px
+}
+.blockhead .popupgroup .popupmenu a.popupctrl,.blockhead .popupgroup .popupmenu a.popupctrl:hover{
+    border:0;
+    color:#fff
+}
+.blockhead a,.blockhead a:hover{
+    color:inherit
+}
+.redirect_page .blockbody{
+    padding:48px;
+    text-align:center
+}
+.redirect_page .blockbody p{
+    color:#000;
+    font-weight:700
+}
+.media{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background-color:#eee;
+    border:1px solid #444;
+    display:inline-block;
+    margin:0 auto 15px;
+    width:100%;
+    max-width:480px;
+    padding:0;
+    text-align:center
+}
+.media .message{
+    font-family:Arial,sans-serif;
+    font-size:16px;
+    font-weight:700;
+    padding:8px
+}
+.media .infobar{
+    background-color:#777;
+    font-size:10px;
+    margin:0 auto;
+    padding:5px
+}
+.media .infobar a{
+    color:#FFF
+}
+#groups_2 li.block ol.blockbody{
+    padding-bottom:5px
+}
+DIV#article_content,DIV.article_preview{
+    padding:0!important;
+    background-color:#FFF!important
+}
+#groups_1 ol.blockbody,#groups_2 ol.blockbody{
+    border:1px solid #888;
+    border-top-width:0
+}
+#referrers{
+    text-align:center
+}
+#referrers #buttons_bar{
+    background-color:#efefef;
+    border:1px solid #777;
+    margin-bottom:30px;
+    padding:5px
+}
+#referrers .linkbit{
+    margin:0 auto 5px;
+    text-align:left;
+    white-space:no-wrap;
+    width:800px
+}
+#referrers .linkbit>div{
+    float:left;
+    margin-left:16px;
+    text-align:left;
+    white-space:nowrap
+}
+.header_banned.ban_newthread,DIV#article_content DIV.article_promoted_text_container,SPAN.prefix{
+    text-align:center
+}
+#referrers .linkbit .cnt{
+    font-size:16px;
+    font-weight:bolder;
+    margin-left:0;
+    width:50px
+}
+#referrers .linkbit .url{
+    width:400px
+}
+#referrers .linkbit .forumid{
+    width:200px
+}
+#referrers .linkbit .threadid{
+    width:300px
+}
+#registerform .blockbody:nth-child(2){
+    border-bottom-width:1px
+}
+DIV.article_preview{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px
+}
+DIV.article_preview DIV.postcontainer{
+    margin:5px 20px
+}
+DIV.article_preview DIV.postcontainer IMG{
+    max-width:100%
+}
+H1.header,H2.header{
+    border:0;
+    color:#FFF;
+    font-family:Arial;
+    font-size:30px;
+    margin:0;
+    text-shadow:2px 2px 5px #111
+}
+DIV#article_content H1.article_title,H3.article_preview,H3.article_preview A{
+    border:0!important;
+    color:#444;
+    font-family:Arial;
+    font-size:35px!important;
+    font-weight:700!important;
+    letter-spacing:-2px
+}
+UL#sidebar,span.blocktitle{
+    color:#FFF
+}
+DIV#article_content H1.article_title,H3.article_preview{
+    margin:5px 10px
+}
+DIV.cms_article_username{
+    display:block;
+    float:left!important;
+    margin:1px 20px;
+    width:98%
+}
+DIV#article_content{
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px
+}
+DIV#article_content DIV.postcontainer{
+    margin:20px
+}
+DIV#article_content DIV.article_author_date_comment_container{
+    font-size:11px;
+    margin:0 20px;
+    width:98%
+}
+H5.widget_post_header{
+    white-space:nowrap
+}
+UL#sidebar{
+    background:url(/images/buttons/newbtn_middle.png) repeat-x #26F;
+    border:1px solid #888
+}
+DIV#sidebar_container{
+    padding:10px 0
+}
+IMG#sidebar_button{
+    margin-right:-16px;
+    width:16px
+}
+#sidebar_container .block{
+    padding:0
+}
+.postcontent A{
+    color:#38d
+}
+50%{
+    -webkit-transform:rotate(180deg) scale(1.4)
+}
+100%{
+    -webkit-transform:rotate(360deg) scale(.7)
+}
+.inlineimgDISABLED{
+    -webkit-animation-duration:5s;
+    -webkit-transition-timing-function:ease-in-out
+}
+.information A{
+    color:#05a;
+    font-size:12px;
+    font-weight:700;
+    text-decoration:none
+}
+#vB_Editor_QR_textarea{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background-color:#FFF!important;
+    box-shadow:inset 1px 1px 8px #ccc!important
+}
+DIV.bbcode_release{
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    border-radius:8px;
+    background:to(#e9e7dD)) 0;
+    background-color:#F9F7ED;
+    border:1px solid #FcFaf2;
+    box-shadow:2px 1px 8px #aaa!important;
+    color:#36393D;
+    display:table;
+    margin:5px 50px;
+    padding:16px
+}
+DIV.bbcode_release H2{
+    color:#555;
+    font-size:34px;
+    letter-spacing:-3px;
+    margin-top:0;
+    padding-top:0;
+    text-shadow:0 0 4px rgba(255,255,255,1)!important
+}
+.rotating{
+    -webkit-animation-duration:1s;
+    -webkit-animation-timing-function:linear
+}
+.thread_hasimages{
+    top:1px;
+    position:relative
+}
+table#threads tr.threadbit td.threadinfo .newposts{
+    background-color:#FFA;
+    border:1px solid #ccc;
+    display:inline-block;
+    padding:2px 5px;
+    margin:-2px 0 -2px 2px;
+    font-size:8pt!important;
+    font-weight:400!important;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;
+    border-radius:2px
+}
+table#threads tr.threadbit td.threadinfo .newposts img{
+    position:relative;
+    height:10px;
+    top:1px
+}
+table#threads tr.threadbit td.threadinfo .newposts:hover{
+    background-color:#FF5;
+    border:1px solid #555;
+    text-decoration:none
+}
+TD.threadicon IMG{
+    height:15px;
+    width:60px
+}
+DIV.video{
+    height:480px;
+    width:853px;
+    margin:10px auto
+}
+DIV.hd_video{
+    width:100%;
+    height:720px;
+    max-width:1280px;
+    margin:10px auto;
+    padding:1px
+}
+DIV.quote DIV.hd_video,DIV.quote DIV.video{
+    height:240px!important;
+    width:427px!important;
+    margin:5px auto
+}
+.FrontPageForums table.forums{
+    margin-bottom:10px
+}
+TABLE.forums DIV.forumdata{
+    margin-left:10px
+}
+TABLE.forums DIV.forumdata P.forumdescription{
+    color:#777
+}
+TABLE.forums TR:last-child{
+    border-bottom:1px solid #888!important
+}
+DIV.lastpostby{
+    float:left
+}
+LI.subforum A{
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    background-color:#ddd;
+    border:1px solid rgba(0,0,0,.1);
+    line-height:20px;
+    padding:1px 4px;
+    text-decoration:none!important;
+    white-space:nowrap
+}
+LI.subforum A:hover{
+    background-color:#ffa
+}
+LI.subforum:after{
+    content:""!important
+}
+TD.last_post_column{
+    max-width:150px;
+    min-width:150px;
+    width:150px
+}
+TD.FrontPageForums{
+    width:50%
+}
+LI.subforum_old{
+    opacity:.6
+}
+DIV.LastPostAvatar{
+    background-color:#ddd;
+    background-position:center;
+    background-size:cover;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    border-radius:4px;
+    float:right;
+    height:32px;
+    margin-left:5px;
+    width:32px
+}
+P.lastposttitle{
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+SPAN.prefix{
+    background-color:#0085ff;
+    color:#FFF;
+    display:inline-block;
+    font-size:9px;
+    padding:3px 7px;
+    text-shadow:1px 1px 0 #000
+}
+.bbcode_description,.pagination span.popupspan a.popupctrl img{
+    display:none
+}
+.rainbow .function,.rainbow .type{
+    color:#ADF
+}
+.rainbow .string{
+    color:#FFA
+}
+.rainbow .operator{
+    color:#ccc
+}
+.rainbow .numeric{
+    color:#fff
+}
+.rainbow .keyword{
+    color:#AFA
+}
+.rainbow .comment{
+    color:#3a3
+}
+pre.rainbow{
+    background-color:#444!important;
+    border:none!important;
+    -moz-border-radius:2px!important;
+    -webkit-border-radius:2px!important;
+    border-radius:2px!important;
+    color:#ddd!important;
+    font-family:Consolas,Courier New,Courier,Monospace!important;
+    font-size:11px!important;
+    height:auto!important;
+    max-height:1000px;
+    overflow:auto!important;
+    padding:16px!important
+}
+.bbcode_container{
+    margin:22px
+}
+BODY{
+    line-height:1!important
+}
+#content_inner{
+    margin:12px;
+    clear:both
+}
+.forumhead,.newcontent_textcontrol,.threadlisthead,div#above_postlist a.popupctrl,div#above_postlist div.pagination_top a.popupctrl,div#above_threadlist div.threadpagenav a.popupctrl,div#below_postlist div#pagination_bottom a.popupctrl,div#below_postlist div.pagination_bottom a.popupctrl,div#below_searchresults a.popupctrl,div#below_threadlist div.threadpagenav a.popupctrl,div#pagination_top a.popupctrl,div.threadfoot,div.threadhead{
+    background:#28f
+}
+.forumhead{
+    text-shadow:0 0 5px rgba(0,0,0,.3)
+}
+.member_summary{
+    background:#E8E8E8;
+    border:1px solid #888
+}
+.formcontrols,.profile_content .subsection{
+    border-top:none
+}
+dl.tabslight{
+    overflow:hidden
+}
+.profile_content .subsectionhead-understate{
+    top:0;
+    padding:0;
+    background:0 0;
+    color:#fff;
+    text-shadow:0 0 5px rgba(0,0,0,.3)
+}
+.profile_content #view-aboutme div.subsectionhead{
+    overflow:hidden;
+    padding:10px 50px 10px 15px;
+    background:#28f
+}
+.member_content .blockbody,.member_content .blockrow{
+    background:0 0
+}
+.member_content #view-aboutme a.floatright{
+    float:right;
+    margin:5px 5px 10px
+}
+.pagination span.popupspan a{
+    background:#28f
+}
+#inlinemod_controls{
+    top:5px;
+    position:relative
+}
+.logindetails input{
+    padding:1px 5px!important
+}
+.member_summary .imagecontrol img{
+    top:0
+}
+.member_summary .textcontrol{
+    margin:0 5px
+}
+.userinfo .blockrow.member_blockrow{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0
+}
+#report_moderation h1{
+    background-color:#28f;
+    border-bottom:1px solid #888;
+    color:#fff
+}
+a.newcontent_textcontrol{
+    background:#28f;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0
+}
+a.newcontent_textcontrol:hover{
+    background:#2C98ED
+}
+#bottom_box{
+    clear:left
+}
+.profile_content dl dd,.profile_content dt{
+    float:left;
+    clear:right
+}
+#bottom_box div.td{
+    border-bottom:none
+}
+#mod_list div.td{
+    border-bottom:1px solid #CCC
+}
+table#threads tr.threadbit.imod_highlight td.alt{
+    background-color:#FFEB90
+}
+div.threadfoot,div.threadhead{
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0
+}
+.blockhead{
+    background:#28f;
+    -moz-border-radius:0;
+    -webkit-border-radius:0;
+    border-radius:0
+}
+#usercp_nav .blockbody{
+    border-color:#888
+}
+blockquote{
+    overflow:visible!important;
+    word-wrap:break-word
+}
+#posticon_preview{
+    width:60px!important;
+    height:15px!important
+}
+.ratingsbox ul::-webkit-scrollbar{
+    width:4px
+}
+.ratingsbox ul::-webkit-scrollbar-thumb{
+    background:#777
+}
+#quick_reply .blockrow,.formcontrols .blockrow{
+    background:0 0
+}
+.profile_content dt{
+    display:block;
+    width:250px
+}
+.profile_content dl:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+.member_content dt{
+    color:#444!important
+}
+.member_content dd{
+    color:#666!important
+}
+.profile_content .blockbody.userprof_content.userprof_content_border dl{
+    padding:5px 10px
+}
+.profile_content .group{
+    margin:5px 5px 5px 24px
+}
+.searchresults .postbit{
+    margin-bottom:-1px
+}
+.searchresults .blockfootpad{
+    padding:10px 0 5px
+}
+.searchresults #postpagestats{
+    margin-left:5px
+}
+span.postbit_ip{
+    position:relative;
+    top:-32px;
+    display:block
+}
+li #quick_reply.vbform{
+    border:1px solid #888;
+    border-bottom:none
+}
+li #quick_reply.vbform .fullwidth{
+    border-bottom:1px solid #888
+}
+#message_list,.posts{
+    margin:0
+}
+blockquote.preview.blockrow{
+    border-left:1px solid #888;
+    border-right:1px solid #888
+}
+.postbitlegacy.yourpost>.postfoot>.postcontrols>.postrating{
+    display:none!important
+}
+#above_postlist,#pagination_top,.threadpagenav{
+    top:0!important
+}
+#below_threadlist{
+    float:none
+}
+#below_threadlist .threadpagenav{
+    padding-bottom:0!important
+}
+#below_threadlist .threadpagenav .pagination{
+    margin-top:8px!important
+}
+.pagination span{
+    float:none;
+    display:table-cell
+}
+.pagination a{
+    display:block;
+    padding-top:5px!important;
+    padding-bottom:5px!important
+}
+#qr_defaultcontainer{
+    margin-right:0
+}
+.imlinks{
+    font-size:0
+}
+.imlinks a img{
+    margin:0 0 1px 1px!important
+}
+.searchresults #threads{
+    border-collapse:separate
+}
+.ratingslist .ratingsbox ul{
+    line-height:1.1!important
+}
+h2.searchlisthead{
+    background:#28f
+}
+.quote .rainbow{
+    white-space:pre-wrap;
+    word-wrap:break-word;
+    word-break:break-all
+}
+.wysiwyg_block .blockbody.formcontrols{
+    background:#eee
+}
+.content img,.content video,.postdetails .video,.postdetails .video_hd,DIV.quote img{
+    max-width:99%!important
+}
+DIV.quote img,DIV.quote video,IMG.thumbnail{
+    max-height:300px!important;
+    max-width:500px!important
+}
+@media (max-width:600px){
+    .content img,.content video,.postdetails .video,.postdetails .video_hd,DIV.quote img{
+        max-width:99%!important
+    }
+}
+.header_banned{
+    max-width:480px;
+    margin:10px auto;
+    padding:16px;
+    background:#ffc;
+    border:1px solid red;
+    box-shadow:inset 0 0 20px -8px red
+}
+.header_banned p{
+    margin-bottom:1em
+}
+.header_banned p:last-child{
+    margin-bottom:0
+}
+.header_banned.ban_newthread h1{
+    font-size:2em;
+    font-weight:700
+}
+.header_banned.ban_newthread span{
+    margin-top:5px;
+    display:block
+}
+.minicons .newpost,div.postrating[id=ratingcontrols_post_]{
+    display:none
+}
+.header_banned.ban_newthread a{
+    font-weight:700
+}
+#userdata div.imlinks{
+    padding:0 20px;
+    width:85px!important
+}
+.status_x_is_online_now .username_container{
+    margin-bottom:4px!important
+}
+.username.online{
+    padding-bottom:1px
+}
+.groupbit a.avatarlink img{
+    max-height:100%;
+    width:auto
+}
+div.postdetails span.usertitle{
+    line-height:normal
+}
+.threadbit.lock:hover{
+    background-color:#f3f3f3!important
+}
+.threadbit.sticky:hover{
+    background-color:#fbfba5!important
+}
+.threadbit:hover{
+    background:#f5f5f5!important
+}
+.minicons{
+    float:right;
+    margin-right:4px;
+    color:#666
+}
+.minicons img{
+    height:10px
+}
+.threadadmin_quickmove{
+    text-align:left;
+    display:inline-block
+}
+.threadadmin .move{
+    text-align:center
+}
+.threadadmin .move a{
+    font-size:10px
+}
+.thumb_container{
+    max-height:300px;
+    max-width:500px;
+    display:inline-block
+}
+ul div.event{
+    word-wrap:break-word
+}
+.ticker_item{
+    background-color:#fefefe;
+    word-wrap:break-word
+}
+.ticker_item.alt{
+    background-color:#f0f0f0
+}
+.fp_custom_page{
+    background-color:#fefefe;
+    border:1px solid #777;
+    padding:5px
+}
+.ticker_last_read{
+    display:inline;
+    background-color:#fe5;
+    font-size:11px;
+    padding:2px 5px
+}
+.ticker_mentioned,.ticker_quoted{
+    display:inline;
+    background-color:#fc5;
+    font-size:11px;
+    padding:2px 5px
+}
+.imgur-album{
+    height:550px;
+    height:85vh;
+    width:99%
+}
+DIV.quote .imgur-album{
+    height:240px!important;
+    width:427px!important
+}
+h1.blocksubhead{
+    overflow:hidden
+}
+@media (max-width: 920px){
+    .postrating{
+        position:absolute;
+        right:0;
+        bottom:22px
+    }
+    .rating_results span font{
+        display:none
+    }
+}
